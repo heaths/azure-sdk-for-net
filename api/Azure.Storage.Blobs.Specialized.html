@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Azure.Storage.Blobs.Specialized
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Azure.Storage.Blobs.Specialized
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Blobs.Specialized">
+  
+  <h1 id="Azure_Storage_Blobs_Specialized" data-uid="Azure.Storage.Blobs.Specialized" class="text-break">Namespace Azure.Storage.Blobs.Specialized
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a></h4>
+      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a> allows you to manipulate Azure
+Storage append blobs.</p>
+<p>An append blob is comprised of blocks and is optimized for append
+operations.  When you modify an append blob, blocks are added to the
+end of the blob only, via the <a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.AppendBlobClient.html#Azure_Storage_Blobs_Specialized_AppendBlobClient_AppendBlockAsync_System_IO_Stream_System_Byte___System_Nullable_Azure_Storage_Blobs_Models_AppendBlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">AppendBlockAsync(Stream, Byte[], Nullable&lt;AppendBlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>
+operation.  Updating or deleting of existing blocks is not supported.
+Unlike a block blob, an append blob does not expose its block IDs.</p>
+<p>Each block in an append blob can be a different size, up to a maximum
+of 4 MB, and an append blob can include up to 50,000 blocks.  The
+maximum size of an append blob is therefore slightly more than 195 GB
+(4 MB X 50,000 blocks).</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></h4>
+      <section><p>The <a class="xref" href="Azure.Storage.Blobs/Azure.Storage.Blobs.BlobClient.html">BlobClient</a> allows you to manipulate Azure Storage
+blobs.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a></h4>
+      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.BlockBlobClient.html">BlockBlobClient</a> allows you to manipulate Azure
+Storage block blobs.</p>
+<p>Block blobs let you upload large blobs efficiently.  Block blobs are
+comprised of blocks, each of which is identified by a block ID. You
+create or modify a block blob by writing a set of blocks and
+committing them by their block IDs. Each block can be a different
+size, up to a maximum of 100 MB (4 MB for requests using REST versions
+before 2016-05-31), and a block blob can include up to 50,000 blocks.
+The maximum size of a block blob is therefore slightly more than 4.75
+TB (100 MB X 50,000 blocks).  If you are writing a block blob that is
+no more than 256 MB in size, you can upload it in its entirety with a
+single write operation; see <a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.BlockBlobClient.html#Azure_Storage_Blobs_Specialized_BlockBlobClient_UploadAsync_System_IO_Stream_System_Nullable_Azure_Storage_Blobs_Models_BlobHttpHeaders__System_Collections_Generic_IDictionary_System_String_System_String__System_Nullable_Azure_Storage_Blobs_Models_BlobAccessConditions__System_IProgress_Azure_Storage_Common_StorageProgress__System_Threading_CancellationToken_">UploadAsync(Stream, Nullable&lt;BlobHttpHeaders&gt;, IDictionary&lt;String,String&gt;, Nullable&lt;BlobAccessConditions&gt;, IProgress&lt;StorageProgress&gt;, CancellationToken)</a>.</p>
+<p>When you upload a block to a blob in your storage account, it is
+associated with the specified block blob, but it does not become part
+of the blob until you commit a list of blocks that includes the new
+block's ID. New blocks remain in an uncommitted state until they are
+specifically committed or discarded. Writing a block does not update
+the last modified time of an existing blob.</p>
+<p>Block blobs include features that help you manage large files over
+networks.  With a block blob, you can upload multiple blocks in
+parallel to decrease upload time.  Each block can include an MD5 hash
+to verify the transfer, so you can track upload progress and re-send
+blocks as needed.You can upload blocks in any order, and determine
+their sequence in the final block list commitment step. You can also
+upload a new block to replace an existing uncommitted block of the
+same block ID.  You have one week to commit blocks to a blob before
+they are discarded.  All uncommitted blocks are also discarded when a
+block list commitment operation occurs but does not include them.</p>
+<p>You can modify an existing block blob by inserting, replacing, or
+deleting existing blocks. After uploading the block or blocks that
+have changed, you can commit a new version of the blob by committing
+the new blocks with the existing blocks you want to keep using a
+single commit operation. To insert the same range of bytes in two
+different locations of the committed blob, you can commit the same
+block in two places within the same commit operation.For any commit
+operation, if any block is not found, the entire commitment operation
+fails with an error, and the blob is not modified. Any block commitment
+overwrites the blob’s existing properties and metadata, and discards
+all uncommitted blocks.</p>
+<p>Block IDs are strings of equal length within a blob. Block client code
+usually uses base-64 encoding to normalize strings into equal lengths.
+When using base-64 encoding, the pre-encoded string must be 64 bytes
+or less.  Block ID values can be duplicated in different blobs.  A
+blob can have up to 100,000 uncommitted blocks, but their total size
+cannot exceed 200,000 MB.</p>
+<p>If you write a block for a blob that does not exist, a new block blob
+is created, with a length of zero bytes.  This blob will appear in
+blob lists that include uncommitted blobs.  If you don’t commit any
+block to this blob, it and its uncommitted blocks will be discarded
+one week after the last successful block upload. All uncommitted
+blocks are also discarded when a new blob of the same name is created
+using a single step(rather than the two-step block upload-then-commit
+process).</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a></h4>
+      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a> allows you to manipulate Azure
+Storage leases on containers and blobs.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a></h4>
+      <section><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.PageBlobClient.html">PageBlobClient</a> allows you to manipulate Azure
+Storage page blobs.</p>
+<p>Page blobs are a collection of 512-byte pages optimized for random
+read and write operations. To create a page blob, you initialize the
+page blob and specify the maximum size the page blob will grow. To add
+or update the contents of a page blob, you write a page or pages by
+specifying an offset and a range that align to 512-byte page
+boundaries.  A write to a page blob can overwrite just one page, some
+pages, or up to 4 MB of the page blob.  Writes to page blobs happen
+in-place and are immediately committed to the blob. The maximum size
+for a page blob is 8 TB.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.SpecializedBlobExtensions.html">SpecializedBlobExtensions</a></h4>
+      <section><p>Add easy to discover methods to <a class="xref" href="Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> for
+creating <a class="xref" href="Azure.Storage.Blobs.Specialized/Azure.Storage.Blobs.Specialized.AppendBlobClient.html">AppendBlobClient</a> instances.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

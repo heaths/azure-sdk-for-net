@@ -1,0 +1,552 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AzureClientFactoryBuilder
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AzureClientFactoryBuilder
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder">
+  
+  
+  <h1 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder" class="text-break">Class AzureClientFactoryBuilder
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AzureClientFactoryBuilder</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientFactoryBuilder.html">IAzureClientFactoryBuilder</a></div>
+    <div><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration-1.html">IAzureClientFactoryBuilderWithConfiguration</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a>&gt;</div>
+    <div><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential.html">IAzureClientFactoryBuilderWithCredential</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Extensions.Azure.html">Microsoft.Extensions.Azure</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Extensions.Azure.dll</h6>
+  <h5 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class AzureClientFactoryBuilder : Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration&lt;Microsoft.Extensions.Configuration.IConfiguration&gt;, Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(Microsoft.Extensions.Configuration.IConfiguration)">ConfigureDefaults(IConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Extensions.Azure.AzureClientFactoryBuilder ConfigureDefaults (Microsoft.Extensions.Configuration.IConfiguration configuration);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.html">AzureClientFactoryBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_System_Action_Azure_Core_Pipeline_ClientOptions_System_IServiceProvider__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(System.Action{Azure.Core.Pipeline.ClientOptions,System.IServiceProvider})">ConfigureDefaults(Action&lt;ClientOptions,IServiceProvider&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Extensions.Azure.AzureClientFactoryBuilder ConfigureDefaults (Action&lt;Azure.Core.Pipeline.ClientOptions,IServiceProvider&gt; configureOptions);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-2">Action</a>&lt;<a class="xref" href="../Azure.Core.Pipeline/Azure.Core.Pipeline.ClientOptions.html">ClientOptions</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.html">AzureClientFactoryBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_ConfigureDefaults_System_Action_Azure_Core_Pipeline_ClientOptions__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.ConfigureDefaults(System.Action{Azure.Core.Pipeline.ClientOptions})">ConfigureDefaults(Action&lt;ClientOptions&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Extensions.Azure.AzureClientFactoryBuilder ConfigureDefaults (Action&lt;Azure.Core.Pipeline.ClientOptions&gt; configureOptions);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.action-1">Action</a>&lt;<a class="xref" href="../Azure.Core.Pipeline/Azure.Core.Pipeline.ClientOptions.html">ClientOptions</a>&gt;</td>
+        <td><span class="parametername">configureOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.html">AzureClientFactoryBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_Azure_Core_TokenCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(Azure.Core.TokenCredential)">UseCredential(TokenCredential)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Extensions.Azure.AzureClientFactoryBuilder UseCredential (Azure.Core.TokenCredential tokenCredential);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">tokenCredential</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.html">AzureClientFactoryBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_UseCredential_System_Func_System_IServiceProvider_Azure_Core_TokenCredential__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.UseCredential(System.Func{System.IServiceProvider,Azure.Core.TokenCredential})">UseCredential(Func&lt;IServiceProvider,TokenCredential&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Extensions.Azure.AzureClientFactoryBuilder UseCredential (Func&lt;IServiceProvider,Azure.Core.TokenCredential&gt; tokenCredentialFactory);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a>,<a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a>&gt;</td>
+        <td><span class="parametername">tokenCredentialFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.html">AzureClientFactoryBuilder</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilder_RegisterClientFactory_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilder#RegisterClientFactory*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilder_RegisterClientFactory__2_System_Func___1___0__" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilder#RegisterClientFactory``2(System.Func{``1,``0})">IAzureClientFactoryBuilder.RegisterClientFactory&lt;TClient,TOptions&gt;(Func&lt;TOptions,TClient&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Azure.Core.Extensions.IAzureClientBuilder&lt;TClient,TOptions&gt; IAzureClientFactoryBuilder.RegisterClientFactory&lt;TClient,TOptions&gt; (Func&lt;TOptions,TClient&gt; clientFactory) where TOptions : class;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<span class="xref">TOptions</span>,<span class="xref">TClient</span>&gt;</td>
+        <td><span class="parametername">clientFactory</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder&lt;TClient,TOptions&gt;</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_Microsoft_Extensions_Configuration_IConfiguration__RegisterClientFactory_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilderWithConfiguration{Microsoft#Extensions#Configuration#IConfiguration}#RegisterClientFactory*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilderWithConfiguration_Microsoft_Extensions_Configuration_IConfiguration__RegisterClientFactory__2_Microsoft_Extensions_Configuration_IConfiguration_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilderWithConfiguration{Microsoft#Extensions#Configuration#IConfiguration}#RegisterClientFactory``2(Microsoft.Extensions.Configuration.IConfiguration)">IAzureClientFactoryBuilderWithConfiguration&lt;IConfiguration&gt;.RegisterClientFactory&lt;TClient,TOptions&gt;(IConfiguration)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Azure.Core.Extensions.IAzureClientBuilder&lt;TClient,TOptions&gt; IAzureClientFactoryBuilderWithConfiguration&lt;IConfiguration&gt;.RegisterClientFactory&lt;TClient,TOptions&gt; (Microsoft.Extensions.Configuration.IConfiguration configuration) where TOptions : class;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.extensions.configuration.iconfiguration">IConfiguration</a></td>
+        <td><span class="parametername">configuration</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder&lt;TClient,TOptions&gt;</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilderWithCredential_RegisterClientFactory_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilderWithCredential#RegisterClientFactory*"></a>
+  <h4 id="Microsoft_Extensions_Azure_AzureClientFactoryBuilder_Azure_Core_Extensions_IAzureClientFactoryBuilderWithCredential_RegisterClientFactory__2_System_Func___1_Azure_Core_TokenCredential___0__System_Boolean_" data-uid="Microsoft.Extensions.Azure.AzureClientFactoryBuilder.Azure#Core#Extensions#IAzureClientFactoryBuilderWithCredential#RegisterClientFactory``2(System.Func{``1,Azure.Core.TokenCredential,``0},System.Boolean)">IAzureClientFactoryBuilderWithCredential.RegisterClientFactory&lt;TClient,TOptions&gt;(Func&lt;TOptions,TokenCredential,TClient&gt;, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Azure.Core.Extensions.IAzureClientBuilder&lt;TClient,TOptions&gt; IAzureClientFactoryBuilderWithCredential.RegisterClientFactory&lt;TClient,TOptions&gt; (Func&lt;TOptions,Azure.Core.TokenCredential,TClient&gt; clientFactory, bool requiresCredential) where TOptions : class;</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<span class="xref">TOptions</span>,<a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a>,<span class="xref">TClient</span>&gt;</td>
+        <td><span class="parametername">clientFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">requiresCredential</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientBuilder-2.html">IAzureClientBuilder&lt;TClient,TOptions&gt;</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientFactoryBuilder.html">Azure.Core.Extensions.IAzureClientFactoryBuilder</a>
+  </div>
+  <div>
+      <span class="xref">Azure.Core.Extensions.IAzureClientFactoryBuilderWithConfiguration&lt;Microsoft.Extensions.Configuration.IConfiguration&gt;</span>
+  </div>
+  <div>
+      <a class="xref" href="../Azure.Core.Extensions/Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential.html">Azure.Core.Extensions.IAzureClientFactoryBuilderWithCredential</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

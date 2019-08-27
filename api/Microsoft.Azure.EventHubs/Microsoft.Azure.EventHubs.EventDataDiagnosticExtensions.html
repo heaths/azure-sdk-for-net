@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventDataDiagnosticExtensions
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventDataDiagnosticExtensions
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventHubs.EventDataDiagnosticExtensions">
+  
+  
+  <h1 id="Microsoft_Azure_EventHubs_EventDataDiagnosticExtensions" data-uid="Microsoft.Azure.EventHubs.EventDataDiagnosticExtensions" class="text-break">Class EventDataDiagnosticExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Diagnostic extension methods for <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">EventDataDiagnosticExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.EventHubs.html">Microsoft.Azure.EventHubs</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.dll</h6>
+  <h5 id="Microsoft_Azure_EventHubs_EventDataDiagnosticExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class EventDataDiagnosticExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventDataDiagnosticExtensions_ExtractActivity_" data-uid="Microsoft.Azure.EventHubs.EventDataDiagnosticExtensions.ExtractActivity*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventDataDiagnosticExtensions_ExtractActivity_Microsoft_Azure_EventHubs_EventData_System_String_" data-uid="Microsoft.Azure.EventHubs.EventDataDiagnosticExtensions.ExtractActivity(Microsoft.Azure.EventHubs.EventData,System.String)">ExtractActivity(EventData, String)</h4>
+  <div class="markdown level1 summary"><p>Creates <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.diagnostics.activity">Activity</a> based on the tracing context stored in the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a><param name="eventData">The event received from EventHub<param name="activityName">Optional Activity name<returns>New <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.diagnostics.activity">Activity</a> with tracing context</returns></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static System.Diagnostics.Activity ExtractActivity (this Microsoft.Azure.EventHubs.EventData eventData, string activityName = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">activityName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.diagnostics.activity">Activity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventDataDiagnosticExtensions_ExtractActivity_Microsoft_Azure_EventHubs_EventData_System_String__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Tracing context is used to correlate telemetry between producer and consumer and
+represented by 'Diagnostic-Id' and 'Correlation-Context' properties in <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html#Microsoft_Azure_EventHubs_EventData_Properties">Properties</a>.</p>
+<p>.NET SDK automatically injects context when sending message to the ServiceBus (if diagnostics is enabled by tracing system).</p>
+<p>
+'Diagnostic-Id' uniquely identifies operation that enqueued the event
+</p><p>
+'Correlation-Context' is comma separated list of string key value pairs representing optional context for the operation.
+</p>
+<p>If there is no tracing context in the event, this method returns <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.diagnostics.activity">Activity</a> without parent.</p>
+<p>Returned <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.diagnostics.activity">Activity</a> needs to be started before it can be used (see example below)</p>
+</div>
+  <h5 id="Microsoft_Azure_EventHubs_EventDataDiagnosticExtensions_ExtractActivity_Microsoft_Azure_EventHubs_EventData_System_String__examples">Examples</h5>
+  <pre><code>
+  async Task ProcessAsync(EventData eventData)
+  {
+     var activity = eventData.ExtractActivity();
+     activity.Start();
+     Logger.LogInformation($"Event received, Id = {Activity.Current.Id}")
+     try 
+     {
+        // process event
+     }
+     catch (Exception ex)
+     {
+          Logger.LogError($"Exception {ex}, Id = {Activity.Current.Id}")
+     }
+     finally 
+     {
+          activity.Stop();
+          // Activity is stopped, we no longer have it in Activity.Current
+          Logger.LogInformation($"Event processed, Id = {activity.Id}, Duration = {activity.Duration}")
+     }
+  }
+</code></pre>
+<p>Note that every log is stamped with <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.diagnostics.activity.current#System_Diagnostics_Activity_Current">Current</a>.Id, that could be used within
+any nested method call (sync or async) - <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.diagnostics.activity.current#System_Diagnostics_Activity_Current">Current</a> is an ambient context that flows with async method calls.</p>
+
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

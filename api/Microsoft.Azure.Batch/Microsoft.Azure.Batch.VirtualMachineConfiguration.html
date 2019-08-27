@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class VirtualMachineConfiguration
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class VirtualMachineConfiguration
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_VirtualMachineConfiguration" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration" class="text-break">Class VirtualMachineConfiguration
+  </h1>
+  <div class="markdown level0 summary"><p>The configuration for compute nodes in a pool based on the Azure Virtual Machines infrastructure.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">VirtualMachineConfiguration</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class VirtualMachineConfiguration</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration__ctor_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration__ctor_Microsoft_Azure_Batch_ImageReference_System_String_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.#ctor(Microsoft.Azure.Batch.ImageReference,System.String)">VirtualMachineConfiguration(ImageReference, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.VirtualMachineConfiguration.html">VirtualMachineConfiguration</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VirtualMachineConfiguration (Microsoft.Azure.Batch.ImageReference imageReference, string nodeAgentSkuId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ImageReference.html">ImageReference</a></td>
+        <td><span class="parametername">imageReference</span></td>
+        <td><p>A reference to the Azure Virtual Machines Marketplace Image or the custom Virtual Machine Image to use.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nodeAgentSkuId</span></td>
+        <td><p>The SKU of Batch Node Agent to be provisioned on the compute node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ContainerConfiguration*"></a>
+  <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ContainerConfiguration">ContainerConfiguration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the container configuration for the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.ContainerConfiguration ContainerConfiguration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ContainerConfiguration.html">ContainerConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ContainerConfiguration_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If specified, setup is performed on each node in the pool to allow tasks to run in containers. All regular tasks
+and job manager tasks run on this pool must specify <a class="xref" href="Microsoft.Azure.Batch.TaskContainerSettings.html">TaskContainerSettings</a>, and all other tasks
+may specify it.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_DataDisks_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.DataDisks*"></a>
+  <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_DataDisks" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.DataDisks">DataDisks</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the configuration for data disks attached to the Comptue Nodes in the pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.DataDisk&gt; DataDisks { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.DataDisk.html">DataDisk</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_DataDisks_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property must be specified if the Compute Nodes in the pool need to have empty data disks attached to them.</p>
+<p>This cannot be updated.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ImageReference_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ImageReference*"></a>
+  <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_ImageReference" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.ImageReference">ImageReference</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a reference to the Azure Virtual Machines Marketplace Image or the custom Virtual Machine Image
+to use.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.ImageReference ImageReference { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ImageReference.html">ImageReference</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_LicenseType_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.LicenseType*"></a>
+  <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_LicenseType" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.LicenseType">LicenseType</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the type of on-premises license to be used when deploying the operating system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LicenseType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_LicenseType_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This only applies to images that contain the Windows operating system, and should only be used when you hold</p>
+<p>valid on-premises licenses for the nodes which will be deployed. If omitted, no on-premises licensing discount</p>
+<p>is applied. Values are: 'Windows_Server' - The on-premises license is for Windows Server. 'Windows_Client' -</p>
+<p>The on-premises license is for Windows Client.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_NodeAgentSkuId_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.NodeAgentSkuId*"></a>
+  <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_NodeAgentSkuId" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.NodeAgentSkuId">NodeAgentSkuId</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the SKU of Batch Node Agent to be provisioned on the compute node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string NodeAgentSkuId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_NodeAgentSkuId_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Batch node agent is a program that runs on each node in the pool, and provides the command-and-control interface</p>
+<p>between the node and the Batch service. There are different implementations of the node agent, known as SKUs,</p>
+<p>for different operating systems.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_VirtualMachineConfiguration_WindowsConfiguration_" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.WindowsConfiguration*"></a>
+  <h4 id="Microsoft_Azure_Batch_VirtualMachineConfiguration_WindowsConfiguration" data-uid="Microsoft.Azure.Batch.VirtualMachineConfiguration.WindowsConfiguration">WindowsConfiguration</h4>
+  <div class="markdown level1 summary"><p>Gets or sets windows operating system settings on the Virtual Machine. This property must not be specified if
+the ImageReference property specifies a Linux OS image.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.WindowsConfiguration WindowsConfiguration { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.WindowsConfiguration.html">WindowsConfiguration</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

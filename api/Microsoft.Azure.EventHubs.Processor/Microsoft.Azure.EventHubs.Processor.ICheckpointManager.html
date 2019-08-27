@@ -1,0 +1,378 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface ICheckpointManager
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface ICheckpointManager
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager">
+  
+  
+  <h1 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager" class="text-break">Interface ICheckpointManager
+  </h1>
+  <div class="markdown level0 summary"><p>If you wish to have EventProcessorHost store checkpoints somewhere other than Azure Storage,
+you can write your own checkpoint manager using this interface.</p>
+<p>The Azure Storage managers use the same storage for both lease and checkpoints, so both
+interfaces are implemented by the same class. You are free to do the same thing if you have
+a unified store for both types of data.</p><p>This interface does not specify initialization methods because we have no way of knowing what
+information your implementation will require.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.EventHubs.Processor.html">Microsoft.Azure.EventHubs.Processor</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.Processor.dll</h6>
+  <h5 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface ICheckpointManager</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CheckpointStoreExistsAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CheckpointStoreExistsAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CheckpointStoreExistsAsync" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CheckpointStoreExistsAsync">CheckpointStoreExistsAsync()</h4>
+  <div class="markdown level1 summary"><p>Does the checkpoint store exist?</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;bool&gt; CheckpointStoreExistsAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>true if it exists, false if not</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointIfNotExistsAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointIfNotExistsAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointIfNotExistsAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointIfNotExistsAsync(System.String)">CreateCheckpointIfNotExistsAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Create the checkpoint for the given partition if it doesn't exist. Do nothing if it does exist.
+The offset/sequenceNumber for a freshly-created checkpoint should be set to StartOfStream/0.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.Processor.Checkpoint&gt; CreateCheckpointIfNotExistsAsync (string partitionId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>Id of partition to create the checkpoint for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.Processor.Checkpoint.html">Checkpoint</a>&gt;</td>
+        <td><p>The checkpoint for the given partition, whether newly created or already existing.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointStoreIfNotExistsAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointStoreIfNotExistsAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_CreateCheckpointStoreIfNotExistsAsync" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.CreateCheckpointStoreIfNotExistsAsync">CreateCheckpointStoreIfNotExistsAsync()</h4>
+  <div class="markdown level1 summary"><p>Create the checkpoint store if it doesn't exist. Do nothing if it does exist.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;bool&gt; CreateCheckpointStoreIfNotExistsAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><p>true if the checkpoint store already exists or was created OK, false if there was a failure</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_DeleteCheckpointAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.DeleteCheckpointAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_DeleteCheckpointAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.DeleteCheckpointAsync(System.String)">DeleteCheckpointAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Delete the stored checkpoint for the given partition. If there is no stored checkpoint for the
+given partition, that is treated as success.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task DeleteCheckpointAsync (string partitionId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>id of partition to delete checkpoint from store</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_GetCheckpointAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.GetCheckpointAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_GetCheckpointAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.GetCheckpointAsync(System.String)">GetCheckpointAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Get the checkpoint data associated with the given partition. Could return null if no checkpoint has
+been created for that partition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.Processor.Checkpoint&gt; GetCheckpointAsync (string partitionId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>Id of partition to get checkpoint info for.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.Processor.Checkpoint.html">Checkpoint</a>&gt;</td>
+        <td><p>Checkpoint info for the given partition, or null if none has been previously stored.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_UpdateCheckpointAsync_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.UpdateCheckpointAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_Processor_ICheckpointManager_UpdateCheckpointAsync_Microsoft_Azure_EventHubs_Processor_Lease_Microsoft_Azure_EventHubs_Processor_Checkpoint_" data-uid="Microsoft.Azure.EventHubs.Processor.ICheckpointManager.UpdateCheckpointAsync(Microsoft.Azure.EventHubs.Processor.Lease,Microsoft.Azure.EventHubs.Processor.Checkpoint)">UpdateCheckpointAsync(Lease, Checkpoint)</h4>
+  <div class="markdown level1 summary"><p>Update the checkpoint in the store with the offset/sequenceNumber in the provided checkpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task UpdateCheckpointAsync (Microsoft.Azure.EventHubs.Processor.Lease lease, Microsoft.Azure.EventHubs.Processor.Checkpoint checkpoint);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.Lease.html">Lease</a></td>
+        <td><span class="parametername">lease</span></td>
+        <td><p>Partition information against which to perform a checkpoint.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.Processor.Checkpoint.html">Checkpoint</a></td>
+        <td><span class="parametername">checkpoint</span></td>
+        <td><p>offset/sequeceNumber to update the store with.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

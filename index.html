@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Azure SDK for .NET | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Azure SDK for .NET | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/docfx.vendor.css">
+    <link rel="stylesheet" href="styles/docfx.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <meta property="docfx:navrel" content="toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="azure-sdk-for-net">Azure SDK for .NET</h1>
+
+<p>This repository contains official .NET libraries for Azure services. You can find NuGet packages for these libraries <a href="packages.md">here</a>.</p>
+<h2 id="getting-started">Getting started</h2>
+<p>To get started with a library, see the README.md file located in the library's project folder. You can find these library folders grouped by service in the /sdk directory.</p>
+<p>For tutorials, samples, quick starts, and other documentation, go to <a href="https://docs.microsoft.com/en-us/dotnet/azure/">Azure for .NET Developers</a>.</p>
+<h2 id="packages-available">Packages available</h2>
+<p>Each service might have a number of libraries available from each of the following categories discussed below:</p>
+<ul>
+<li><a href="#Client-July-2019-Preview">Client - July 2019 Preview</a></li>
+<li><a href="#Client-Stable">Client - Stable</a></li>
+<li><a href="#Management">Management</a></li>
+</ul>
+<h3 id="client-july-2019-preview">Client: July 2019 Preview</h3>
+<p>New wave of packages that we are currently releasing in <strong>preview</strong>.
+These libraries follow the <a href="https://azure.github.io/azure-sdk/dotnet/guidelines/">Azure SDK Design Guidelines for .NET</a> and share a number of core features such as HTTP retries, logging, transport protocols, authentication protocols, etc., so that once you learn how to use these features in one client library, you will know how to use them in other client libraries. You can learn about these shared features at <a href="/sdk/core/Azure.Core/README.md">Azure.Core</a>.</p>
+<p>These preview libraries can be easily identified by their folder, package, and namespaces names starting with 'Azure', e.g. Azure.Storage.Blobs.</p>
+<p>The libraries released in the July 2019 preview:</p>
+<ul>
+<li><a href="https://azure.github.io/azure-sdk-for-net/api/Azure.ApplicationModel.Configuration.html">Azure.ApplicationModel.Configuration</a></li>
+<li><a href="https://azure.github.io/azure-sdk-for-net/api/Azure.Messaging.EventHubs.html">Azure.Messaging.EventHubs</a></li>
+<li><a href="https://azure.github.io/azure-sdk-for-net/api/Azure.Security.KeyVault.Keys.html">Azure.Security.KeyVault.Keys</a></li>
+<li><a href="https://azure.github.io/azure-sdk-for-net/api/Azure.Security.KeyVault.Secrets.html">Azure.Security.KeyVault.Secrets</a></li>
+<li><a href="https://azure.github.io/azure-sdk-for-net/api/Azure.Storage.Blobs.html">Azure.Storage.Blobs</a></li>
+<li><a href="https://azure.github.io/azure-sdk-for-net/api/Azure.Storage.Files.html">Azure.Storage.Files</a></li>
+<li><a href="https://azure.github.io/azure-sdk-for-net/api/Azure.Storage.Queues.html">Azure.Storage.Queues</a></li>
+</ul>
+<blockquote>
+<p>NOTE: If you need to ensure your code is ready for production, use one of the stable libraries.</p>
+</blockquote>
+<h3 id="client-stable">Client: Stable</h3>
+<p>Last stable versions of packages that are production-ready. These libraries provide similar functionalities to the preview packages, as they allow you to use and consume existing resources and interact with them, for example: upload a storage blob. Stable library directories typically contain 'Microsoft.Azure' in their names, e.g. 'Microsoft.Azure.KeyVault'.</p>
+<h3 id="management">Management</h3>
+<p>Libraries which enable you to provision specific server resources. They are directly mirroring Azure service's REST endpoints. Management library directories typically contain the word 'Management' in their names, e.g. 'Microsoft.Azure.Management.Storage'.</p>
+<h2 id="need-help">Need help?</h2>
+<ul>
+<li>For reference documentation visit the <a href="http://aka.ms/net-docs">Azure SDK for .NET API Reference</a>.</li>
+<li>For tutorials, samples, quick starts, and other documentation, go to <a href="https://docs.microsoft.com/en-us/dotnet/azure/">Azure for .NET Developers</a>.</li>
+<li>File an issue via <a href="https://github.com/Azure/azure-sdk-for-net/issues/new/choose">Github Issues</a>.</li>
+<li>Check <a href="https://stackoverflow.com/questions/tagged/azure+.net">previous questions</a> or ask new ones on StackOverflow using <code>azure</code> and <code>.net</code> tags.</li>
+</ul>
+<h2 id="contributing">Contributing</h2>
+<p>For details on contributing to this repository, see the <a href="CONTRIBUTING.md">contributing guide</a>.</p>
+<p>This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit
+<a href="https://cla.microsoft.com">https://cla.microsoft.com</a>.</p>
+<p>When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repositories using our CLA.</p>
+<p>This project has adopted the <a href="https://opensource.microsoft.com/codeofconduct/">Microsoft Open Source Code of Conduct</a>. For more information see the <a href="https://opensource.microsoft.com/codeofconduct/faq/">Code of Conduct FAQ</a> or contact <a href="mailto:opencode@microsoft.com">opencode@microsoft.com</a> with any additional questions or comments.</p>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th>Build Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Client Libraries</td>
+<td><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=290&amp;branchName=master"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/290?branchName=master" alt="Build Status"></a> <a href="https://azuresdkartifacts.blob.core.windows.net/azure-sdk-for-net/dependencies/dependencies.html"><img src="https://img.shields.io/badge/dependencies-analyzed-blue.svg" alt="Dependencies"></a></td>
+</tr>
+<tr>
+<td>Management Libraries</td>
+<td><a href="https://dev.azure.com/azure-sdk/public/_build/latest?definitionId=529&amp;branchName=master"><img src="https://dev.azure.com/azure-sdk/public/_apis/build/status/529?branchName=master" alt="Build Status"></a></td>
+</tr>
+</tbody>
+</table>
+<p><img src="https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-net%2FREADME.png" alt="Impressions"></p>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

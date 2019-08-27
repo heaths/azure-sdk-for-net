@@ -1,0 +1,2136 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IEvents
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IEvents
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents">
+  
+  
+  <h1 id="Microsoft_Azure_ApplicationInsights_Query_IEvents" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents" class="text-break">Interface IEvents
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.html">Microsoft.Azure.ApplicationInsights.Query</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ApplicationInsights.Query.dll</h6>
+  <h5 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IEvents</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetAvailabilityResultEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetAvailabilityResultEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetAvailabilityResultEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetAvailabilityResultEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetAvailabilityResultEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsAvailabilityResultResult.html">EventsAvailabilityResultResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetAvailabilityResultEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetAvailabilityResultEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetAvailabilityResultEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetAvailabilityResultEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetAvailabilityResultEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsAvailabilityResultResult&gt;&gt;&gt; GetAvailabilityResultEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsAvailabilityResultResult.html">EventsAvailabilityResultResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetBrowserTimingEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetBrowserTimingEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetBrowserTimingEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetBrowserTimingEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetBrowserTimingEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsBrowserTimingResult.html">EventsBrowserTimingResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetBrowserTimingEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetBrowserTimingEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetBrowserTimingEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetBrowserTimingEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetBrowserTimingEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsBrowserTimingResult&gt;&gt;&gt; GetBrowserTimingEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsBrowserTimingResult.html">EventsBrowserTimingResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetByTypeWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetByTypeWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetByTypeWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetByTypeWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetByTypeWithHttpMessagesAsync(String, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&gt;&gt; GetByTypeWithHttpMessagesAsync (string appId, string eventType, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults.html">EventsResults</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetCustomEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomEventResult.html">EventsCustomEventResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetCustomEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomEventResult&gt;&gt;&gt; GetCustomEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomEventResult.html">EventsCustomEventResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomMetricEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomMetricEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomMetricEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomMetricEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetCustomMetricEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomMetricResult.html">EventsCustomMetricResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomMetricEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomMetricEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetCustomMetricEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetCustomMetricEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetCustomMetricEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomMetricResult&gt;&gt;&gt; GetCustomMetricEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsCustomMetricResult.html">EventsCustomMetricResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetDependencyEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetDependencyEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetDependencyEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetDependencyEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetDependencyEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsDependencyResult.html">EventsDependencyResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetDependencyEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetDependencyEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetDependencyEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetDependencyEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetDependencyEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsDependencyResult&gt;&gt;&gt; GetDependencyEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsDependencyResult.html">EventsDependencyResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetExceptionEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetExceptionEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetExceptionEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetExceptionEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetExceptionEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsExceptionResult.html">EventsExceptionResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetExceptionEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetExceptionEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetExceptionEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetExceptionEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetExceptionEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsExceptionResult&gt;&gt;&gt; GetExceptionEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsExceptionResult.html">EventsExceptionResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetOdataMetadataWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetOdataMetadataWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetOdataMetadataWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetOdataMetadataWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetOdataMetadataWithHttpMessagesAsync(String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;object&gt;&gt; GetOdataMetadataWithHttpMessagesAsync (string appId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPageViewEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPageViewEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPageViewEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPageViewEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetPageViewEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsPageViewResult.html">EventsPageViewResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPageViewEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPageViewEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPageViewEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPageViewEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetPageViewEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsPageViewResult&gt;&gt;&gt; GetPageViewEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsPageViewResult.html">EventsPageViewResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPerformanceCounterEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPerformanceCounterEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPerformanceCounterEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPerformanceCounterEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetPerformanceCounterEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsPerformanceCounterResult.html">EventsPerformanceCounterResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPerformanceCounterEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPerformanceCounterEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetPerformanceCounterEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetPerformanceCounterEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetPerformanceCounterEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsPerformanceCounterResult&gt;&gt;&gt; GetPerformanceCounterEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsPerformanceCounterResult.html">EventsPerformanceCounterResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetRequestEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetRequestEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetRequestEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetRequestEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetRequestEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsRequestResult.html">EventsRequestResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetRequestEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetRequestEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetRequestEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetRequestEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetRequestEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsRequestResult&gt;&gt;&gt; GetRequestEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsRequestResult.html">EventsRequestResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetTraceEventsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetTraceEventsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetTraceEventsWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetTraceEventsWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Nullable{System.Boolean},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetTraceEventsWithHttpMessagesAsync(String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventsWithHttpMessagesAsync (string appId, string timespan = null, string filter = null, string search = null, string orderby = null, string select = null, Nullable&lt;int&gt; skip = null, Nullable&lt;int&gt; top = null, string format = null, Nullable&lt;bool&gt; count = null, string apply = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">search</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">orderby</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">select</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">skip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">format</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">apply</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsTraceResult.html">EventsTraceResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetTraceEventWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetTraceEventWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetTraceEventWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetTraceEventWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetTraceEventWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsTraceResult&gt;&gt;&gt; GetTraceEventWithHttpMessagesAsync (string appId, string eventId = null, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults-1.html">EventsResults</a>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsTraceResult.html">EventsTraceResult</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_ApplicationInsights_Query_IEvents_GetWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.ApplicationInsights.Query.IEvents.GetWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults&gt;&gt; GetWithHttpMessagesAsync (string appId, string eventType, string eventId, string timespan = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">appId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">eventId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">timespan</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.ApplicationInsights.Query.Models/Microsoft.Azure.ApplicationInsights.Query.Models.EventsResults.html">EventsResults</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_Get_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_">EventsExtensions.Get(IEvents, String, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetAsync(IEvents, String, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetAvailabilityResultEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetAvailabilityResultEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetAvailabilityResultEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetAvailabilityResultEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetAvailabilityResultEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetAvailabilityResultEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetAvailabilityResultEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetAvailabilityResultEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetBrowserTimingEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetBrowserTimingEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetBrowserTimingEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetBrowserTimingEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetBrowserTimingEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetBrowserTimingEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetBrowserTimingEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetBrowserTimingEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetByType_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetByType(IEvents, String, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetByTypeAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetByTypeAsync(IEvents, String, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetCustomEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetCustomEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetCustomEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetCustomEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomMetricEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetCustomMetricEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomMetricEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetCustomMetricEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomMetricEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetCustomMetricEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetCustomMetricEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetCustomMetricEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetDependencyEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetDependencyEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetDependencyEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetDependencyEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetDependencyEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetDependencyEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetDependencyEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetDependencyEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetExceptionEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetExceptionEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetExceptionEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetExceptionEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetExceptionEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetExceptionEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetExceptionEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetExceptionEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetOdataMetadata_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_">EventsExtensions.GetOdataMetadata(IEvents, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetOdataMetadataAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_Threading_CancellationToken_">EventsExtensions.GetOdataMetadataAsync(IEvents, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPageViewEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetPageViewEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPageViewEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetPageViewEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPageViewEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetPageViewEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPageViewEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetPageViewEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPerformanceCounterEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetPerformanceCounterEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPerformanceCounterEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetPerformanceCounterEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPerformanceCounterEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetPerformanceCounterEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetPerformanceCounterEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetPerformanceCounterEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetRequestEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetRequestEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetRequestEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetRequestEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetRequestEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetRequestEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetRequestEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetRequestEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetTraceEvent_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_">EventsExtensions.GetTraceEvent(IEvents, String, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetTraceEventAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_Threading_CancellationToken_">EventsExtensions.GetTraceEventAsync(IEvents, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetTraceEvents_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_">EventsExtensions.GetTraceEvents(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ApplicationInsights.Query.EventsExtensions.html#Microsoft_Azure_ApplicationInsights_Query_EventsExtensions_GetTraceEventsAsync_Microsoft_Azure_ApplicationInsights_Query_IEvents_System_String_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Nullable_System_Boolean__System_String_System_Threading_CancellationToken_">EventsExtensions.GetTraceEventsAsync(IEvents, String, String, String, String, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Nullable&lt;Boolean&gt;, String, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

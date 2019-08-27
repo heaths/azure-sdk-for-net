@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ResourceFile
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ResourceFile
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.ResourceFile">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_ResourceFile" data-uid="Microsoft.Azure.Batch.ResourceFile" class="text-break">Class ResourceFile
+  </h1>
+  <div class="markdown level0 summary"><p>A file to be downloaded to a compute node from Azure Blob Storage, such as task executables and task input data files.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">ResourceFile</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_ResourceFile_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ResourceFile</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName_" data-uid="Microsoft.Azure.Batch.ResourceFile.AutoStorageContainerName*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName" data-uid="Microsoft.Azure.Batch.ResourceFile.AutoStorageContainerName">AutoStorageContainerName</h4>
+  <div class="markdown level1 summary"><p>Gets the storage container name in the auto storage account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AutoStorageContainerName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_BlobPrefix_" data-uid="Microsoft.Azure.Batch.ResourceFile.BlobPrefix*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_BlobPrefix" data-uid="Microsoft.Azure.Batch.ResourceFile.BlobPrefix">BlobPrefix</h4>
+  <div class="markdown level1 summary"><p>Gets the blob prefix to use when downloading blobs from an Azure Storage container. Only the blobs whose names
+begin with the specified prefix will be downloaded.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BlobPrefix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_ResourceFile_BlobPrefix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is valid only when <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName">AutoStorageContainerName</a> or <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl">StorageContainerUrl</a>
+is used. This prefix can be a partial filename or a subdirectory. If a prefix is not specified, all the files
+in the container will be downloaded.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_FileMode_" data-uid="Microsoft.Azure.Batch.ResourceFile.FileMode*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_FileMode" data-uid="Microsoft.Azure.Batch.ResourceFile.FileMode">FileMode</h4>
+  <div class="markdown level1 summary"><p>Gets the file permission mode attribute in octal format.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FileMode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_ResourceFile_FileMode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This property is applicable only if the resource file is downloaded to a Linux node. This property will 
+  be ignored if it is specified for a <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> which will be downloaded to a Windows node. If 
+  this property is not specified for a Linux node, then the default value is 0770.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_FilePath_" data-uid="Microsoft.Azure.Batch.ResourceFile.FilePath*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_FilePath" data-uid="Microsoft.Azure.Batch.ResourceFile.FilePath">FilePath</h4>
+  <div class="markdown level1 summary"><p>Gets the location on the compute node to which to download the file(s), relative to the task's working directory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string FilePath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_ResourceFile_FilePath_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_HttpUrl">HttpUrl</a> property is specified, this is required and describes the path which the file will
+be downloaded to, including the filename. Otherwise, if the <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_AutoStorageContainerName">AutoStorageContainerName</a> or <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl">StorageContainerUrl</a> property is specified, this is optional and is the directory to download the files to. In the case where this
+is used as a directory, any directory structure already associated with the input data will be retained in full
+and appended to the specified <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html#Microsoft_Azure_Batch_ResourceFile_FilePath">FilePath</a> directory. The specified relative path cannot break out
+of the task's working directory (for example by using '..').</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_HttpUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.HttpUrl*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_HttpUrl" data-uid="Microsoft.Azure.Batch.ResourceFile.HttpUrl">HttpUrl</h4>
+  <div class="markdown level1 summary"><p>Gets the URL of the file to download.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HttpUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_ResourceFile_HttpUrl_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the URL is Azure Blob Storage, it must be readable using anonymous access; that is, the Batch service does</p>
+<p>not present any credentials when downloading the blob. There are two ways to get such a URL for a blob in Azure</p>
+<p>storage: include a Shared Access Signature (SAS) granting read permissions on the blob, or set the ACL for the</p>
+<p>blob or its container to allow public access.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.StorageContainerUrl*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl" data-uid="Microsoft.Azure.Batch.ResourceFile.StorageContainerUrl">StorageContainerUrl</h4>
+  <div class="markdown level1 summary"><p>Gets the URL of the blob container within Azure Blob Storage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string StorageContainerUrl { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_ResourceFile_StorageContainerUrl_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This URL must be readable and listable using anonymous access; that is, the Batch service does not present any</p>
+<p>credentials when downloading blobs from the container. There are two ways to get such a URL for a container in</p>
+<p>Azure storage: include a Shared Access Signature (SAS) granting read permissions on the container, or set the</p>
+<p>ACL for the container to allow public access.</p>
+</div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_FromAutoStorageContainer_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromAutoStorageContainer*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_FromAutoStorageContainer_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromAutoStorageContainer(System.String,System.String,System.String,System.String)">FromAutoStorageContainer(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified auto storage container name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.Batch.ResourceFile FromAutoStorageContainer (string autoStorageContainerName, string filePath = null, string blobPrefix = null, string fileMode = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">autoStorageContainerName</span></td>
+        <td><p>The storage container name in the auto storage account.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The location on the compute node to which to download the file(s), relative to the task's working directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">blobPrefix</span></td>
+        <td><p>The blob prefix to use when downloading blobs from an Azure Storage container. Only the blobs whose names begin
+with the specified prefix will be downloaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileMode</span></td>
+        <td><p>The file permission mode attribute in octal format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified auto storage container name.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_FromStorageContainerUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromStorageContainerUrl*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_FromStorageContainerUrl_System_String_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromStorageContainerUrl(System.String,System.String,System.String,System.String)">FromStorageContainerUrl(String, String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified Azure Storage container URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.Batch.ResourceFile FromStorageContainerUrl (string storageContainerUrl, string filePath = null, string blobPrefix = null, string fileMode = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">storageContainerUrl</span></td>
+        <td><p>The URL of the blob container within Azure Blob Storage.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The location on the compute node to which to download the file(s), relative to the task's working directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">blobPrefix</span></td>
+        <td><p>The blob prefix to use when downloading blobs from an Azure Storage container. Only the blobs whose names begin
+with the specified prefix will be downloaded.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileMode</span></td>
+        <td><p>The file permission mode attribute in octal format.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified Azure Storage container URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_ResourceFile_FromUrl_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromUrl*"></a>
+  <h4 id="Microsoft_Azure_Batch_ResourceFile_FromUrl_System_String_System_String_System_String_" data-uid="Microsoft.Azure.Batch.ResourceFile.FromUrl(System.String,System.String,System.String)">FromUrl(String, String, String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified HTTP URL.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.Batch.ResourceFile FromUrl (string httpUrl, string filePath, string fileMode = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">httpUrl</span></td>
+        <td><p>The URL of the file to download.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The file permission mode attribute in octal format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">fileMode</span></td>
+        <td><p>The location on the compute node to which to download the file(s), relative to the task's working directory.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a></td>
+        <td><p>A <a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a> from the specified HTTP URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Azure.Identity
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Azure.Identity
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Identity">
+  
+  <h1 id="Azure_Identity" data-uid="Azure.Identity" class="text-break">Namespace Azure.Identity
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.AuthenticationFailedException.html">AuthenticationFailedException</a></h4>
+      <section><p>An exception class raised for errors in authenticating client reqeusts.</p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a></h4>
+      <section><p>Provides a <a class="xref" href="Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementation which chains multiple <a class="xref" href="Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementations to be tried in order
+until one of the getToken methods returns a non-default <a class="xref" href="Azure.Core/Azure.Core.AccessToken.html">AccessToken</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ClientCertificateCredential.html">ClientCertificateCredential</a></h4>
+      <section><p>Enables authentication of a service principal in to Azure Active Directory using a X509 certificate that is assigned to it's App Registration. More information
+on how to configure certificate authentication can be found here:
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#register-your-certificate-with-azure-ad">https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-certificate-credentials#register-your-certificate-with-azure-ad</a></p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ClientSecretCredential.html">ClientSecretCredential</a></h4>
+      <section><p>Enables authentication to Azure Active Directory using a client secret that was generated for an App Registration.  More information on how
+to configure a client secret can be found here:
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application">https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-credentials-to-your-web-application</a></p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.DefaultAzureCredential.html">DefaultAzureCredential</a></h4>
+      <section><p>Provides a default <a class="xref" href="Azure.Identity/Azure.Identity.ChainedTokenCredential.html">ChainedTokenCredential</a> configuration for applications that will be deployed to Azure.  The following credential
+types will be tried, in order:</p>
+<ul>
+<li><a class="xref" href="Azure.Identity/Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></li>
+<li><a class="xref" href="Azure.Identity/Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a>
+Consult the documentation of these credential types for more information on how they attempt authentication.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.DeviceCodeCredential.html">DeviceCodeCredential</a></h4>
+      <section><p>A <a class="xref" href="Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementation which authenticates a user using the device code flow, and provides access tokens for that user account.<br>
+For more information on the device code authentication flow see <a href="https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow">https://github.com/AzureAD/microsoft-authentication-library-for-dotnet/wiki/Device-Code-Flow</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.EnvironmentCredential.html">EnvironmentCredential</a></h4>
+      <section><p>Enables authentication to Azure Active Directory using client secret
+details configured in the following environment variables:</p>
+<ul>
+<li>AZURE_TENANT_ID: The Azure Active Directory tenant(directory) ID.</li>
+<li>AZURE_CLIENT_ID: The client(application) ID of an App Registration in the tenant.</li>
+<li>AZURE_CLIENT_SECRET: A client secret that was generated for the App Registration.
+This credential ultimately uses a <a class="xref" href="Azure.Identity/Azure.Identity.ClientSecretCredential.html">ClientSecretCredential</a> to
+perform the authentication using these details. Please consult the
+documentation of that class for more details.</li>
+</ul>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.IdentityClientOptions.html">IdentityClientOptions</a></h4>
+      <section><p>Options to configure requests made to Azure Identity Services</p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.InteractiveBrowserCredential.html">InteractiveBrowserCredential</a></h4>
+      <section><p>A <a class="xref" href="Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a> implementation which launches the system default browser to interactively authenticate a user, and obtain an access token.
+The browser will only be launched to authenticate the user once, then will silently aquire access tokens through the users refresh token as long as it's valid.</p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.ManagedIdentityCredential.html">ManagedIdentityCredential</a></h4>
+      <section><p>Attempts authentication using a managed identity that has been assigned to the deployment environment.This authentication type works in Azure VMs,
+App Service and Azure Functions applications, as well as inside of Azure Cloud Shell. More information about configuring managed identities can be found here:
+<a href="https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview">https://docs.microsoft.com/en-us/azure/active-directory/managed-identities-azure-resources/overview</a></p>
+</section>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.UsernamePasswordCredential.html">UsernamePasswordCredential</a></h4>
+      <section><p>Enables authentication to Azure Active Directory using a user's  username and password. If the user has MFA enabled this
+credential will fail to get a token throwing an <a class="xref" href="Azure.Identity/Azure.Identity.AuthenticationFailedException.html">AuthenticationFailedException</a>. Also, this credential requires a high degree of
+trust and is not recommended outside of prototyping when more secure credentials can be used.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Azure.Identity/Azure.Identity.DeviceCodeInfo.html">DeviceCodeInfo</a></h4>
+      <section><p>Details of the device code to present to a user to allow them to authenticate through the device code authentication flow.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

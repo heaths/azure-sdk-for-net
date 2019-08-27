@@ -1,0 +1,785 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JobManagerTask
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JobManagerTask
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask" class="text-break">Class JobManagerTask
+  </h1>
+  <div class="markdown level0 summary"><p>Specifies details of a Job Manager Task.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">JobManagerTask</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models.html">Microsoft.Azure.Batch.Protocol.Models</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JobManagerTask</code></pre>
+  </div>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The Job Manager Task is automatically started when the Job is created.</p>
+<p>The Batch service tries to schedule the Job Manager Task before any</p>
+<p>other Tasks in the Job. When shrinking a Pool, the Batch service tries</p>
+<p>to preserve Nodes where Job Manager Tasks are running for as long as</p>
+<p>possible (that is, Compute Nodes running 'normal' Tasks are removed</p>
+<p>before Compute Nodes running Job Manager Tasks). When a Job Manager</p>
+<p>Task fails and needs to be restarted, the system tries to schedule it</p>
+<p>at the highest priority. If there are no idle Compute Nodes available,</p>
+<p>the system may terminate one of the running Tasks in the Pool and</p>
+<p>return it to the queue in order to make room for the Job Manager Task</p>
+<p>to restart. Note that a Job Manager Task in one Job does not have</p>
+<p>priority over Tasks in other Jobs. Across Jobs, only Job level</p>
+<p>priorities are observed. For example, if a Job Manager in a priority 0</p>
+<p>Job needs to be restarted, it will not displace Tasks of a priority 1</p>
+<p>Job. Batch will retry Tasks when a recovery operation is triggered on a</p>
+<p>Node. Examples of recovery operations include (but are not limited to)</p>
+<p>when an unhealthy Node is rebooted or a Compute Node disappeared due to</p>
+<p>host failure. Retries due to recovery operations are independent of and</p>
+<p>are not counted against the maxTaskRetryCount. Even if the</p>
+<p>maxTaskRetryCount is 0, an internal retry due to a recovery operation</p>
+<p>may occur. Because of this, all Tasks should be idempotent. This means</p>
+<p>Tasks need to tolerate being interrupted and restarted without causing</p>
+<p>any corruption or duplicate data. The best practice for long running</p>
+<p>Tasks is to use some form of checkpointing.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor">JobManagerTask()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobManagerTask class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobManagerTask ();</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask__ctor_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_TaskContainerSettings_System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ResourceFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_OutputFile__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_EnvironmentSetting__Microsoft_Azure_Batch_Protocol_Models_TaskConstraints_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_UserIdentity_System_Nullable_System_Boolean__System_Collections_Generic_IList_Microsoft_Azure_Batch_Protocol_Models_ApplicationPackageReference__Microsoft_Azure_Batch_Protocol_Models_AuthenticationTokenSettings_System_Nullable_System_Boolean__" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.#ctor(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings,System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ResourceFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.OutputFile},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting},Microsoft.Azure.Batch.Protocol.Models.TaskConstraints,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.UserIdentity,System.Nullable{System.Boolean},System.Collections.Generic.IList{Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference},Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings,System.Nullable{System.Boolean})">JobManagerTask(String, String, String, TaskContainerSettings, IList&lt;ResourceFile&gt;, IList&lt;OutputFile&gt;, IList&lt;EnvironmentSetting&gt;, TaskConstraints, Nullable&lt;Boolean&gt;, UserIdentity, Nullable&lt;Boolean&gt;, IList&lt;ApplicationPackageReference&gt;, AuthenticationTokenSettings, Nullable&lt;Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the JobManagerTask class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobManagerTask (string id, string commandLine, string displayName = null, Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings containerSettings = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ResourceFile&gt; resourceFiles = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.OutputFile&gt; outputFiles = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; environmentSettings = null, Microsoft.Azure.Batch.Protocol.Models.TaskConstraints constraints = null, Nullable&lt;bool&gt; killJobOnCompletion = null, Microsoft.Azure.Batch.Protocol.Models.UserIdentity userIdentity = null, Nullable&lt;bool&gt; runExclusive = null, System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference&gt; applicationPackageReferences = null, Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings authenticationTokenSettings = null, Nullable&lt;bool&gt; allowLowPriorityNode = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>A string that uniquely identifies the Job Manager
+Task within the Job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">commandLine</span></td>
+        <td><p>The command line of the Job Manager
+Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">displayName</span></td>
+        <td><p>The display name of the Job Manager
+Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
+        <td><span class="parametername">containerSettings</span></td>
+        <td><p>The settings for the container
+under which the Job Manager Task runs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
+        <td><span class="parametername">resourceFiles</span></td>
+        <td><p>A list of files that the Batch service
+will download to the Compute Node before running the command
+line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
+        <td><span class="parametername">outputFiles</span></td>
+        <td><p>A list of files that the Batch service
+will upload from the Compute Node after running the command
+line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
+        <td><span class="parametername">environmentSettings</span></td>
+        <td><p>A list of environment variable
+settings for the Job Manager Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
+        <td><span class="parametername">constraints</span></td>
+        <td><p>Constraints that apply to the Job Manager
+Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">killJobOnCompletion</span></td>
+        <td><p>Whether completion of the Job
+Manager Task signifies completion of the entire Job.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
+        <td><span class="parametername">userIdentity</span></td>
+        <td><p>The user identity under which the Job
+Manager Task runs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">runExclusive</span></td>
+        <td><p>Whether the Job Manager Task requires
+exclusive use of the Compute Node where it runs.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
+        <td><span class="parametername">applicationPackageReferences</span></td>
+        <td><p>A list of Application
+Packages that the Batch service will deploy to the Compute Node
+before running the command line.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings.html">AuthenticationTokenSettings</a></td>
+        <td><span class="parametername">authenticationTokenSettings</span></td>
+        <td><p>The settings for an
+authentication token that the Task can use to perform Batch service
+operations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">allowLowPriorityNode</span></td>
+        <td><p>Whether the Job Manager Task may
+run on a low-priority Compute Node.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AllowLowPriorityNode_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AllowLowPriorityNode*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AllowLowPriorityNode" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AllowLowPriorityNode">AllowLowPriorityNode</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager Task may run on a low-priority
+Compute Node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;allowLowPriorityNode&quot;)]
+public Nullable&lt;bool&gt; AllowLowPriorityNode { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AllowLowPriorityNode_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The default value is true.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ApplicationPackageReferences*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ApplicationPackageReferences">ApplicationPackageReferences</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of Application Packages that the Batch service
+will deploy to the Compute Node before running the command line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;applicationPackageReferences&quot;)]
+public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference&gt; ApplicationPackageReferences { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ApplicationPackageReference.html">ApplicationPackageReference</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ApplicationPackageReferences_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Application Packages are downloaded and deployed to a shared</p>
+<p>directory, not the Task working directory. Therefore, if a</p>
+<p>referenced Application Package is already on the Compute Node, and</p>
+<p>is up to date, then it is not re-downloaded; the existing copy on</p>
+<p>the Compute Node is used. If a referenced Application Package</p>
+<p>cannot be installed, for example because the package has been</p>
+<p>deleted or because download failed, the Task fails.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AuthenticationTokenSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.AuthenticationTokenSettings">AuthenticationTokenSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the settings for an authentication token that the Task
+can use to perform Batch service operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;authenticationTokenSettings&quot;)]
+public Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings AuthenticationTokenSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.AuthenticationTokenSettings.html">AuthenticationTokenSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_AuthenticationTokenSettings_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If this property is set, the Batch service provides the Task with</p>
+<p>an authentication token which can be used to authenticate Batch</p>
+<p>service operations without requiring an Account access key. The</p>
+<p>token is provided via the AZ_BATCH_AUTHENTICATION_TOKEN environment</p>
+<p>variable. The operations that the Task can carry out using the</p>
+<p>token depend on the settings. For example, a Task can request Job</p>
+<p>permissions in order to add other Tasks to the Job, or check the</p>
+<p>status of the Job or of other Tasks under the Job.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_CommandLine_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.CommandLine*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_CommandLine" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.CommandLine">CommandLine</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the Job Manager Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;commandLine&quot;)]
+public string CommandLine { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_CommandLine_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot</p>
+<p>take advantage of shell features such as environment variable</p>
+<p>expansion. If you want to take advantage of such features, you</p>
+<p>should invoke the shell in the command line, for example using &quot;cmd</p>
+<p>/c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the</p>
+<p>command line refers to file paths, it should use a relative path</p>
+<p>(relative to the Task working directory), or use the Batch provided</p>
+<p>environment variable</p>
+<p>(<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Constraints_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Constraints*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Constraints" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Constraints">Constraints</h4>
+  <div class="markdown level1 summary"><p>Gets or sets constraints that apply to the Job Manager Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;constraints&quot;)]
+public Microsoft.Azure.Batch.Protocol.Models.TaskConstraints Constraints { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskConstraints.html">TaskConstraints</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ContainerSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ContainerSettings">ContainerSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the Job
+Manager Task runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;containerSettings&quot;)]
+public Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings ContainerSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.TaskContainerSettings.html">TaskContainerSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ContainerSettings_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the Pool that will run this Task has containerConfiguration set,</p>
+<p>this must be set as well. If the Pool that will run this Task</p>
+<p>doesn't have containerConfiguration set, this must not be set. When</p>
+<p>this is specified, all directories recursively below the</p>
+<p>AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch directories on the</p>
+<p>node) are mapped into the container, all Task environment variables</p>
+<p>are mapped into the container, and the Task command line is</p>
+<p>executed in the container. Files produced in the container outside</p>
+<p>of AZ_BATCH_NODE_ROOT_DIR might not be reflected to the host disk,</p>
+<p>meaning that Batch file APIs will not be able to access those</p>
+<p>files.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_DisplayName_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.DisplayName*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_DisplayName" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.DisplayName">DisplayName</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the display name of the Job Manager Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;displayName&quot;)]
+public string DisplayName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_DisplayName_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It need not be unique and can contain any Unicode characters up to</p>
+<p>a maximum length of 1024.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.EnvironmentSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.EnvironmentSettings">EnvironmentSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of environment variable settings for the Job
+Manager Task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;environmentSettings&quot;)]
+public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting&gt; EnvironmentSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Id_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Id*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Id" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a string that uniquely identifies the Job Manager Task
+within the Job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;id&quot;)]
+public string Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_Id_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The ID can contain any combination of alphanumeric characters</p>
+<p>including hyphens and underscores and cannot contain more than 64</p>
+<p>characters.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.KillJobOnCompletion*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.KillJobOnCompletion">KillJobOnCompletion</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether completion of the Job Manager Task signifies
+completion of the entire Job.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;killJobOnCompletion&quot;)]
+public Nullable&lt;bool&gt; KillJobOnCompletion { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_KillJobOnCompletion_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If true, when the Job Manager Task completes, the Batch service</p>
+<p>marks the Job as complete. If any Tasks are still running at this</p>
+<p>time (other than Job Release), those Tasks are terminated. If</p>
+<p>false, the completion of the Job Manager Task does not affect the</p>
+<p>Job status. In this case, you should either use the</p>
+<p>onAllTasksComplete attribute to terminate the Job, or have a client</p>
+<p>or user terminate the Job explicitly. An example of this is if the</p>
+<p>Job Manager creates a set of Tasks but then takes no further role</p>
+<p>in their execution. The default value is true. If you are using the</p>
+<p>onAllTasksComplete and onTaskFailure attributes to control Job</p>
+<p>lifetime, and using the Job Manager Task only to create the Tasks</p>
+<p>for the Job (not to monitor progress), then it is important to set</p>
+<p>killJobOnCompletion to false.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.OutputFiles*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.OutputFiles">OutputFiles</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will upload
+from the Compute Node after running the command line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;outputFiles&quot;)]
+public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.OutputFile&gt; OutputFiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.OutputFile.html">OutputFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_OutputFiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For multi-instance Tasks, the files will only be uploaded from the</p>
+<p>Compute Node on which the primary Task is executed.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ResourceFiles*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.ResourceFiles">ResourceFiles</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download
+to the Compute Node before running the command line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;resourceFiles&quot;)]
+public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.Protocol.Models.ResourceFile&gt; ResourceFiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.ResourceFile.html">ResourceFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_ResourceFiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Files listed under this element are located in the Task's working</p>
+<p>directory. There is a maximum size for the list of resource files.</p>
+<p>When the max size is exceeded, the request will fail and the</p>
+<p>response error code will be RequestEntityTooLarge. If this occurs,</p>
+<p>the collection of ResourceFiles must be reduced in size. This can</p>
+<p>be achieved using .zip files, Application Packages, or Docker</p>
+<p>Containers.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.RunExclusive*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.RunExclusive">RunExclusive</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether the Job Manager Task requires exclusive use of
+the Compute Node where it runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;runExclusive&quot;)]
+public Nullable&lt;bool&gt; RunExclusive { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_RunExclusive_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If true, no other Tasks will run on the same Node for as long as</p>
+<p>the Job Manager is running. If false, other Tasks can run</p>
+<p>simultaneously with the Job Manager on a Compute Node. The Job</p>
+<p>Manager Task counts normally against the Compute Node's concurrent</p>
+<p>Task limit, so this is only relevant if the Compute Node allows</p>
+<p>multiple concurrent Tasks. The default value is true.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.UserIdentity*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity" data-uid="Microsoft.Azure.Batch.Protocol.Models.JobManagerTask.UserIdentity">UserIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the Job Manager Task
+runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Newtonsoft.Json.JsonProperty(PropertyName=&quot;userIdentity&quot;)]
+public Microsoft.Azure.Batch.Protocol.Models.UserIdentity UserIdentity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.Models.UserIdentity.html">UserIdentity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_Models_JobManagerTask_UserIdentity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the Task runs as a non-administrative user unique to</p>
+<p>the Task.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

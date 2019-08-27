@@ -1,0 +1,812 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPersonGroupPerson
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPersonGroupPerson
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson" class="text-break">Interface IPersonGroupPerson
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.Face.html">Microsoft.Azure.CognitiveServices.Vision.Face</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Vision.Face.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPersonGroupPerson</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_AddFaceFromStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.AddFaceFromStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_AddFaceFromStreamWithHttpMessagesAsync_System_String_System_Guid_System_IO_Stream_System_String_System_Collections_Generic_IList_System_Int32__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.AddFaceFromStreamWithHttpMessagesAsync(System.String,System.Guid,System.IO.Stream,System.String,System.Collections.Generic.IList{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddFaceFromStreamWithHttpMessagesAsync(String, Guid, Stream, String, IList&lt;Int32&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.Face.Models.PersistedFace&gt;&gt; AddFaceFromStreamWithHttpMessagesAsync (string personGroupId, Guid personId, System.IO.Stream image, string userData = null, System.Collections.Generic.IList&lt;int&gt; targetFace = null, string detectionModel = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">targetFace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">detectionModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.Face.Models/Microsoft.Azure.CognitiveServices.Vision.Face.Models.PersistedFace.html">PersistedFace</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_AddFaceFromUrlWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.AddFaceFromUrlWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_AddFaceFromUrlWithHttpMessagesAsync_System_String_System_Guid_System_String_System_String_System_Collections_Generic_IList_System_Int32__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.AddFaceFromUrlWithHttpMessagesAsync(System.String,System.Guid,System.String,System.String,System.Collections.Generic.IList{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddFaceFromUrlWithHttpMessagesAsync(String, Guid, String, String, IList&lt;Int32&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.Face.Models.PersistedFace&gt;&gt; AddFaceFromUrlWithHttpMessagesAsync (string personGroupId, Guid personId, string url, string userData = null, System.Collections.Generic.IList&lt;int&gt; targetFace = null, string detectionModel = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">targetFace</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">detectionModel</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.Face.Models/Microsoft.Azure.CognitiveServices.Vision.Face.Models.PersistedFace.html">PersistedFace</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_CreateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.CreateWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_CreateWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.CreateWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">CreateWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.Face.Models.Person&gt;&gt; CreateWithHttpMessagesAsync (string personGroupId, string name = null, string userData = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.Face.Models/Microsoft.Azure.CognitiveServices.Vision.Face.Models.Person.html">Person</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_DeleteFaceWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.DeleteFaceWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_DeleteFaceWithHttpMessagesAsync_System_String_System_Guid_System_Guid_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.DeleteFaceWithHttpMessagesAsync(System.String,System.Guid,System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteFaceWithHttpMessagesAsync(String, Guid, Guid, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; DeleteFaceWithHttpMessagesAsync (string personGroupId, Guid personId, Guid persistedFaceId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">persistedFaceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_DeleteWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.DeleteWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_DeleteWithHttpMessagesAsync_System_String_System_Guid_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.DeleteWithHttpMessagesAsync(System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteWithHttpMessagesAsync(String, Guid, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; DeleteWithHttpMessagesAsync (string personGroupId, Guid personId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_GetFaceWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.GetFaceWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_GetFaceWithHttpMessagesAsync_System_String_System_Guid_System_Guid_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.GetFaceWithHttpMessagesAsync(System.String,System.Guid,System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetFaceWithHttpMessagesAsync(String, Guid, Guid, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.Face.Models.PersistedFace&gt;&gt; GetFaceWithHttpMessagesAsync (string personGroupId, Guid personId, Guid persistedFaceId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">persistedFaceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.Face.Models/Microsoft.Azure.CognitiveServices.Vision.Face.Models.PersistedFace.html">PersistedFace</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.GetWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_GetWithHttpMessagesAsync_System_String_System_Guid_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.GetWithHttpMessagesAsync(System.String,System.Guid,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, Guid, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.Face.Models.Person&gt;&gt; GetWithHttpMessagesAsync (string personGroupId, Guid personId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.Face.Models/Microsoft.Azure.CognitiveServices.Vision.Face.Models.Person.html">Person</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.ListWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_ListWithHttpMessagesAsync_System_String_System_String_System_Nullable_System_Int32__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.ListWithHttpMessagesAsync(System.String,System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(String, String, Nullable&lt;Int32&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.Face.Models.Person&gt;&gt;&gt; ListWithHttpMessagesAsync (string personGroupId, string start = null, Nullable&lt;int&gt; top = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">start</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">top</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.Face.Models/Microsoft.Azure.CognitiveServices.Vision.Face.Models.Person.html">Person</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_UpdateFaceWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.UpdateFaceWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_UpdateFaceWithHttpMessagesAsync_System_String_System_Guid_System_Guid_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.UpdateFaceWithHttpMessagesAsync(System.String,System.Guid,System.Guid,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdateFaceWithHttpMessagesAsync(String, Guid, Guid, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; UpdateFaceWithHttpMessagesAsync (string personGroupId, Guid personId, Guid persistedFaceId, string userData = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">persistedFaceId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_UpdateWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.UpdateWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_UpdateWithHttpMessagesAsync_System_String_System_Guid_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.Face.IPersonGroupPerson.UpdateWithHttpMessagesAsync(System.String,System.Guid,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdateWithHttpMessagesAsync(String, Guid, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; UpdateWithHttpMessagesAsync (string personGroupId, Guid personId, string name = null, string userData = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">personGroupId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">personId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">userData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_AddFaceFromStreamAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_IO_Stream_System_String_System_Collections_Generic_IList_System_Int32__System_String_System_Threading_CancellationToken_">PersonGroupPersonExtensions.AddFaceFromStreamAsync(IPersonGroupPerson, String, Guid, Stream, String, IList&lt;Int32&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_AddFaceFromUrlAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_String_System_String_System_Collections_Generic_IList_System_Int32__System_String_System_Threading_CancellationToken_">PersonGroupPersonExtensions.AddFaceFromUrlAsync(IPersonGroupPerson, String, Guid, String, String, IList&lt;Int32&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_CreateAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_String_System_String_System_Threading_CancellationToken_">PersonGroupPersonExtensions.CreateAsync(IPersonGroupPerson, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_DeleteAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_Threading_CancellationToken_">PersonGroupPersonExtensions.DeleteAsync(IPersonGroupPerson, String, Guid, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_DeleteFaceAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_Guid_System_Threading_CancellationToken_">PersonGroupPersonExtensions.DeleteFaceAsync(IPersonGroupPerson, String, Guid, Guid, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_GetAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_Threading_CancellationToken_">PersonGroupPersonExtensions.GetAsync(IPersonGroupPerson, String, Guid, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_GetFaceAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_Guid_System_Threading_CancellationToken_">PersonGroupPersonExtensions.GetFaceAsync(IPersonGroupPerson, String, Guid, Guid, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_ListAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_String_System_Nullable_System_Int32__System_Threading_CancellationToken_">PersonGroupPersonExtensions.ListAsync(IPersonGroupPerson, String, String, Nullable&lt;Int32&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_UpdateAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_String_System_String_System_Threading_CancellationToken_">PersonGroupPersonExtensions.UpdateAsync(IPersonGroupPerson, String, Guid, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.Face.PersonGroupPersonExtensions.html#Microsoft_Azure_CognitiveServices_Vision_Face_PersonGroupPersonExtensions_UpdateFaceAsync_Microsoft_Azure_CognitiveServices_Vision_Face_IPersonGroupPerson_System_String_System_Guid_System_Guid_System_String_System_Threading_CancellationToken_">PersonGroupPersonExtensions.UpdateFaceAsync(IPersonGroupPerson, String, Guid, Guid, String, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

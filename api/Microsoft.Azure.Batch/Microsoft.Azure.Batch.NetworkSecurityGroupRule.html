@@ -1,0 +1,305 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NetworkSecurityGroupRule
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NetworkSecurityGroupRule
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule" class="text-break">Class NetworkSecurityGroupRule
+  </h1>
+  <div class="markdown level0 summary"><p>A network security group rule to apply to an inbound endpoint.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">NetworkSecurityGroupRule</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class NetworkSecurityGroupRule</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_NetworkSecurityGroupRule__ctor_" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule__ctor_System_Int32_Microsoft_Azure_Batch_Common_NetworkSecurityGroupRuleAccess_System_String_System_Collections_Generic_IReadOnlyList_System_String__" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.#ctor(System.Int32,Microsoft.Azure.Batch.Common.NetworkSecurityGroupRuleAccess,System.String,System.Collections.Generic.IReadOnlyList{System.String})">NetworkSecurityGroupRule(Int32, NetworkSecurityGroupRuleAccess, String, IReadOnlyList&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.NetworkSecurityGroupRule.html">NetworkSecurityGroupRule</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public NetworkSecurityGroupRule (int priority, Microsoft.Azure.Batch.Common.NetworkSecurityGroupRuleAccess access, string sourceAddressPrefix, System.Collections.Generic.IReadOnlyList&lt;string&gt; sourcePortRanges = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">priority</span></td>
+        <td><p>The priority for this rule.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.NetworkSecurityGroupRuleAccess.html">NetworkSecurityGroupRuleAccess</a></td>
+        <td><span class="parametername">access</span></td>
+        <td><p>The action that should be taken for a specified IP address, subnet range or tag.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sourceAddressPrefix</span></td>
+        <td><p>The source address prefix or tag to match for the rule.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">sourcePortRanges</span></td>
+        <td><p>The source port ranges to match for the rule.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_Access_" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.Access*"></a>
+  <h4 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_Access" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.Access">Access</h4>
+  <div class="markdown level1 summary"><p>Gets the action that should be taken for a specified IP address, subnet range or tag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Common.NetworkSecurityGroupRuleAccess Access { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.NetworkSecurityGroupRuleAccess.html">NetworkSecurityGroupRuleAccess</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_Priority_" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.Priority*"></a>
+  <h4 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_Priority" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.Priority">Priority</h4>
+  <div class="markdown level1 summary"><p>Gets the priority for this rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Priority { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_Priority_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Priorities within a pool must be unique and are evaluated in order of priority. The lower the number the higher</p>
+<p>the priority. For example, rules could be specified with order numbers of 150, 250, and 350. The rule with the</p>
+<p>order number of 150 takes precedence over the rule that has an order of 250. Allowed priorities are 150 to 3500.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_SourceAddressPrefix_" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.SourceAddressPrefix*"></a>
+  <h4 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_SourceAddressPrefix" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.SourceAddressPrefix">SourceAddressPrefix</h4>
+  <div class="markdown level1 summary"><p>Gets the source address prefix or tag to match for the rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SourceAddressPrefix { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_SourceAddressPrefix_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Valid values are a single IP address (i.e. 10.10.10.10), IP subnet (i.e. 192.168.1.0/24), default tag, or * (for</p>
+<p>all addresses).</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_SourcePortRanges_" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.SourcePortRanges*"></a>
+  <h4 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_SourcePortRanges" data-uid="Microsoft.Azure.Batch.NetworkSecurityGroupRule.SourcePortRanges">SourcePortRanges</h4>
+  <div class="markdown level1 summary"><p>Gets the source port ranges to match for the rule.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Collections.Generic.IReadOnlyList&lt;string&gt; SourcePortRanges { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ireadonlylist-1">IReadOnlyList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_NetworkSecurityGroupRule_SourcePortRanges_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Valid values are '*' (for all ports 0 - 65535), a specific port (i.e. 22), or a port range (i.e. 100-200). The</p>
+<p>ports must be in the range of 0 to 65535. Each entry in this collection must not overlap any other entry (either</p>
+<p>a range or an individual port). If any other values are provided the request fails with HTTP status code 400.</p>
+<p>The default value is '*'</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

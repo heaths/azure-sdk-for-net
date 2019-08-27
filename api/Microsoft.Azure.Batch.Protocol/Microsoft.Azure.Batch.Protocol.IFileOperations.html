@@ -1,0 +1,1176 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IFileOperations
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IFileOperations
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_IFileOperations" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations" class="text-break">Interface IFileOperations
+  </h1>
+  <div class="markdown level0 summary"><p>FileOperations operations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IFileOperations_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IFileOperations</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_DeleteFromComputeNodeWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.DeleteFromComputeNodeWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_DeleteFromComputeNodeWithHttpMessagesAsync_System_String_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileDeleteFromComputeNodeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.DeleteFromComputeNodeWithHttpMessagesAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromComputeNodeOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteFromComputeNodeWithHttpMessagesAsync(String, String, String, Nullable&lt;Boolean&gt;, FileDeleteFromComputeNodeOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified file from the Compute Node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromComputeNodeHeaders&gt;&gt; DeleteFromComputeNodeWithHttpMessagesAsync (string poolId, string nodeId, string filePath, Nullable&lt;bool&gt; recursive = null, Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromComputeNodeOptions fileDeleteFromComputeNodeOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool that contains the Compute Node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nodeId</span></td>
+        <td><p>The ID of the Compute Node from which you want to delete the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the file or directory that you want to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>Whether to delete children of a directory. If the filePath
+parameter represents a directory instead of a file, you can set
+recursive to true to delete the directory and all of the files and
+subdirectories in it. If recursive is false then the directory must
+be empty or deletion will fail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromComputeNodeOptions.html">FileDeleteFromComputeNodeOptions</a></td>
+        <td><span class="parametername">fileDeleteFromComputeNodeOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromComputeNodeHeaders.html">FileDeleteFromComputeNodeHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_DeleteFromTaskWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.DeleteFromTaskWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_DeleteFromTaskWithHttpMessagesAsync_System_String_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileDeleteFromTaskOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.DeleteFromTaskWithHttpMessagesAsync(System.String,System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromTaskOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteFromTaskWithHttpMessagesAsync(String, String, String, Nullable&lt;Boolean&gt;, FileDeleteFromTaskOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes the specified Task file from the Compute Node where the
+Task ran.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromTaskHeaders&gt;&gt; DeleteFromTaskWithHttpMessagesAsync (string jobId, string taskId, string filePath, Nullable&lt;bool&gt; recursive = null, Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromTaskOptions fileDeleteFromTaskOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The ID of the Job that contains the Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">taskId</span></td>
+        <td><p>The ID of the Task whose file you want to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the Task file or directory that you want to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>Whether to delete children of a directory. If the filePath
+parameter represents a directory instead of a file, you can set
+recursive to true to delete the directory and all of the files and
+subdirectories in it. If recursive is false then the directory must
+be empty or deletion will fail.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromTaskOptions.html">FileDeleteFromTaskOptions</a></td>
+        <td><span class="parametername">fileDeleteFromTaskOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileDeleteFromTaskHeaders.html">FileDeleteFromTaskHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetFromComputeNodeWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetFromComputeNodeWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetFromComputeNodeWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetFromComputeNodeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetFromComputeNodeWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.FileGetFromComputeNodeOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetFromComputeNodeWithHttpMessagesAsync(String, String, String, FileGetFromComputeNodeOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns the content of the specified Compute Node file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;System.IO.Stream,Microsoft.Azure.Batch.Protocol.Models.FileGetFromComputeNodeHeaders&gt;&gt; GetFromComputeNodeWithHttpMessagesAsync (string poolId, string nodeId, string filePath, Microsoft.Azure.Batch.Protocol.Models.FileGetFromComputeNodeOptions fileGetFromComputeNodeOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool that contains the Compute Node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nodeId</span></td>
+        <td><p>The ID of the Compute Node that contains the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the Compute Node file that you want to get the content
+of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetFromComputeNodeOptions.html">FileGetFromComputeNodeOptions</a></td>
+        <td><span class="parametername">fileGetFromComputeNodeOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetFromComputeNodeHeaders.html">FileGetFromComputeNodeHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetFromTaskWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetFromTaskWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetFromTaskWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetFromTaskOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetFromTaskWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.FileGetFromTaskOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetFromTaskWithHttpMessagesAsync(String, String, String, FileGetFromTaskOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Returns the content of the specified Task file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;System.IO.Stream,Microsoft.Azure.Batch.Protocol.Models.FileGetFromTaskHeaders&gt;&gt; GetFromTaskWithHttpMessagesAsync (string jobId, string taskId, string filePath, Microsoft.Azure.Batch.Protocol.Models.FileGetFromTaskOptions fileGetFromTaskOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The ID of the Job that contains the Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">taskId</span></td>
+        <td><p>The ID of the Task whose file you want to retrieve.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the Task file that you want to get the content of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetFromTaskOptions.html">FileGetFromTaskOptions</a></td>
+        <td><span class="parametername">fileGetFromTaskOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetFromTaskHeaders.html">FileGetFromTaskHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetPropertiesFromComputeNodeWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetPropertiesFromComputeNodeWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetPropertiesFromComputeNodeWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetPropertiesFromComputeNodeWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetPropertiesFromComputeNodeWithHttpMessagesAsync(String, String, String, FileGetPropertiesFromComputeNodeOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the properties of the specified Compute Node file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders&gt;&gt; GetPropertiesFromComputeNodeWithHttpMessagesAsync (string poolId, string nodeId, string filePath, Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeOptions fileGetPropertiesFromComputeNodeOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool that contains the Compute Node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nodeId</span></td>
+        <td><p>The ID of the Compute Node that contains the file.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the Compute Node file that you want to get the
+properties of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeOptions.html">FileGetPropertiesFromComputeNodeOptions</a></td>
+        <td><span class="parametername">fileGetPropertiesFromComputeNodeOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromComputeNodeHeaders.html">FileGetPropertiesFromComputeNodeHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetPropertiesFromTaskWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetPropertiesFromTaskWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_GetPropertiesFromTaskWithHttpMessagesAsync_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromTaskOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.GetPropertiesFromTaskWithHttpMessagesAsync(System.String,System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromTaskOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetPropertiesFromTaskWithHttpMessagesAsync(String, String, String, FileGetPropertiesFromTaskOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the properties of the specified Task file.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromTaskHeaders&gt;&gt; GetPropertiesFromTaskWithHttpMessagesAsync (string jobId, string taskId, string filePath, Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromTaskOptions fileGetPropertiesFromTaskOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The ID of the Job that contains the Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">taskId</span></td>
+        <td><p>The ID of the Task whose file you want to get the properties of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filePath</span></td>
+        <td><p>The path to the Task file that you want to get the properties of.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromTaskOptions.html">FileGetPropertiesFromTaskOptions</a></td>
+        <td><span class="parametername">fileGetPropertiesFromTaskOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileGetPropertiesFromTaskHeaders.html">FileGetPropertiesFromTaskHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromComputeNodeNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromComputeNodeNextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromComputeNodeNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_FileListFromComputeNodeNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromComputeNodeNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListFromComputeNodeNextWithHttpMessagesAsync(String, FileListFromComputeNodeNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all of the files in Task directories on the specified Compute
+Node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.NodeFile&gt;,Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeHeaders&gt;&gt; ListFromComputeNodeNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeNextOptions fileListFromComputeNodeNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeNextOptions.html">FileListFromComputeNodeNextOptions</a></td>
+        <td><span class="parametername">fileListFromComputeNodeNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.NodeFile.html">NodeFile</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeHeaders.html">FileListFromComputeNodeHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromComputeNodeWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromComputeNodeWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromComputeNodeWithHttpMessagesAsync_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileListFromComputeNodeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromComputeNodeWithHttpMessagesAsync(System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListFromComputeNodeWithHttpMessagesAsync(String, String, Nullable&lt;Boolean&gt;, FileListFromComputeNodeOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all of the files in Task directories on the specified Compute
+Node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.NodeFile&gt;,Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeHeaders&gt;&gt; ListFromComputeNodeWithHttpMessagesAsync (string poolId, string nodeId, Nullable&lt;bool&gt; recursive = null, Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeOptions fileListFromComputeNodeOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool that contains the Compute Node.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nodeId</span></td>
+        <td><p>The ID of the Compute Node whose files you want to list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>Whether to list children of a directory.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeOptions.html">FileListFromComputeNodeOptions</a></td>
+        <td><span class="parametername">fileListFromComputeNodeOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.NodeFile.html">NodeFile</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromComputeNodeHeaders.html">FileListFromComputeNodeHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromTaskNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromTaskNextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromTaskNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromTaskNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListFromTaskNextWithHttpMessagesAsync(String, FileListFromTaskNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists the files in a Task's directory on its Compute Node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.NodeFile&gt;,Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskHeaders&gt;&gt; ListFromTaskNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskNextOptions fileListFromTaskNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskNextOptions.html">FileListFromTaskNextOptions</a></td>
+        <td><span class="parametername">fileListFromTaskNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.NodeFile.html">NodeFile</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskHeaders.html">FileListFromTaskHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromTaskWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromTaskWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IFileOperations_ListFromTaskWithHttpMessagesAsync_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IFileOperations.ListFromTaskWithHttpMessagesAsync(System.String,System.String,System.Nullable{System.Boolean},Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListFromTaskWithHttpMessagesAsync(String, String, Nullable&lt;Boolean&gt;, FileListFromTaskOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists the files in a Task's directory on its Compute Node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.NodeFile&gt;,Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskHeaders&gt;&gt; ListFromTaskWithHttpMessagesAsync (string jobId, string taskId, Nullable&lt;bool&gt; recursive = null, Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions fileListFromTaskOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td><p>The ID of the Job that contains the Task.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">taskId</span></td>
+        <td><p>The ID of the Task whose files you want to list.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">recursive</span></td>
+        <td><p>Whether to list children of the Task directory. This parameter can
+be used in combination with the filter parameter to list specific
+type of files.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskOptions.html">FileListFromTaskOptions</a></td>
+        <td><span class="parametername">fileListFromTaskOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.NodeFile.html">NodeFile</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.FileListFromTaskHeaders.html">FileListFromTaskHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_DeleteFromComputeNode_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileDeleteFromComputeNodeOptions_">FileOperationsExtensions.DeleteFromComputeNode(IFileOperations, String, String, String, Nullable&lt;Boolean&gt;, FileDeleteFromComputeNodeOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_DeleteFromComputeNodeAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileDeleteFromComputeNodeOptions_System_Threading_CancellationToken_">FileOperationsExtensions.DeleteFromComputeNodeAsync(IFileOperations, String, String, String, Nullable&lt;Boolean&gt;, FileDeleteFromComputeNodeOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_DeleteFromTask_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileDeleteFromTaskOptions_">FileOperationsExtensions.DeleteFromTask(IFileOperations, String, String, String, Nullable&lt;Boolean&gt;, FileDeleteFromTaskOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_DeleteFromTaskAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileDeleteFromTaskOptions_System_Threading_CancellationToken_">FileOperationsExtensions.DeleteFromTaskAsync(IFileOperations, String, String, String, Nullable&lt;Boolean&gt;, FileDeleteFromTaskOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetFromComputeNode_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetFromComputeNodeOptions_">FileOperationsExtensions.GetFromComputeNode(IFileOperations, String, String, String, FileGetFromComputeNodeOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetFromComputeNodeAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetFromComputeNodeOptions_System_Threading_CancellationToken_">FileOperationsExtensions.GetFromComputeNodeAsync(IFileOperations, String, String, String, FileGetFromComputeNodeOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetFromTask_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetFromTaskOptions_">FileOperationsExtensions.GetFromTask(IFileOperations, String, String, String, FileGetFromTaskOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetFromTaskAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetFromTaskOptions_System_Threading_CancellationToken_">FileOperationsExtensions.GetFromTaskAsync(IFileOperations, String, String, String, FileGetFromTaskOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetPropertiesFromComputeNode_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeOptions_">FileOperationsExtensions.GetPropertiesFromComputeNode(IFileOperations, String, String, String, FileGetPropertiesFromComputeNodeOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetPropertiesFromComputeNodeAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromComputeNodeOptions_System_Threading_CancellationToken_">FileOperationsExtensions.GetPropertiesFromComputeNodeAsync(IFileOperations, String, String, String, FileGetPropertiesFromComputeNodeOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetPropertiesFromTask_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromTaskOptions_">FileOperationsExtensions.GetPropertiesFromTask(IFileOperations, String, String, String, FileGetPropertiesFromTaskOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_GetPropertiesFromTaskAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_FileGetPropertiesFromTaskOptions_System_Threading_CancellationToken_">FileOperationsExtensions.GetPropertiesFromTaskAsync(IFileOperations, String, String, String, FileGetPropertiesFromTaskOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromComputeNode_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileListFromComputeNodeOptions_">FileOperationsExtensions.ListFromComputeNode(IFileOperations, String, String, Nullable&lt;Boolean&gt;, FileListFromComputeNodeOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromComputeNodeAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileListFromComputeNodeOptions_System_Threading_CancellationToken_">FileOperationsExtensions.ListFromComputeNodeAsync(IFileOperations, String, String, Nullable&lt;Boolean&gt;, FileListFromComputeNodeOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromComputeNodeNext_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_FileListFromComputeNodeNextOptions_">FileOperationsExtensions.ListFromComputeNodeNext(IFileOperations, String, FileListFromComputeNodeNextOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromComputeNodeNextAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_FileListFromComputeNodeNextOptions_System_Threading_CancellationToken_">FileOperationsExtensions.ListFromComputeNodeNextAsync(IFileOperations, String, FileListFromComputeNodeNextOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromTask_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_">FileOperationsExtensions.ListFromTask(IFileOperations, String, String, Nullable&lt;Boolean&gt;, FileListFromTaskOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromTaskAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_System_String_System_Nullable_System_Boolean__Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskOptions_System_Threading_CancellationToken_">FileOperationsExtensions.ListFromTaskAsync(IFileOperations, String, String, Nullable&lt;Boolean&gt;, FileListFromTaskOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromTaskNext_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskNextOptions_">FileOperationsExtensions.ListFromTaskNext(IFileOperations, String, FileListFromTaskNextOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.FileOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_FileOperationsExtensions_ListFromTaskNextAsync_Microsoft_Azure_Batch_Protocol_IFileOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_FileListFromTaskNextOptions_System_Threading_CancellationToken_">FileOperationsExtensions.ListFromTaskNextAsync(IFileOperations, String, FileListFromTaskNextOptions, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

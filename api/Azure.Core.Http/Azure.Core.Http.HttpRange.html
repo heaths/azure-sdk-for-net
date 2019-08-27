@@ -1,0 +1,512 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct HttpRange
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct HttpRange
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Core.Http.HttpRange">
+  
+  
+  <h1 id="Azure_Core_Http_HttpRange" data-uid="Azure.Core.Http.HttpRange" class="text-break">Struct HttpRange
+  </h1>
+  <div class="markdown level0 summary"><p>Defines a range of bytes within an HTTP resource, starting at an offset and
+ending at offset+count-1 inclusively.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Core.Http.html">Azure.Core.Http</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Core.dll</h6>
+  <h5 id="Azure_Core_Http_HttpRange_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct HttpRange : IEquatable&lt;Azure.Core.Http.HttpRange&gt;</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Core_Http_HttpRange__ctor_" data-uid="Azure.Core.Http.HttpRange.#ctor*"></a>
+  <h4 id="Azure_Core_Http_HttpRange__ctor_System_Nullable_System_Int64__System_Nullable_System_Int64__" data-uid="Azure.Core.Http.HttpRange.#ctor(System.Nullable{System.Int64},System.Nullable{System.Int64})">HttpRange(Nullable&lt;Int64&gt;, Nullable&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates an instance of HttpRange</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public HttpRange (Nullable&lt;long&gt; offset = null, Nullable&lt;long&gt; count = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">offset</span></td>
+        <td><p>null means offset is 0</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">count</span></td>
+        <td><p>null means to the end</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_Count_" data-uid="Azure.Core.Http.HttpRange.Count*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_Count" data-uid="Azure.Core.Http.HttpRange.Count">Count</h4>
+  <div class="markdown level1 summary"><p>Gets the size of the <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a>.  null means the range
+extends all the way to the end.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;long&gt; Count { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_Offset_" data-uid="Azure.Core.Http.HttpRange.Offset*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_Offset" data-uid="Azure.Core.Http.HttpRange.Offset">Offset</h4>
+  <div class="markdown level1 summary"><p>Gets the starting offset of the <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long Offset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_Equals_" data-uid="Azure.Core.Http.HttpRange.Equals*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_Equals_Azure_Core_Http_HttpRange_" data-uid="Azure.Core.Http.HttpRange.Equals(Azure.Core.Http.HttpRange)">Equals(HttpRange)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a> instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals (Azure.Core.Http.HttpRange other);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_Equals_" data-uid="Azure.Core.Http.HttpRange.Equals*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_Equals_System_Object_" data-uid="Azure.Core.Http.HttpRange.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a> instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override bool Equals (object obj);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_GetHashCode_" data-uid="Azure.Core.Http.HttpRange.GetHashCode*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_GetHashCode" data-uid="Azure.Core.Http.HttpRange.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Get a hash code for the <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override int GetHashCode ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Hash code for the <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_ToRangeHeader_" data-uid="Azure.Core.Http.HttpRange.ToRangeHeader*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_ToRangeHeader" data-uid="Azure.Core.Http.HttpRange.ToRangeHeader">ToRangeHeader()</h4>
+  <div class="markdown level1 summary"><p>Returns Range header for this range.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Core.Http.HttpHeader ToRangeHeader ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Http.HttpHeader.html">HttpHeader</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_ToString_" data-uid="Azure.Core.Http.HttpRange.ToString*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_ToString" data-uid="Azure.Core.Http.HttpRange.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Converts the specified range to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>String representation of the range.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Core_Http_HttpRange_ToString_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-the-range-header-for-file-service-operations">https://docs.microsoft.com/en-us/rest/api/storageservices/specifying-the-range-header-for-file-service-operations</a>.</p>
+</div>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_op_Equality_" data-uid="Azure.Core.Http.HttpRange.op_Equality*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_op_Equality_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_" data-uid="Azure.Core.Http.HttpRange.op_Equality(Azure.Core.Http.HttpRange,Azure.Core.Http.HttpRange)">Equality(HttpRange, HttpRange)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a> instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator == (Azure.Core.Http.HttpRange left, Azure.Core.Http.HttpRange right);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Core_Http_HttpRange_op_Inequality_" data-uid="Azure.Core.Http.HttpRange.op_Inequality*"></a>
+  <h4 id="Azure_Core_Http_HttpRange_op_Inequality_Azure_Core_Http_HttpRange_Azure_Core_Http_HttpRange_" data-uid="Azure.Core.Http.HttpRange.op_Inequality(Azure.Core.Http.HttpRange,Azure.Core.Http.HttpRange)">Inequality(HttpRange, HttpRange)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a> instances are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator != (Azure.Core.Http.HttpRange left, Azure.Core.Http.HttpRange right);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Core.Http.HttpRange.html">HttpRange</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're not equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;Azure.Core.Http.HttpRange&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

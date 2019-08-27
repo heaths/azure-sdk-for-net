@@ -1,0 +1,1712 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CustomVisionPredictionClientExtensions
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CustomVisionPredictionClientExtensions
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions" class="text-break">Class CustomVisionPredictionClientExtensions
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CustomVisionPredictionClientExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.html">Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class CustomVisionPredictionClientExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImage_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImage*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImage_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImage(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String)">ClassifyImage(ICustomVisionPredictionClient, Guid, String, Stream, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction ClassifyImage (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">ClassifyImageAsync(ICustomVisionPredictionClient, Guid, String, Stream, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrl_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrl*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrl_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrl(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String)">ClassifyImageUrl(ICustomVisionPredictionClient, Guid, String, ImageUrl, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction ClassifyImageUrl (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Threading.CancellationToken)">ClassifyImageUrlAsync(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageUrlAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">ClassifyImageUrlWithHttpMessages(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageUrlWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithNoStore_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithNoStore*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithNoStore_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithNoStore(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String)">ClassifyImageUrlWithNoStore(ICustomVisionPredictionClient, Guid, String, ImageUrl, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction ClassifyImageUrlWithNoStore (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithNoStoreAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithNoStoreAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithNoStoreAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithNoStoreAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Threading.CancellationToken)">ClassifyImageUrlWithNoStoreAsync(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageUrlWithNoStoreAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithNoStoreWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithNoStoreWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageUrlWithNoStoreWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageUrlWithNoStoreWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">ClassifyImageUrlWithNoStoreWithHttpMessages(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageUrlWithNoStoreWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">ClassifyImageWithHttpMessages(ICustomVisionPredictionClient, Guid, String, Stream, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithNoStore_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithNoStore*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithNoStore_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithNoStore(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String)">ClassifyImageWithNoStore(ICustomVisionPredictionClient, Guid, String, Stream, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction ClassifyImageWithNoStore (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithNoStoreAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithNoStoreAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithNoStoreAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithNoStoreAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">ClassifyImageWithNoStoreAsync(ICustomVisionPredictionClient, Guid, String, Stream, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageWithNoStoreAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithNoStoreWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithNoStoreWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_ClassifyImageWithNoStoreWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.ClassifyImageWithNoStoreWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">ClassifyImageWithNoStoreWithHttpMessages(ICustomVisionPredictionClient, Guid, String, Stream, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; ClassifyImageWithNoStoreWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImage_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImage*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImage_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImage(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String)">DetectImage(ICustomVisionPredictionClient, Guid, String, Stream, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction DetectImage (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">DetectImageAsync(ICustomVisionPredictionClient, Guid, String, Stream, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrl_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrl*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrl_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrl(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String)">DetectImageUrl(ICustomVisionPredictionClient, Guid, String, ImageUrl, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction DetectImageUrl (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Threading.CancellationToken)">DetectImageUrlAsync(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageUrlAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">DetectImageUrlWithHttpMessages(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageUrlWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithNoStore_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithNoStore*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithNoStore_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithNoStore(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String)">DetectImageUrlWithNoStore(ICustomVisionPredictionClient, Guid, String, ImageUrl, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction DetectImageUrlWithNoStore (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithNoStoreAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithNoStoreAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithNoStoreAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithNoStoreAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Threading.CancellationToken)">DetectImageUrlWithNoStoreAsync(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageUrlWithNoStoreAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithNoStoreWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithNoStoreWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageUrlWithNoStoreWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_Models_ImageUrl_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageUrlWithNoStoreWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">DetectImageUrlWithNoStoreWithHttpMessages(ICustomVisionPredictionClient, Guid, String, ImageUrl, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageUrlWithNoStoreWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl imageUrl, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImageUrl.html">ImageUrl</a></td>
+        <td><span class="parametername">imageUrl</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">DetectImageWithHttpMessages(ICustomVisionPredictionClient, Guid, String, Stream, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithNoStore_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithNoStore*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithNoStore_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithNoStore(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String)">DetectImageWithNoStore(ICustomVisionPredictionClient, Guid, String, Stream, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction DetectImageWithNoStore (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithNoStoreAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithNoStoreAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithNoStoreAsync_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithNoStoreAsync(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Threading.CancellationToken)">DetectImageWithNoStoreAsync(ICustomVisionPredictionClient, Guid, String, Stream, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageWithNoStoreAsync (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithNoStoreWithHttpMessages_" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithNoStoreWithHttpMessages*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_CustomVisionPredictionClientExtensions_DetectImageWithNoStoreWithHttpMessages_Microsoft_Azure_CognitiveServices_Vision_CustomVision_Prediction_ICustomVisionPredictionClient_System_Guid_System_String_System_IO_Stream_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___" data-uid="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.CustomVisionPredictionClientExtensions.DetectImageWithNoStoreWithHttpMessages(Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient,System.Guid,System.String,System.IO.Stream,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}})">DetectImageWithNoStoreWithHttpMessages(ICustomVisionPredictionClient, Guid, String, Stream, String, Dictionary&lt;String,List&lt;String&gt;&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction&gt; DetectImageWithNoStoreWithHttpMessages (this Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient operations, Guid projectId, string publishedName, System.IO.Stream imageData, string application = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.ICustomVisionPredictionClient.html">ICustomVisionPredictionClient</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.guid">Guid</a></td>
+        <td><span class="parametername">projectId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">publishedName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">imageData</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">application</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models/Microsoft.Azure.CognitiveServices.Vision.CustomVision.Prediction.Models.ImagePrediction.html">ImagePrediction</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

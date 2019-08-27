@@ -1,0 +1,1873 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ComputerVisionClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ComputerVisionClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient" class="text-break">Class ComputerVisionClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">Microsoft.Rest.ServiceClient</span></div>
+    <div class="level1"><span class="xref">ComputerVisionClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.html">IComputerVisionClient</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.html">Microsoft.Azure.CognitiveServices.Vision.ComputerVision</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Vision.ComputerVision.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ComputerVisionClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient&gt;, IDisposable, Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor(System.Net.Http.DelegatingHandler[])">ComputerVisionClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ComputerVisionClient (params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">ComputerVisionClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComputerVisionClient (Microsoft.Rest.ServiceClientCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">ComputerVisionClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ComputerVisionClient (System.Net.Http.HttpClient httpClient, bool disposeHttpClient);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">ComputerVisionClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected ComputerVisionClient (System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)">ComputerVisionClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComputerVisionClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient httpClient, bool disposeHttpClient);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">ComputerVisionClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ComputerVisionClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_Credentials_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_Credentials" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Rest.ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DeserializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DeserializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Newtonsoft.Json.JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_Endpoint_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.Endpoint*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_Endpoint" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Endpoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_SerializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_SerializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Newtonsoft.Json.JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageByDomainInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageByDomainInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageByDomainInStreamWithHttpMessagesAsync_System_String_System_IO_Stream_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageByDomainInStreamWithHttpMessagesAsync(System.String,System.IO.Stream,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AnalyzeImageByDomainInStreamWithHttpMessagesAsync(String, Stream, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DomainModelResults&gt;&gt; AnalyzeImageByDomainInStreamWithHttpMessagesAsync (string model, System.IO.Stream image, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DomainModelResults.html">DomainModelResults</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageByDomainWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageByDomainWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageByDomainWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageByDomainWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AnalyzeImageByDomainWithHttpMessagesAsync(String, String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DomainModelResults&gt;&gt; AnalyzeImageByDomainWithHttpMessagesAsync (string model, string url, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">model</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DomainModelResults.html">DomainModelResults</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageInStreamWithHttpMessagesAsync_System_IO_Stream_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageInStreamWithHttpMessagesAsync(System.IO.Stream,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes},System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AnalyzeImageInStreamWithHttpMessagesAsync(Stream, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageAnalysis&gt;&gt; AnalyzeImageInStreamWithHttpMessagesAsync (System.IO.Stream image, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes&gt; visualFeatures = null, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details&gt; details = null, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes.html">VisualFeatureTypes</a>&gt;</td>
+        <td><span class="parametername">visualFeatures</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details.html">Details</a>&gt;</td>
+        <td><span class="parametername">details</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageAnalysis.html">ImageAnalysis</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_AnalyzeImageWithHttpMessagesAsync_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.AnalyzeImageWithHttpMessagesAsync(System.String,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes},System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AnalyzeImageWithHttpMessagesAsync(String, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageAnalysis&gt;&gt; AnalyzeImageWithHttpMessagesAsync (string url, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes&gt; visualFeatures = null, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details&gt; details = null, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.VisualFeatureTypes.html">VisualFeatureTypes</a>&gt;</td>
+        <td><span class="parametername">visualFeatures</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.Details.html">Details</a>&gt;</td>
+        <td><span class="parametername">details</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageAnalysis.html">ImageAnalysis</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_BatchReadFileInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.BatchReadFileInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_BatchReadFileInStreamWithHttpMessagesAsync_System_IO_Stream_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.BatchReadFileInStreamWithHttpMessagesAsync(System.IO.Stream,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">BatchReadFileInStreamWithHttpMessagesAsync(Stream, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationHeaderResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.BatchReadFileInStreamHeaders&gt;&gt; BatchReadFileInStreamWithHttpMessagesAsync (System.IO.Stream image, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.BatchReadFileInStreamHeaders.html">BatchReadFileInStreamHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_BatchReadFileWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.BatchReadFileWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_BatchReadFileWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.BatchReadFileWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">BatchReadFileWithHttpMessagesAsync(String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationHeaderResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.BatchReadFileHeaders&gt;&gt; BatchReadFileWithHttpMessagesAsync (string url, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.BatchReadFileHeaders.html">BatchReadFileHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DescribeImageInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DescribeImageInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DescribeImageInStreamWithHttpMessagesAsync_System_IO_Stream_System_Nullable_System_Int32__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DescribeImageInStreamWithHttpMessagesAsync(System.IO.Stream,System.Nullable{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DescribeImageInStreamWithHttpMessagesAsync(Stream, Nullable&lt;Int32&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageDescription&gt;&gt; DescribeImageInStreamWithHttpMessagesAsync (System.IO.Stream image, Nullable&lt;int&gt; maxCandidates = 1, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">maxCandidates</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageDescription.html">ImageDescription</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DescribeImageWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DescribeImageWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DescribeImageWithHttpMessagesAsync_System_String_System_Nullable_System_Int32__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DescribeImageWithHttpMessagesAsync(System.String,System.Nullable{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DescribeImageWithHttpMessagesAsync(String, Nullable&lt;Int32&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageDescription&gt;&gt; DescribeImageWithHttpMessagesAsync (string url, Nullable&lt;int&gt; maxCandidates = 1, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">maxCandidates</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ImageDescription.html">ImageDescription</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DetectObjectsInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DetectObjectsInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DetectObjectsInStreamWithHttpMessagesAsync_System_IO_Stream_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DetectObjectsInStreamWithHttpMessagesAsync(System.IO.Stream,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DetectObjectsInStreamWithHttpMessagesAsync(Stream, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DetectResult&gt;&gt; DetectObjectsInStreamWithHttpMessagesAsync (System.IO.Stream image, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DetectResult.html">DetectResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DetectObjectsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DetectObjectsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_DetectObjectsWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.DetectObjectsWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DetectObjectsWithHttpMessagesAsync(String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DetectResult&gt;&gt; DetectObjectsWithHttpMessagesAsync (string url, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.DetectResult.html">DetectResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GenerateThumbnailInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GenerateThumbnailInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GenerateThumbnailInStreamWithHttpMessagesAsync_System_Int32_System_Int32_System_IO_Stream_System_Nullable_System_Boolean__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GenerateThumbnailInStreamWithHttpMessagesAsync(System.Int32,System.Int32,System.IO.Stream,System.Nullable{System.Boolean},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GenerateThumbnailInStreamWithHttpMessagesAsync(Int32, Int32, Stream, Nullable&lt;Boolean&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.IO.Stream&gt;&gt; GenerateThumbnailInStreamWithHttpMessagesAsync (int width, int height, System.IO.Stream image, Nullable&lt;bool&gt; smartCropping = false, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">smartCropping</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GenerateThumbnailWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GenerateThumbnailWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GenerateThumbnailWithHttpMessagesAsync_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GenerateThumbnailWithHttpMessagesAsync(System.Int32,System.Int32,System.String,System.Nullable{System.Boolean},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GenerateThumbnailWithHttpMessagesAsync(Int32, Int32, String, Nullable&lt;Boolean&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.IO.Stream&gt;&gt; GenerateThumbnailWithHttpMessagesAsync (int width, int height, string url, Nullable&lt;bool&gt; smartCropping = false, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">width</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">height</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td><span class="parametername">smartCropping</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetAreaOfInterestInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetAreaOfInterestInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetAreaOfInterestInStreamWithHttpMessagesAsync_System_IO_Stream_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetAreaOfInterestInStreamWithHttpMessagesAsync(System.IO.Stream,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetAreaOfInterestInStreamWithHttpMessagesAsync(Stream, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.AreaOfInterestResult&gt;&gt; GetAreaOfInterestInStreamWithHttpMessagesAsync (System.IO.Stream image, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.AreaOfInterestResult.html">AreaOfInterestResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetAreaOfInterestWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetAreaOfInterestWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetAreaOfInterestWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetAreaOfInterestWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetAreaOfInterestWithHttpMessagesAsync(String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.AreaOfInterestResult&gt;&gt; GetAreaOfInterestWithHttpMessagesAsync (string url, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.AreaOfInterestResult.html">AreaOfInterestResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetReadOperationResultWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetReadOperationResultWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetReadOperationResultWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetReadOperationResultWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetReadOperationResultWithHttpMessagesAsync(String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ReadOperationResult&gt;&gt; GetReadOperationResultWithHttpMessagesAsync (string operationId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">operationId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ReadOperationResult.html">ReadOperationResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetTextOperationResultWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetTextOperationResultWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_GetTextOperationResultWithHttpMessagesAsync_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.GetTextOperationResultWithHttpMessagesAsync(System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetTextOperationResultWithHttpMessagesAsync(String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextOperationResult&gt;&gt; GetTextOperationResultWithHttpMessagesAsync (string operationId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">operationId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextOperationResult.html">TextOperationResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_ListModelsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.ListModelsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_ListModelsWithHttpMessagesAsync_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.ListModelsWithHttpMessagesAsync(System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListModelsWithHttpMessagesAsync(Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ListModelsResult&gt;&gt; ListModelsWithHttpMessagesAsync (System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.ListModelsResult.html">ListModelsResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizePrintedTextInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizePrintedTextInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizePrintedTextInStreamWithHttpMessagesAsync_System_Boolean_System_IO_Stream_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizePrintedTextInStreamWithHttpMessagesAsync(System.Boolean,System.IO.Stream,System.Nullable{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RecognizePrintedTextInStreamWithHttpMessagesAsync(Boolean, Stream, Nullable&lt;OcrLanguages&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrResult&gt;&gt; RecognizePrintedTextInStreamWithHttpMessagesAsync (bool detectOrientation, System.IO.Stream image, Nullable&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages&gt; language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">detectOrientation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages.html">OcrLanguages</a>&gt;</td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrResult.html">OcrResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizePrintedTextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizePrintedTextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizePrintedTextWithHttpMessagesAsync_System_Boolean_System_String_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizePrintedTextWithHttpMessagesAsync(System.Boolean,System.String,System.Nullable{Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RecognizePrintedTextWithHttpMessagesAsync(Boolean, String, Nullable&lt;OcrLanguages&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrResult&gt;&gt; RecognizePrintedTextWithHttpMessagesAsync (bool detectOrientation, string url, Nullable&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages&gt; language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">detectOrientation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrLanguages.html">OcrLanguages</a>&gt;</td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.OcrResult.html">OcrResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizeTextInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizeTextInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizeTextInStreamWithHttpMessagesAsync_System_IO_Stream_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizeTextInStreamWithHttpMessagesAsync(System.IO.Stream,Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RecognizeTextInStreamWithHttpMessagesAsync(Stream, TextRecognitionMode, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationHeaderResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.RecognizeTextInStreamHeaders&gt;&gt; RecognizeTextInStreamWithHttpMessagesAsync (System.IO.Stream image, Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode mode, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode.html">TextRecognitionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.RecognizeTextInStreamHeaders.html">RecognizeTextInStreamHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizeTextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizeTextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_RecognizeTextWithHttpMessagesAsync_System_String_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.RecognizeTextWithHttpMessagesAsync(System.String,Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RecognizeTextWithHttpMessagesAsync(String, TextRecognitionMode, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationHeaderResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.RecognizeTextHeaders&gt;&gt; RecognizeTextWithHttpMessagesAsync (string url, Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode mode, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TextRecognitionMode.html">TextRecognitionMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.RecognizeTextHeaders.html">RecognizeTextHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_TagImageInStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.TagImageInStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_TagImageInStreamWithHttpMessagesAsync_System_IO_Stream_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.TagImageInStreamWithHttpMessagesAsync(System.IO.Stream,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">TagImageInStreamWithHttpMessagesAsync(Stream, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TagResult&gt;&gt; TagImageInStreamWithHttpMessagesAsync (System.IO.Stream image, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">image</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TagResult.html">TagResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_TagImageWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.TagImageWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClient_TagImageWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClient.TagImageWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">TagImageWithHttpMessagesAsync(String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TagResult&gt;&gt; TagImageWithHttpMessagesAsync (string url, string language = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">url</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">language</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models/Microsoft.Azure.CognitiveServices.Vision.ComputerVision.Models.TagResult.html">TagResult</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient.html">Microsoft.Azure.CognitiveServices.Vision.ComputerVision.IComputerVisionClient</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageAsync(IComputerVisionClient, String, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageByDomainAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_String_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageByDomainAsync(IComputerVisionClient, String, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageByDomainInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_IO_Stream_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageByDomainInStreamAsync(IComputerVisionClient, String, Stream, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_AnalyzeImageInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_IO_Stream_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_VisualFeatureTypes__System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_Details__System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.AnalyzeImageInStreamAsync(IComputerVisionClient, Stream, IList&lt;VisualFeatureTypes&gt;, IList&lt;Details&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_BatchReadFileAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.BatchReadFileAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_BatchReadFileInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_IO_Stream_System_Threading_CancellationToken_">ComputerVisionClientExtensions.BatchReadFileInStreamAsync(IComputerVisionClient, Stream, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DescribeImageAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.DescribeImageAsync(IComputerVisionClient, String, Nullable&lt;Int32&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DescribeImageInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_IO_Stream_System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.DescribeImageInStreamAsync(IComputerVisionClient, Stream, Nullable&lt;Int32&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DetectObjectsAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.DetectObjectsAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_DetectObjectsInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_IO_Stream_System_Threading_CancellationToken_">ComputerVisionClientExtensions.DetectObjectsInStreamAsync(IComputerVisionClient, Stream, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GenerateThumbnailAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Int32_System_Int32_System_String_System_Nullable_System_Boolean__System_Threading_CancellationToken_">ComputerVisionClientExtensions.GenerateThumbnailAsync(IComputerVisionClient, Int32, Int32, String, Nullable&lt;Boolean&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GenerateThumbnailInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Int32_System_Int32_System_IO_Stream_System_Nullable_System_Boolean__System_Threading_CancellationToken_">ComputerVisionClientExtensions.GenerateThumbnailInStreamAsync(IComputerVisionClient, Int32, Int32, Stream, Nullable&lt;Boolean&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetAreaOfInterestAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.GetAreaOfInterestAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetAreaOfInterestInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_IO_Stream_System_Threading_CancellationToken_">ComputerVisionClientExtensions.GetAreaOfInterestInStreamAsync(IComputerVisionClient, Stream, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetReadOperationResultAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.GetReadOperationResultAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_GetTextOperationResultAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.GetTextOperationResultAsync(IComputerVisionClient, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_ListModelsAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Threading_CancellationToken_">ComputerVisionClientExtensions.ListModelsAsync(IComputerVisionClient, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizePrintedTextAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Boolean_System_String_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__System_Threading_CancellationToken_">ComputerVisionClientExtensions.RecognizePrintedTextAsync(IComputerVisionClient, Boolean, String, Nullable&lt;OcrLanguages&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizePrintedTextInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_Boolean_System_IO_Stream_System_Nullable_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_OcrLanguages__System_Threading_CancellationToken_">ComputerVisionClientExtensions.RecognizePrintedTextInStreamAsync(IComputerVisionClient, Boolean, Stream, Nullable&lt;OcrLanguages&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizeTextAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_System_Threading_CancellationToken_">ComputerVisionClientExtensions.RecognizeTextAsync(IComputerVisionClient, String, TextRecognitionMode, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_RecognizeTextInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_IO_Stream_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_Models_TextRecognitionMode_System_Threading_CancellationToken_">ComputerVisionClientExtensions.RecognizeTextInStreamAsync(IComputerVisionClient, Stream, TextRecognitionMode, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_TagImageAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_String_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.TagImageAsync(IComputerVisionClient, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Vision.ComputerVision.ComputerVisionClientExtensions.html#Microsoft_Azure_CognitiveServices_Vision_ComputerVision_ComputerVisionClientExtensions_TagImageInStreamAsync_Microsoft_Azure_CognitiveServices_Vision_ComputerVision_IComputerVisionClient_System_IO_Stream_System_String_System_Threading_CancellationToken_">ComputerVisionClientExtensions.TagImageInStreamAsync(IComputerVisionClient, Stream, String, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

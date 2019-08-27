@@ -1,0 +1,1867 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class MessageReceiver
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class MessageReceiver
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver" class="text-break">Class MessageReceiver
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ClientEntity.html">ClientEntity</a></div>
+    <div class="level2"><span class="xref">MessageReceiver</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html">IMessageReceiver</a></div>
+    <div><a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html">IReceiverClient</a></div>
+    <div><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.IClientEntity.html">IClientEntity</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ClientId">ClientEntity.ClientId</a>
+    </div>
+    <div>
+      <a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_CloseAsync">ClientEntity.CloseAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_IsClosedOrClosing">ClientEntity.IsClosedOrClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OwnsConnection">ClientEntity.OwnsConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_RetryPolicy">ClientEntity.RetryPolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ThrowIfClosed">ClientEntity.ThrowIfClosed()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.ServiceBus.Core.html">Microsoft.Azure.ServiceBus.Core</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class MessageReceiver : Microsoft.Azure.ServiceBus.ClientEntity, Microsoft.Azure.ServiceBus.Core.IMessageReceiver</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">MessageReceiver(ServiceBusConnectionStringBuilder, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageReceiver (Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder connectionStringBuilder, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode = Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></td>
+        <td><span class="parametername">connectionStringBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">MessageReceiver(ServiceBusConnection, String, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageReceiver (Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode = Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
+        <td><span class="parametername">serviceBusConnection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">MessageReceiver(String, String, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageReceiver (string connectionString, string entityPath, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode = Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider,Microsoft.Azure.ServiceBus.TransportType,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">MessageReceiver(String, String, ITokenProvider, TransportType, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageReceiver (string endpoint, string entityPath, Microsoft.Azure.ServiceBus.Primitives.ITokenProvider tokenProvider, Microsoft.Azure.ServiceBus.TransportType transportType = Microsoft.Azure.ServiceBus.TransportType.Amqp, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode = Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus.Primitives/Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></td>
+        <td><span class="parametername">tokenProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.TransportType.html">TransportType</a></td>
+        <td><span class="parametername">transportType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_LastPeekedSequenceNumber_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.LastPeekedSequenceNumber*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_LastPeekedSequenceNumber" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.LastPeekedSequenceNumber">LastPeekedSequenceNumber</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public long LastPeekedSequenceNumber { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OperationTimeout_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OperationTimeout*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OperationTimeout" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OperationTimeout">OperationTimeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TimeSpan OperationTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_Path_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.Path*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_Path" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.Path">Path</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Path { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PrefetchCount_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PrefetchCount*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PrefetchCount" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PrefetchCount">PrefetchCount</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int PrefetchCount { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveMode_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveMode*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveMode" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveMode">ReceiveMode</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.ServiceBus.ReceiveMode ReceiveMode { get; protected set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisteredPlugins_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisteredPlugins*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisteredPlugins" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisteredPlugins">RegisteredPlugins</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin&gt; RegisteredPlugins { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ServiceBusConnection_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ServiceBusConnection*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ServiceBusConnection" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ServiceBusConnection">ServiceBusConnection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Microsoft.Azure.ServiceBus.ServiceBusConnection ServiceBusConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_AbandonAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.AbandonAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_AbandonAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.AbandonAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">AbandonAsync(String, IDictionary&lt;String,Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task AbandonAsync (string lockToken, System.Collections.Generic.IDictionary&lt;string,object&gt; propertiesToModify = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_CompleteAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.CompleteAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_CompleteAsync_System_Collections_Generic_IEnumerable_System_String__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.CompleteAsync(System.Collections.Generic.IEnumerable{System.String})">CompleteAsync(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task CompleteAsync (System.Collections.Generic.IEnumerable&lt;string&gt; lockTokens);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">lockTokens</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_CompleteAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.CompleteAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_CompleteAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.CompleteAsync(System.String)">CompleteAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task CompleteAsync (string lockToken);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_DeadLetterAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.DeadLetterAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_DeadLetterAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.DeadLetterAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">DeadLetterAsync(String, IDictionary&lt;String,Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task DeadLetterAsync (string lockToken, System.Collections.Generic.IDictionary&lt;string,object&gt; propertiesToModify = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_DeadLetterAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.DeadLetterAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_DeadLetterAsync_System_String_System_String_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.DeadLetterAsync(System.String,System.String,System.String)">DeadLetterAsync(String, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task DeadLetterAsync (string lockToken, string deadLetterReason, string deadLetterErrorDescription = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">deadLetterReason</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">deadLetterErrorDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_DeferAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.DeferAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_DeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.DeferAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">DeferAsync(String, IDictionary&lt;String,Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task DeferAsync (string lockToken, System.Collections.Generic.IDictionary&lt;string,object&gt; propertiesToModify = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnAbandonAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnAbandonAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnAbandonAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnAbandonAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">OnAbandonAsync(String, IDictionary&lt;String,Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual System.Threading.Tasks.Task OnAbandonAsync (string lockToken, System.Collections.Generic.IDictionary&lt;string,object&gt; propertiesToModify = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnClosingAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnClosingAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnClosingAsync" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnClosingAsync">OnClosingAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+protected override System.Threading.Tasks.Task OnClosingAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnCompleteAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnCompleteAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnCompleteAsync_System_Collections_Generic_IEnumerable_System_String__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnCompleteAsync(System.Collections.Generic.IEnumerable{System.String})">OnCompleteAsync(IEnumerable&lt;String&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual System.Threading.Tasks.Task OnCompleteAsync (System.Collections.Generic.IEnumerable&lt;string&gt; lockTokens);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">lockTokens</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnDeadLetterAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnDeadLetterAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnDeadLetterAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__System_String_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnDeadLetterAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.String)">OnDeadLetterAsync(String, IDictionary&lt;String,Object&gt;, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual System.Threading.Tasks.Task OnDeadLetterAsync (string lockToken, System.Collections.Generic.IDictionary&lt;string,object&gt; propertiesToModify = null, string deadLetterReason = null, string deadLetterErrorDescription = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">deadLetterReason</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">deadLetterErrorDescription</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnDeferAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnDeferAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnDeferAsync_System_String_System_Collections_Generic_IDictionary_System_String_System_Object__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnDeferAsync(System.String,System.Collections.Generic.IDictionary{System.String,System.Object})">OnDeferAsync(String, IDictionary&lt;String,Object&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual System.Threading.Tasks.Task OnDeferAsync (string lockToken, System.Collections.Generic.IDictionary&lt;string,object&gt; propertiesToModify = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;</td>
+        <td><span class="parametername">propertiesToModify</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnMessageHandler_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnMessageHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnMessageHandler_Microsoft_Azure_ServiceBus_MessageHandlerOptions_System_Func_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnMessageHandler(Microsoft.Azure.ServiceBus.MessageHandlerOptions,System.Func{Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task})">OnMessageHandler(MessageHandlerOptions, Func&lt;Message,CancellationToken,Task&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void OnMessageHandler (Microsoft.Azure.ServiceBus.MessageHandlerOptions registerHandlerOptions, Func&lt;Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task&gt; callback);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.MessageHandlerOptions.html">MessageHandlerOptions</a></td>
+        <td><span class="parametername">registerHandlerOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">callback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnPeekAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnPeekAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnPeekAsync_System_Int64_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnPeekAsync(System.Int64,System.Int32)">OnPeekAsync(Int64, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; OnPeekAsync (long fromSequenceNumber, int messageCount = 1);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">fromSequenceNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">messageCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnReceiveAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnReceiveAsync_System_Int32_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnReceiveAsync(System.Int32,System.TimeSpan)">OnReceiveAsync(Int32, TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; OnReceiveAsync (int maxMessageCount, TimeSpan serverWaitTime);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxMessageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">serverWaitTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnReceiveDeferredMessageAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnReceiveDeferredMessageAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnReceiveDeferredMessageAsync_System_Int64___" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnReceiveDeferredMessageAsync(System.Int64[])">OnReceiveDeferredMessageAsync(Int64[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+protected virtual System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; OnReceiveDeferredMessageAsync (long[] sequenceNumbers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>[]</td>
+        <td><span class="parametername">sequenceNumbers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnRenewLockAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnRenewLockAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_OnRenewLockAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.OnRenewLockAsync(System.String)">OnRenewLockAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+protected virtual System.Threading.Tasks.Task&lt;DateTime&gt; OnRenewLockAsync (string lockToken);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekAsync" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekAsync">PeekAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.Message&gt; PeekAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekAsync_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekAsync(System.Int32)">PeekAsync(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; PeekAsync (int maxMessageCount);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxMessageCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekBySequenceNumberAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekBySequenceNumberAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekBySequenceNumberAsync_System_Int64_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekBySequenceNumberAsync(System.Int64)">PeekBySequenceNumberAsync(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.Message&gt; PeekBySequenceNumberAsync (long fromSequenceNumber);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">fromSequenceNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekBySequenceNumberAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekBySequenceNumberAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_PeekBySequenceNumberAsync_System_Int64_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.PeekBySequenceNumberAsync(System.Int64,System.Int32)">PeekBySequenceNumberAsync(Int64, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; PeekBySequenceNumberAsync (long fromSequenceNumber, int messageCount);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">fromSequenceNumber</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">messageCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync">ReceiveAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.Message&gt; ReceiveAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync(System.Int32)">ReceiveAsync(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; ReceiveAsync (int maxMessageCount);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxMessageCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync(System.TimeSpan)">ReceiveAsync(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.Message&gt; ReceiveAsync (TimeSpan operationTimeout);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveAsync_System_Int32_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveAsync(System.Int32,System.TimeSpan)">ReceiveAsync(Int32, TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; ReceiveAsync (int maxMessageCount, TimeSpan operationTimeout);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">maxMessageCount</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveDeferredMessageAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveDeferredMessageAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveDeferredMessageAsync_System_Int64_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveDeferredMessageAsync(System.Int64)">ReceiveDeferredMessageAsync(Int64)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.Message&gt; ReceiveDeferredMessageAsync (long sequenceNumber);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">sequenceNumber</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveDeferredMessageAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveDeferredMessageAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_ReceiveDeferredMessageAsync_System_Collections_Generic_IEnumerable_System_Int64__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.ReceiveDeferredMessageAsync(System.Collections.Generic.IEnumerable{System.Int64})">ReceiveDeferredMessageAsync(IEnumerable&lt;Int64&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Message&gt;&gt; ReceiveDeferredMessageAsync (System.Collections.Generic.IEnumerable&lt;long&gt; sequenceNumbers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">sequenceNumbers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisterMessageHandler_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisterMessageHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisterMessageHandler_System_Func_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__Microsoft_Azure_ServiceBus_MessageHandlerOptions_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisterMessageHandler(System.Func{Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task},Microsoft.Azure.ServiceBus.MessageHandlerOptions)">RegisterMessageHandler(Func&lt;Message,CancellationToken,Task&gt;, MessageHandlerOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMessageHandler (Func&lt;Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task&gt; handler, Microsoft.Azure.ServiceBus.MessageHandlerOptions messageHandlerOptions);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.MessageHandlerOptions.html">MessageHandlerOptions</a></td>
+        <td><span class="parametername">messageHandlerOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisterMessageHandler_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisterMessageHandler*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisterMessageHandler_System_Func_Microsoft_Azure_ServiceBus_Message_System_Threading_CancellationToken_System_Threading_Tasks_Task__System_Func_Microsoft_Azure_ServiceBus_ExceptionReceivedEventArgs_System_Threading_Tasks_Task__" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisterMessageHandler(System.Func{Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task},System.Func{Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,System.Threading.Tasks.Task})">RegisterMessageHandler(Func&lt;Message,CancellationToken,Task&gt;, Func&lt;ExceptionReceivedEventArgs,Task&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterMessageHandler (Func&lt;Microsoft.Azure.ServiceBus.Message,System.Threading.CancellationToken,System.Threading.Tasks.Task&gt; handler, Func&lt;Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs,System.Threading.Tasks.Task&gt; exceptionReceivedHandler);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-3">Func</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">handler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.ExceptionReceivedEventArgs.html">ExceptionReceivedEventArgs</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a>&gt;</td>
+        <td><span class="parametername">exceptionReceivedHandler</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisterPlugin*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)">RegisterPlugin(ServiceBusPlugin)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RegisterPlugin (Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin serviceBusPlugin);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a></td>
+        <td><span class="parametername">serviceBusPlugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RenewLockAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RenewLockAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RenewLockAsync_Microsoft_Azure_ServiceBus_Message_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RenewLockAsync(Microsoft.Azure.ServiceBus.Message)">RenewLockAsync(Message)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task RenewLockAsync (Microsoft.Azure.ServiceBus.Message message);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.Message.html">Message</a></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RenewLockAsync_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RenewLockAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_RenewLockAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.RenewLockAsync(System.String)">RenewLockAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;DateTime&gt; RenewLockAsync (string lockToken);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">lockToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetime">DateTime</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_UnregisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.UnregisterPlugin*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_Core_MessageReceiver_UnregisterPlugin_System_String_" data-uid="Microsoft.Azure.ServiceBus.Core.MessageReceiver.UnregisterPlugin(System.String)">UnregisterPlugin(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UnregisterPlugin (string serviceBusPluginName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">serviceBusPluginName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IMessageReceiver.html">Microsoft.Azure.ServiceBus.Core.IMessageReceiver</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.Core.IReceiverClient.html">Microsoft.Azure.ServiceBus.Core.IReceiverClient</a>
+  </div>
+  <div>
+      <a class="xref" href="../Microsoft.Azure.ServiceBus/Microsoft.Azure.ServiceBus.IClientEntity.html">Microsoft.Azure.ServiceBus.IClientEntity</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

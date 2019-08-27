@@ -1,0 +1,499 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAccountOperations
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAccountOperations
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_IAccountOperations" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations" class="text-break">Interface IAccountOperations
+  </h1>
+  <div class="markdown level0 summary"><p>AccountOperations operations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IAccountOperations_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAccountOperations</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListPoolNodeCountsNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListPoolNodeCountsNextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListPoolNodeCountsNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListPoolNodeCountsNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListPoolNodeCountsNextWithHttpMessagesAsync(String, AccountListPoolNodeCountsNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of Compute Nodes in each state, grouped by Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions accountListPoolNodeCountsNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions.html">AccountListPoolNodeCountsNextOptions</a></td>
+        <td><span class="parametername">accountListPoolNodeCountsNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts.html">PoolNodeCounts</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders.html">AccountListPoolNodeCountsHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListPoolNodeCountsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListPoolNodeCountsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListPoolNodeCountsWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListPoolNodeCountsWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListPoolNodeCountsWithHttpMessagesAsync(AccountListPoolNodeCountsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of Compute Nodes in each state, grouped by Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders&gt;&gt; ListPoolNodeCountsWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions accountListPoolNodeCountsOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions.html">AccountListPoolNodeCountsOptions</a></td>
+        <td><span class="parametername">accountListPoolNodeCountsOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts.html">PoolNodeCounts</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsHeaders.html">AccountListPoolNodeCountsHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListSupportedImagesNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListSupportedImagesNextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListSupportedImagesNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListSupportedImagesNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListSupportedImagesNextWithHttpMessagesAsync(String, AccountListSupportedImagesNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all Virtual Machine Images supported by the Azure Batch
+service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions accountListSupportedImagesNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions.html">AccountListSupportedImagesNextOptions</a></td>
+        <td><span class="parametername">accountListSupportedImagesNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ImageInformation.html">ImageInformation</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders.html">AccountListSupportedImagesHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListSupportedImagesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListSupportedImagesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IAccountOperations_ListSupportedImagesWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IAccountOperations.ListSupportedImagesWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListSupportedImagesWithHttpMessagesAsync(AccountListSupportedImagesOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all Virtual Machine Images supported by the Azure Batch
+service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders&gt;&gt; ListSupportedImagesWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions accountListSupportedImagesOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions.html">AccountListSupportedImagesOptions</a></td>
+        <td><span class="parametername">accountListSupportedImagesOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ImageInformation.html">ImageInformation</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesHeaders.html">AccountListSupportedImagesHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCounts_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsOptions_">AccountOperationsExtensions.ListPoolNodeCounts(IAccountOperations, AccountListPoolNodeCountsOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsOptions_System_Threading_CancellationToken_">AccountOperationsExtensions.ListPoolNodeCountsAsync(IAccountOperations, AccountListPoolNodeCountsOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsNext_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsNextOptions_">AccountOperationsExtensions.ListPoolNodeCountsNext(IAccountOperations, String, AccountListPoolNodeCountsNextOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsNextAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsNextOptions_System_Threading_CancellationToken_">AccountOperationsExtensions.ListPoolNodeCountsNextAsync(IAccountOperations, String, AccountListPoolNodeCountsNextOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImages_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesOptions_">AccountOperationsExtensions.ListSupportedImages(IAccountOperations, AccountListSupportedImagesOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesOptions_System_Threading_CancellationToken_">AccountOperationsExtensions.ListSupportedImagesAsync(IAccountOperations, AccountListSupportedImagesOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesNext_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesNextOptions_">AccountOperationsExtensions.ListSupportedImagesNext(IAccountOperations, String, AccountListSupportedImagesNextOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesNextAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesNextOptions_System_Threading_CancellationToken_">AccountOperationsExtensions.ListSupportedImagesNextAsync(IAccountOperations, String, AccountListSupportedImagesNextOptions, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

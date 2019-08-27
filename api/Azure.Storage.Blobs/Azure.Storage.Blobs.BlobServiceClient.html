@@ -1,0 +1,1471 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BlobServiceClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BlobServiceClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Blobs.BlobServiceClient">
+  
+  
+  <h1 id="Azure_Storage_Blobs_BlobServiceClient" data-uid="Azure.Storage.Blobs.BlobServiceClient" class="text-break">Class BlobServiceClient
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a> allows you to manipulate Azure
+Storage service resources and containers. The storage account provides
+the top-level namespace for the Blob service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">BlobServiceClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Blobs.html">Azure.Storage.Blobs</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BlobServiceClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient__ctor_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient__ctor" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor">BlobServiceClient()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a>
+class for mocking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected BlobServiceClient ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient__ctor_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient__ctor_System_String_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor(System.String)">BlobServiceClient(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobServiceClient (string connectionString);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient__ctor_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient__ctor_System_String_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor(System.String,Azure.Storage.Blobs.BlobClientOptions)">BlobServiceClient(String, BlobClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobServiceClient (string connectionString, Azure.Storage.Blobs.BlobClientOptions options);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td><p>A connection string includes the authentication information
+required for your application to access data in an Azure Storage
+account at runtime.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string"></a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient__ctor_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient__ctor_System_Uri_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor(System.Uri,Azure.Storage.Blobs.BlobClientOptions)">BlobServiceClient(Uri, BlobClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobServiceClient (Uri serviceUri, Azure.Storage.Blobs.BlobClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">serviceUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_Uri">Uri</a> referencing the blob service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient__ctor_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Storage.Blobs.BlobClientOptions)">BlobServiceClient(Uri, TokenCredential, BlobClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobServiceClient (Uri serviceUri, Azure.Core.TokenCredential credential, Azure.Storage.Blobs.BlobClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">serviceUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_Uri">Uri</a> referencing the blob service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The token credential used to sign requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient__ctor_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient__ctor_System_Uri_Azure_Storage_StorageSharedKeyCredential_Azure_Storage_Blobs_BlobClientOptions_" data-uid="Azure.Storage.Blobs.BlobServiceClient.#ctor(System.Uri,Azure.Storage.StorageSharedKeyCredential,Azure.Storage.Blobs.BlobClientOptions)">BlobServiceClient(Uri, StorageSharedKeyCredential, BlobClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BlobServiceClient (Uri serviceUri, Azure.Storage.StorageSharedKeyCredential credential, Azure.Storage.Blobs.BlobClientOptions options = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">serviceUri</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_Uri">Uri</a> referencing the blob service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>The shared key credential used to sign requests.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobClientOptions.html">BlobClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Optional client options that define the transport pipeline
+policies for authentication, retries, etc., that are applied to
+every request.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_Pipeline_" data-uid="Azure.Storage.Blobs.BlobServiceClient.Pipeline*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_Pipeline" data-uid="Azure.Storage.Blobs.BlobServiceClient.Pipeline">Pipeline</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="../Azure.Core.Pipeline/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a> transport pipeline used to send
+every request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Azure.Core.Pipeline.HttpPipeline Pipeline { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Core.Pipeline/Azure.Core.Pipeline.HttpPipeline.html">HttpPipeline</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_Uri_" data-uid="Azure.Storage.Blobs.BlobServiceClient.Uri*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_Uri" data-uid="Azure.Storage.Blobs.BlobServiceClient.Uri">Uri</h4>
+  <div class="markdown level1 summary"><p>Gets the blob service's primary <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_Uri">Uri</a> endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Uri Uri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainer_" data-uid="Azure.Storage.Blobs.BlobServiceClient.CreateBlobContainer*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainer_System_String_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.CreateBlobContainer(System.String,System.Nullable{Azure.Storage.Blobs.Models.PublicAccessType},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateBlobContainer(String, Nullable&lt;PublicAccessType&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainer_System_String_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">CreateBlobContainer(String, Nullable&lt;PublicAccessType&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new
+container under the specified account. If the container with the
+same name already exists, the operation fails.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response&lt;Azure.Storage.Blobs.BlobContainerClient&gt; CreateBlobContainer (string containerName, Nullable&lt;Azure.Storage.Blobs.Models.PublicAccessType&gt; publicAccessType = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">containerName</span></td>
+        <td><p>The name of the container to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html">PublicAccessType</a>&gt;</td>
+        <td><span class="parametername">publicAccessType</span></td>
+        <td><p>Optionally specifies whether data in the container may be accessed
+publicly and the level of access. <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html#Azure_Storage_Blobs_Models_PublicAccessType_Container">Container</a>
+specifies full public read access for container and blob data.
+Clients can enumerate blobs within the container via anonymous
+request, but cannot enumerate containers within the storage
+account.  <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html#Azure_Storage_Blobs_Models_PublicAccessType_Blob">Blob</a> specifies public
+read access for blobs.  Blob data within this container can be
+read via anonymous request, but container data is not available.
+Clients cannot enumerate blobs within the container via anonymous
+request.  If this parameter is null, container data is private to
+the account owner.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the
+newly created container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainer_System_String_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainerAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.CreateBlobContainerAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainerAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.CreateBlobContainerAsync(System.String,System.Nullable{Azure.Storage.Blobs.Models.PublicAccessType},System.Collections.Generic.IDictionary{System.String,System.String},System.Threading.CancellationToken)">CreateBlobContainerAsync(String, Nullable&lt;PublicAccessType&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainerAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken_">CreateBlobContainerAsync(String, Nullable&lt;PublicAccessType&gt;, IDictionary&lt;String,String&gt;, CancellationToken)</a> operation creates a new
+container under the specified account. If the container with the
+same name already exists, the operation fails.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/create-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.BlobContainerClient&gt;&gt; CreateBlobContainerAsync (string containerName, Nullable&lt;Azure.Storage.Blobs.Models.PublicAccessType&gt; publicAccessType = null, System.Collections.Generic.IDictionary&lt;string,string&gt; metadata = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">containerName</span></td>
+        <td><p>The name of the container to create.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html">PublicAccessType</a>&gt;</td>
+        <td><span class="parametername">publicAccessType</span></td>
+        <td><p>Optionally specifies whether data in the container may be accessed
+publicly and the level of access. <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html#Azure_Storage_Blobs_Models_PublicAccessType_Container">Container</a>
+specifies full public read access for container and blob data.
+Clients can enumerate blobs within the container via anonymous
+request, but cannot enumerate containers within the storage
+account.  <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.PublicAccessType.html#Azure_Storage_Blobs_Models_PublicAccessType_Blob">Blob</a> specifies public
+read access for blobs.  Blob data within this container can be
+read via anonymous request, but container data is not available.
+Clients cannot enumerate blobs within the container via anonymous
+request.  If this parameter is null, container data is private to
+the account owner.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;</td>
+        <td><span class="parametername">metadata</span></td>
+        <td><p>Optional custom metadata to set for this container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> referencing the
+newly created container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_CreateBlobContainerAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_PublicAccessType__System_Collections_Generic_IDictionary_System_String_System_String__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainer_" data-uid="Azure.Storage.Blobs.BlobServiceClient.DeleteBlobContainer*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainer_System_String_System_Nullable_Azure_Storage_Blobs_Models_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.DeleteBlobContainer(System.String,System.Nullable{Azure.Storage.Blobs.Models.ContainerAccessConditions},System.Threading.CancellationToken)">DeleteBlobContainer(String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainer_System_String_System_Nullable_Azure_Storage_Blobs_Models_ContainerAccessConditions__System_Threading_CancellationToken_">DeleteBlobContainer(String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</a> operation marks the
+specified container for deletion. The container and any blobs
+contained within it are later deleted during garbage collection.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/delete-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+public virtual Azure.Response DeleteBlobContainer (string containerName, Nullable&lt;Azure.Storage.Blobs.Models.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">containerName</span></td>
+        <td><p>The name of the container to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerAccessConditions.html">ContainerAccessConditions</a> to add
+conditions on the deletion of this container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainer_System_String_System_Nullable_Azure_Storage_Blobs_Models_ContainerAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainerAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.DeleteBlobContainerAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainerAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_ContainerAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.DeleteBlobContainerAsync(System.String,System.Nullable{Azure.Storage.Blobs.Models.ContainerAccessConditions},System.Threading.CancellationToken)">DeleteBlobContainerAsync(String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainerAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_ContainerAccessConditions__System_Threading_CancellationToken_">DeleteBlobContainerAsync(String, Nullable&lt;ContainerAccessConditions&gt;, CancellationToken)</a> operation marks the
+specified container for deletion. The container and any blobs
+contained within it are later deleted during garbage collection.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/delete-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Azure.Core.ForwardsClientCalls]
+[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; DeleteBlobContainerAsync (string containerName, Nullable&lt;Azure.Storage.Blobs.Models.ContainerAccessConditions&gt; accessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">containerName</span></td>
+        <td><p>The name of the container to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerAccessConditions.html">ContainerAccessConditions</a>&gt;</td>
+        <td><span class="parametername">accessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerAccessConditions.html">ContainerAccessConditions</a> to add
+conditions on the deletion of this container.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> if successful.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_DeleteBlobContainerAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_ContainerAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetAccountInfo_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetAccountInfo*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetAccountInfo_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetAccountInfo(System.Threading.CancellationToken)">GetAccountInfo(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetAccountInfo_System_Threading_CancellationToken_">GetAccountInfo(CancellationToken)</a> operation returns the sku
+name and account kind for the specified account.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-account-information"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.AccountInfo&gt; GetAccountInfo (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccountInfo.html">AccountInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetAccountInfo_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetAccountInfoAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetAccountInfoAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetAccountInfoAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetAccountInfoAsync(System.Threading.CancellationToken)">GetAccountInfoAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetAccountInfoAsync_System_Threading_CancellationToken_">GetAccountInfoAsync(CancellationToken)</a> operation returns the sku
+name and account kind for the specified account.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-account-information"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.AccountInfo&gt;&gt; GetAccountInfoAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.AccountInfo.html">AccountInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetAccountInfoAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetBlobContainerClient_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetBlobContainerClient*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetBlobContainerClient_System_String_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetBlobContainerClient(System.String)">GetBlobContainerClient(String)</h4>
+  <div class="markdown level1 summary"><p>Create a new <a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> object by appending
+<code data-dev-comment-type="paramref">containerName</code> to the end of <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_Uri">Uri</a>.
+The new <a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> uses the same request
+policy pipeline as the <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html">BlobServiceClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Storage.Blobs.BlobContainerClient GetBlobContainerClient (string containerName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">containerName</span></td>
+        <td><p>The name of the container to reference.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> for the desired container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetContainers_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetContainers*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetContainers_System_Nullable_Azure_Storage_Blobs_Models_GetContainersOptions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetContainers(System.Nullable{Azure.Storage.Blobs.Models.GetContainersOptions},System.Threading.CancellationToken)">GetContainers(Nullable&lt;GetContainersOptions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetContainers_System_Nullable_Azure_Storage_Blobs_Models_GetContainersOptions__System_Threading_CancellationToken_">GetContainers(Nullable&lt;GetContainersOptions&gt;, CancellationToken)</a> operation returns an async
+sequence of containers in the storage account.  Enumerating the
+containers may make multiple requests to the service while fetching
+all the values.  Containers are ordered lexicographically by name.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/list-containers2"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual System.Collections.Generic.IEnumerable&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ContainerItem&gt;&gt; GetContainers (Nullable&lt;Azure.Storage.Blobs.Models.GetContainersOptions&gt; options = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.GetContainersOptions.html">GetContainersOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Specifies options for listing, filtering, and shaping the
+containers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerItem.html">ContainerItem</a>&gt;&gt;</td>
+        <td><p>An <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable&lt;T&gt;</a> of <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a>
+describing the containers in the storage account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetContainers_System_Nullable_Azure_Storage_Blobs_Models_GetContainersOptions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetContainersAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetContainersAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetContainersAsync_System_Nullable_Azure_Storage_Blobs_Models_GetContainersOptions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetContainersAsync(System.Nullable{Azure.Storage.Blobs.Models.GetContainersOptions},System.Threading.CancellationToken)">GetContainersAsync(Nullable&lt;GetContainersOptions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetContainersAsync_System_Nullable_Azure_Storage_Blobs_Models_GetContainersOptions__System_Threading_CancellationToken_">GetContainersAsync(Nullable&lt;GetContainersOptions&gt;, CancellationToken)</a> operation returns an async
+sequence of containers in the storage account.  Enumerating the
+containers may make multiple requests to the service while fetching
+all the values.  Containers are ordered lexicographically by name.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/list-containers2"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncCollection&lt;Azure.Storage.Blobs.Models.ContainerItem&gt; GetContainersAsync (Nullable&lt;Azure.Storage.Blobs.Models.GetContainersOptions&gt; options = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.GetContainersOptions.html">GetContainersOptions</a>&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Specifies options for listing, filtering, and shaping the
+containers.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ContainerItem.html">ContainerItem</a>&gt;</td>
+        <td><p>An <a class="xref" href="../Azure/Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a> describing the
+containers in the storage account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetContainersAsync_System_Nullable_Azure_Storage_Blobs_Models_GetContainersOptions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetProperties_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetProperties*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetProperties_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetProperties(System.Threading.CancellationToken)">GetProperties(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetProperties_System_Threading_CancellationToken_">GetProperties(CancellationToken)</a> operation gets the properties
+of a storage account’s blob service, including properties for
+Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-service-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobServiceProperties&gt; GetProperties (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobServiceProperties.html">BlobServiceProperties</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing
+the service properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetProperties_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetPropertiesAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetPropertiesAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetPropertiesAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetPropertiesAsync(System.Threading.CancellationToken)">GetPropertiesAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetPropertiesAsync_System_Threading_CancellationToken_">GetPropertiesAsync(CancellationToken)</a> operation gets the properties
+of a storage account’s blob service, including properties for
+Storage Analytics and CORS (Cross-Origin Resource Sharing) rules.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-service-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobServiceProperties&gt;&gt; GetPropertiesAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobServiceProperties.html">BlobServiceProperties</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing
+the service properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetPropertiesAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetStatistics_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetStatistics*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetStatistics_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetStatistics(System.Threading.CancellationToken)">GetStatistics(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetStatistics_System_Threading_CancellationToken_">GetStatistics(CancellationToken)</a> operation retrieves
+statistics related to replication for the Blob service.  It is
+only available on the secondary location endpoint when read-access
+geo-redundant replication (<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SkuName.html#Azure_Storage_Blobs_Models_SkuName_StandardRAGRS">StandardRAGRS</a>)
+is enabled for the storage account.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-service-stats"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.BlobServiceStatistics&gt; GetStatistics (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobServiceStatistics.html">BlobServiceStatistics</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing
+the service replication statistics.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetStatistics_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetStatisticsAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetStatisticsAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetStatisticsAsync_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetStatisticsAsync(System.Threading.CancellationToken)">GetStatisticsAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetStatisticsAsync_System_Threading_CancellationToken_">GetStatisticsAsync(CancellationToken)</a> operation retrieves
+statistics related to replication for the Blob service.  It is
+only available on the secondary location endpoint when read-access
+geo-redundant replication (<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.SkuName.html#Azure_Storage_Blobs_Models_SkuName_StandardRAGRS">StandardRAGRS</a>)
+is enabled for the storage account.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/get-blob-service-stats"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.BlobServiceStatistics&gt;&gt; GetStatisticsAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobServiceStatistics.html">BlobServiceStatistics</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing
+the service replication statistics.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetStatisticsAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKey_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetUserDelegationKey*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKey_System_Nullable_System_DateTimeOffset__System_DateTimeOffset_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetUserDelegationKey(System.Nullable{System.DateTimeOffset},System.DateTimeOffset,System.Threading.CancellationToken)">GetUserDelegationKey(Nullable&lt;DateTimeOffset&gt;, DateTimeOffset, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKey_System_Nullable_System_DateTimeOffset__System_DateTimeOffset_System_Threading_CancellationToken_">GetUserDelegationKey(Nullable&lt;DateTimeOffset&gt;, DateTimeOffset, CancellationToken)</a> operation retrieves a
+key that can be used to delegate Active Directory authorization to
+shared access signatures created with <a class="xref" href="../Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.UserDelegationKey&gt; GetUserDelegationKey (Nullable&lt;DateTimeOffset&gt; start, DateTimeOffset expiry, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><span class="parametername">start</span></td>
+        <td><p>Start time for the key's validity, with null indicating an
+immediate start.  The time should be specified in UTC.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">expiry</span></td>
+        <td><p>Expiration of the key's validity.  The time should be specified
+in UTC.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.UserDelegationKey.html">UserDelegationKey</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing
+the service replication statistics.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKey_System_Nullable_System_DateTimeOffset__System_DateTimeOffset_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKeyAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetUserDelegationKeyAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKeyAsync_System_Nullable_System_DateTimeOffset__System_DateTimeOffset_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.GetUserDelegationKeyAsync(System.Nullable{System.DateTimeOffset},System.DateTimeOffset,System.Threading.CancellationToken)">GetUserDelegationKeyAsync(Nullable&lt;DateTimeOffset&gt;, DateTimeOffset, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKeyAsync_System_Nullable_System_DateTimeOffset__System_DateTimeOffset_System_Threading_CancellationToken_">GetUserDelegationKeyAsync(Nullable&lt;DateTimeOffset&gt;, DateTimeOffset, CancellationToken)</a> operation retrieves a
+key that can be used to delegate Active Directory authorization to
+shared access signatures created with <a class="xref" href="../Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.UserDelegationKey&gt;&gt; GetUserDelegationKeyAsync (Nullable&lt;DateTimeOffset&gt; start, DateTimeOffset expiry, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td><span class="parametername">start</span></td>
+        <td><p>Start time for the key's validity, with null indicating an
+immediate start.  The time should be specified in UTC.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td><span class="parametername">expiry</span></td>
+        <td><p>Expiration of the key's validity.  The time should be specified
+in UTC.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.UserDelegationKey.html">UserDelegationKey</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing
+the service replication statistics.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKeyAsync_System_Nullable_System_DateTimeOffset__System_DateTimeOffset_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_SetProperties_" data-uid="Azure.Storage.Blobs.BlobServiceClient.SetProperties*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_SetProperties_Azure_Storage_Blobs_Models_BlobServiceProperties_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.SetProperties(Azure.Storage.Blobs.Models.BlobServiceProperties,System.Threading.CancellationToken)">SetProperties(BlobServiceProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_SetProperties_Azure_Storage_Blobs_Models_BlobServiceProperties_System_Threading_CancellationToken_">SetProperties(BlobServiceProperties, CancellationToken)</a> operation sets properties for
+a storage account’s Blob service endpoint, including properties
+for Storage Analytics, CORS (Cross-Origin Resource Sharing) rules
+and soft delete settings.  You can also use this operation to set
+the default request version for all incoming requests to the Blob
+service that do not have a version specified.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-service-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response SetProperties (Azure.Storage.Blobs.Models.BlobServiceProperties properties, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobServiceProperties.html">BlobServiceProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>The blob service properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> describing
+the service properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_SetProperties_Azure_Storage_Blobs_Models_BlobServiceProperties_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_BlobServiceClient_SetPropertiesAsync_" data-uid="Azure.Storage.Blobs.BlobServiceClient.SetPropertiesAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_BlobServiceClient_SetPropertiesAsync_Azure_Storage_Blobs_Models_BlobServiceProperties_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.BlobServiceClient.SetPropertiesAsync(Azure.Storage.Blobs.Models.BlobServiceProperties,System.Threading.CancellationToken)">SetPropertiesAsync(BlobServiceProperties, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_SetPropertiesAsync_Azure_Storage_Blobs_Models_BlobServiceProperties_System_Threading_CancellationToken_">SetPropertiesAsync(BlobServiceProperties, CancellationToken)</a> operation sets properties for
+a storage account’s Blob service endpoint, including properties
+for Storage Analytics, CORS (Cross-Origin Resource Sharing) rules
+and soft delete settings.  You can also use this operation to set
+the default request version for all incoming requests to the Blob
+service that do not have a version specified.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-service-properties"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; SetPropertiesAsync (Azure.Storage.Blobs.Models.BlobServiceProperties properties, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.BlobServiceProperties.html">BlobServiceProperties</a></td>
+        <td><span class="parametername">properties</span></td>
+        <td><p>The blob service properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response.html">Response</a> describing
+the service properties.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_BlobServiceClient_SetPropertiesAsync_Azure_Storage_Blobs_Models_BlobServiceProperties_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

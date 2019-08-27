@@ -1,0 +1,949 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct BlobSasBuilder
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct BlobSasBuilder
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Sas.BlobSasBuilder">
+  
+  
+  <h1 id="Azure_Storage_Sas_BlobSasBuilder" data-uid="Azure.Storage.Sas.BlobSasBuilder" class="text-break">Struct BlobSasBuilder
+  </h1>
+  <div class="markdown level0 summary"><p><a class="xref" href="Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a> is used to generate a Shared Access
+Signature (SAS) for an Azure Storage container or blob.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas"></a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Sas.html">Azure.Storage.Sas</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
+  <h5 id="Azure_Storage_Sas_BlobSasBuilder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct BlobSasBuilder : IEquatable&lt;Azure.Storage.Sas.BlobSasBuilder&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_BlobName_" data-uid="Azure.Storage.Sas.BlobSasBuilder.BlobName*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_BlobName" data-uid="Azure.Storage.Sas.BlobSasBuilder.BlobName">BlobName</h4>
+  <div class="markdown level1 summary"><p>The name of the blob being made accessible, or
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string.empty">Empty</a> for a container SAS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BlobName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_CacheControl_" data-uid="Azure.Storage.Sas.BlobSasBuilder.CacheControl*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_CacheControl" data-uid="Azure.Storage.Sas.BlobSasBuilder.CacheControl">CacheControl</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Control response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CacheControl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ContainerName_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContainerName*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ContainerName" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContainerName">ContainerName</h4>
+  <div class="markdown level1 summary"><p>The name of the container being made accessible.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContainerName { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ContentDisposition_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentDisposition*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ContentDisposition" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentDisposition">ContentDisposition</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Content-Disposition response
+header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentDisposition { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ContentEncoding_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentEncoding*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ContentEncoding" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentEncoding">ContentEncoding</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Encoding response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentEncoding { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ContentLanguage_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentLanguage*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ContentLanguage" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentLanguage">ContentLanguage</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Language response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ContentType_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentType*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ContentType" data-uid="Azure.Storage.Sas.BlobSasBuilder.ContentType">ContentType</h4>
+  <div class="markdown level1 summary"><p>Override the value returned for Cache-Type response header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ContentType { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ExpiryTime_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ExpiryTime*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ExpiryTime" data-uid="Azure.Storage.Sas.BlobSasBuilder.ExpiryTime">ExpiryTime</h4>
+  <div class="markdown level1 summary"><p>The time at which the shared access signature becomes invalid.
+This field must be omitted if it has been specified in an
+associated stored access policy.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset ExpiryTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Identifier_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Identifier*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Identifier" data-uid="Azure.Storage.Sas.BlobSasBuilder.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"><p>An optional unique value up to 64 characters in length that
+correlates to an access policy specified for the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Identifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_IPRange_" data-uid="Azure.Storage.Sas.BlobSasBuilder.IPRange*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_IPRange" data-uid="Azure.Storage.Sas.BlobSasBuilder.IPRange">IPRange</h4>
+  <div class="markdown level1 summary"><p>Specifies an IP address or a range of IP addresses from which to
+accept requests. If the IP address from which the request
+originates does not match the IP address or address range
+specified on the SAS token, the request is not authenticated.
+When specifying a range of IP addresses, note that the range is
+inclusive.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Storage.Sas.IPRange IPRange { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.IPRange.html">IPRange</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Permissions_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Permissions*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Permissions" data-uid="Azure.Storage.Sas.BlobSasBuilder.Permissions">Permissions</h4>
+  <div class="markdown level1 summary"><p>The permissions associated with the shared access signature. The
+user is restricted to operations allowed by the permissions. This
+field must be omitted if it has been specified in an associated
+stored access policy.  The <a class="xref" href="Azure.Storage.Sas.BlobSasPermissions.html">BlobSasPermissions</a>,
+<a class="xref" href="Azure.Storage.Sas.ContainerSasPermissions.html">ContainerSasPermissions</a>, and
+<a class="xref" href="Azure.Storage.Sas.SnapshotSasPermissions.html">SnapshotSasPermissions</a> can be used to create the
+permissions string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Permissions { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Protocol_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Protocol*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Protocol" data-uid="Azure.Storage.Sas.BlobSasBuilder.Protocol">Protocol</h4>
+  <div class="markdown level1 summary"><p>The optional signed protocol field specifies the protocol
+permitted for a request made with the SAS.  Possible values are
+<a class="xref" href="Azure.Storage.Sas.SasProtocol.html#Azure_Storage_Sas_SasProtocol_HttpsAndHttp">HttpsAndHttp</a>,
+<a class="xref" href="Azure.Storage.Sas.SasProtocol.html#Azure_Storage_Sas_SasProtocol_Https">Https</a>, and
+<a class="xref" href="Azure.Storage.Sas.SasProtocol.html#Azure_Storage_Sas_SasProtocol_None">None</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Storage.Sas.SasProtocol Protocol { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.SasProtocol.html">SasProtocol</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Resource_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Resource*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Resource" data-uid="Azure.Storage.Sas.BlobSasBuilder.Resource">Resource</h4>
+  <div class="markdown level1 summary"><p>Specifies which resources are accessible via the shared access
+signature.</p>
+<p>Specify b if the shared resource is a blob. This grants access to
+the content and metadata of the blob.</p>
+<p>Specify c if the shared resource is a container. This grants
+access to the content and metadata of any blob in the container,
+and to the list of blobs in the container.</p>
+<p>Beginning in version 2018-11-09, specify bs if the shared resource
+is a blob snapshot.  This grants access to the content and
+metadata of the specific snapshot, but not the corresponding root
+blob.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Resource { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Snapshot_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Snapshot*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Snapshot" data-uid="Azure.Storage.Sas.BlobSasBuilder.Snapshot">Snapshot</h4>
+  <div class="markdown level1 summary"><p>The name of the snapshot being made accessible, or
+<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string.empty">Empty</a> for a blob SAS.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Snapshot { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_StartTime_" data-uid="Azure.Storage.Sas.BlobSasBuilder.StartTime*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_StartTime" data-uid="Azure.Storage.Sas.BlobSasBuilder.StartTime">StartTime</h4>
+  <div class="markdown level1 summary"><p>Optionally specify the time at which the shared access signature
+becomes valid.  If omitted when DateTimeOffset.MinValue is used,
+start time for this call is assumed to be the time when the
+storage service receives the request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTimeOffset StartTime { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Version_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Version*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Version" data-uid="Azure.Storage.Sas.BlobSasBuilder.Version">Version</h4>
+  <div class="markdown level1 summary"><p>The storage service version to use to authenticate requests made
+with this shared access signature, and the service version to use
+when handling requests made with this shared access signature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Version { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Equals_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Equals*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Equals_Azure_Storage_Sas_BlobSasBuilder_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Equals(Azure.Storage.Sas.BlobSasBuilder)">Equals(BlobSasBuilder)</h4>
+  <div class="markdown level1 summary"><p>Check if two BlobSasBuilder instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals (Azure.Storage.Sas.BlobSasBuilder other);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_Equals_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Equals*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_Equals_System_Object_" data-uid="Azure.Storage.Sas.BlobSasBuilder.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Check if two BlobSasBuilder instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override bool Equals (object obj);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_GetHashCode_" data-uid="Azure.Storage.Sas.BlobSasBuilder.GetHashCode*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_GetHashCode" data-uid="Azure.Storage.Sas.BlobSasBuilder.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Get a hash code for the BlobSasBuilder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override int GetHashCode ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Hash code for the BlobSasBuilder.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ToSasQueryParameters_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ToSasQueryParameters*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ToSasQueryParameters_Azure_Storage_StorageSharedKeyCredential_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ToSasQueryParameters(Azure.Storage.StorageSharedKeyCredential)">ToSasQueryParameters(StorageSharedKeyCredential)</h4>
+  <div class="markdown level1 summary"><p>Use an account's <a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a> to sign this
+shared access signature values to produce the proper SAS query
+parameters for authenticating requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Storage.Sas.BlobSasQueryParameters ToSasQueryParameters (Azure.Storage.StorageSharedKeyCredential sharedKeyCredential);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a></td>
+        <td><span class="parametername">sharedKeyCredential</span></td>
+        <td><p>The storage account's <a class="xref" href="../Azure.Storage/Azure.Storage.StorageSharedKeyCredential.html">StorageSharedKeyCredential</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.BlobSasQueryParameters.html">BlobSasQueryParameters</a></td>
+        <td><p>The <a class="xref" href="Azure.Storage.Sas.BlobSasQueryParameters.html">BlobSasQueryParameters</a> used for authenticating
+requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ToSasQueryParameters_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ToSasQueryParameters*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ToSasQueryParameters_Azure_Storage_Blobs_Models_UserDelegationKey_System_String_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ToSasQueryParameters(Azure.Storage.Blobs.Models.UserDelegationKey,System.String)">ToSasQueryParameters(UserDelegationKey, String)</h4>
+  <div class="markdown level1 summary"><p>Use an account's <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.UserDelegationKey.html">UserDelegationKey</a> to sign this
+shared access signature values to produce the propery SAS query
+parameters for authenticating requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Azure.Storage.Sas.BlobSasQueryParameters ToSasQueryParameters (Azure.Storage.Blobs.Models.UserDelegationKey userDelegationKey, string accountName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.UserDelegationKey.html">UserDelegationKey</a></td>
+        <td><span class="parametername">userDelegationKey</span></td>
+        <td><p>A <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.UserDelegationKey.html">UserDelegationKey</a> returned from
+<a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobServiceClient.html#Azure_Storage_Blobs_BlobServiceClient_GetUserDelegationKeyAsync_System_Nullable_System_DateTimeOffset__System_DateTimeOffset_System_Threading_CancellationToken_">GetUserDelegationKeyAsync(Nullable&lt;DateTimeOffset&gt;, DateTimeOffset, CancellationToken)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">accountName</span></td>
+        <td><p>The name of the storage account.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.BlobSasQueryParameters.html">BlobSasQueryParameters</a></td>
+        <td><p>The <a class="xref" href="Azure.Storage.Sas.BlobSasQueryParameters.html">BlobSasQueryParameters</a> used for authenticating requests.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_ToString_" data-uid="Azure.Storage.Sas.BlobSasBuilder.ToString*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_ToString" data-uid="Azure.Storage.Sas.BlobSasBuilder.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a string that represents the current object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override string ToString ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string that represents the current object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_op_Equality_" data-uid="Azure.Storage.Sas.BlobSasBuilder.op_Equality*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_op_Equality_Azure_Storage_Sas_BlobSasBuilder_Azure_Storage_Sas_BlobSasBuilder_" data-uid="Azure.Storage.Sas.BlobSasBuilder.op_Equality(Azure.Storage.Sas.BlobSasBuilder,Azure.Storage.Sas.BlobSasBuilder)">Equality(BlobSasBuilder, BlobSasBuilder)</h4>
+  <div class="markdown level1 summary"><p>Check if two BlobSasBuilder instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator == (Azure.Storage.Sas.BlobSasBuilder left, Azure.Storage.Sas.BlobSasBuilder right);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_BlobSasBuilder_op_Inequality_" data-uid="Azure.Storage.Sas.BlobSasBuilder.op_Inequality*"></a>
+  <h4 id="Azure_Storage_Sas_BlobSasBuilder_op_Inequality_Azure_Storage_Sas_BlobSasBuilder_Azure_Storage_Sas_BlobSasBuilder_" data-uid="Azure.Storage.Sas.BlobSasBuilder.op_Inequality(Azure.Storage.Sas.BlobSasBuilder,Azure.Storage.Sas.BlobSasBuilder)">Inequality(BlobSasBuilder, BlobSasBuilder)</h4>
+  <div class="markdown level1 summary"><p>Check if two BlobSasBuilder instances are not equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator != (Azure.Storage.Sas.BlobSasBuilder left, Azure.Storage.Sas.BlobSasBuilder right);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're not equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;Azure.Storage.Sas.BlobSasBuilder&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

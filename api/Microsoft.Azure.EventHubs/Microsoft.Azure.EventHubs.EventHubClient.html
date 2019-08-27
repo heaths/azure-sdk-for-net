@@ -1,0 +1,1380 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EventHubClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EventHubClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventHubs.EventHubClient">
+  
+  
+  <h1 id="Microsoft_Azure_EventHubs_EventHubClient" data-uid="Microsoft.Azure.EventHubs.EventHubClient" class="text-break">Class EventHubClient
+  </h1>
+  <div class="markdown level0 summary"><p>Anchor class - all EventHub client operations start here.
+See <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_CreateFromConnectionString_System_String_">CreateFromConnectionString(String)</a></p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html">ClientEntity</a></div>
+    <div class="level2"><span class="xref">EventHubClient</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_ClientId">ClientEntity.ClientId</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_Close">ClientEntity.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_closeCalled">ClientEntity.closeCalled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_IsClosed">ClientEntity.IsClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_RegisteredPlugins">ClientEntity.RegisteredPlugins</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_RegisterPlugin_Microsoft_Azure_EventHubs_Core_EventHubsPlugin_">ClientEntity.RegisterPlugin(EventHubsPlugin)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_RetryPolicy">ClientEntity.RetryPolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_UnregisterPlugin_System_String_">ClientEntity.UnregisterPlugin(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.EventHubs.html">Microsoft.Azure.EventHubs</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.dll</h6>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class EventHubClient : Microsoft.Azure.EventHubs.ClientEntity</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_EnableReceiverRuntimeMetric_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.EnableReceiverRuntimeMetric*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_EnableReceiverRuntimeMetric" data-uid="Microsoft.Azure.EventHubs.EventHubClient.EnableReceiverRuntimeMetric">EnableReceiverRuntimeMetric</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a value indicating whether the runtime metric of a receiver is enabled.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool EnableReceiverRuntimeMetric { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>true if a client wants to access <a class="xref" href="Microsoft.Azure.EventHubs.ReceiverRuntimeInformation.html">ReceiverRuntimeInformation</a> using <a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_EventHubName_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.EventHubName*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_EventHubName" data-uid="Microsoft.Azure.EventHubs.EventHubClient.EventHubName">EventHubName</h4>
+  <div class="markdown level1 summary"><p>Gets the name of the EventHub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EventHubName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_WebProxy_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.WebProxy*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_WebProxy" data-uid="Microsoft.Azure.EventHubs.EventHubClient.WebProxy">WebProxy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the web proxy.
+A proxy is applicable only when transport type is set to AmqpWebSockets.
+If not set, systemwide proxy settings will be honored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Net.IWebProxy WebProxy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.iwebproxy">IWebProxy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CloseAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CloseAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CloseAsync" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CloseAsync">CloseAsync()</h4>
+  <div class="markdown level1 summary"><p>Closes and releases resources associated with <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public override sealed System.Threading.Tasks.Task CloseAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_Create_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.Create*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_Create_Microsoft_Azure_EventHubs_EventHubsConnectionStringBuilder_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.Create(Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder)">Create(EventHubsConnectionStringBuilder)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the Event Hubs client using the specified connection string builder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.EventHubs.EventHubClient Create (Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder csb);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsConnectionStringBuilder.html">EventHubsConnectionStringBuilder</a></td>
+        <td><span class="parametername">csb</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateBatch_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateBatch*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateBatch" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateBatch">CreateBatch()</h4>
+  <div class="markdown level1 summary"><p>Creates a batch where event data objects can be added for later SendAsync call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.EventDataBatch CreateBatch ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></td>
+        <td><p>Returns <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateBatch_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateBatch*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateBatch_Microsoft_Azure_EventHubs_BatchOptions_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateBatch(Microsoft.Azure.EventHubs.BatchOptions)">CreateBatch(BatchOptions)</h4>
+  <div class="markdown level1 summary"><p>Creates a batch where event data objects can be added for later SendAsync call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.EventDataBatch CreateBatch (Microsoft.Azure.EventHubs.BatchOptions options);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.BatchOptions.html">BatchOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p><a class="xref" href="Microsoft.Azure.EventHubs.BatchOptions.html">BatchOptions</a> to define partition key and max message size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></td>
+        <td><p>Returns <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateEpochReceiver_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateEpochReceiver*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateEpochReceiver_System_String_System_String_Microsoft_Azure_EventHubs_EventPosition_System_Int64_Microsoft_Azure_EventHubs_ReceiverOptions_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateEpochReceiver(System.String,System.String,Microsoft.Azure.EventHubs.EventPosition,System.Int64,Microsoft.Azure.EventHubs.ReceiverOptions)">CreateEpochReceiver(String, String, EventPosition, Int64, ReceiverOptions)</h4>
+  <div class="markdown level1 summary"><p>Create a Epoch based EventHub receiver with given <a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a>.
+The receiver is created for a specific EventHub Partition from the specific consumer group.</p>
+<p>It is important to pay attention to the following when creating epoch based receiver:
+<p>- Ownership enforcement: Once you created an epoch based receiver, you cannot create a non-epoch receiver to the same consumerGroup-Partition combo until all receivers to the combo are closed.
+<p>- Ownership stealing: If a receiver with higher epoch value is created for a consumerGroup-Partition combo, any older epoch receiver to that combo will be force closed.
+<p>- Any receiver closed due to lost of ownership to a consumerGroup-Partition combo will get ReceiverDisconnectedException for all operations from that receiver.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.PartitionReceiver CreateEpochReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, long epoch, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">consumerGroupName</span></td>
+        <td><p>the consumer group name that this receiver should be grouped under.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>the partition Id that the receiver belongs to. All data received will be from this partition only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></td>
+        <td><span class="parametername">eventPosition</span></td>
+        <td><p>The starting <a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a> at which to start receiving messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a></td>
+        <td><span class="parametername">epoch</span></td>
+        <td><p>a unique identifier (epoch value) that the service uses, to enforce partition/lease ownership.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverOptions.html">ReceiverOptions</a></td>
+        <td><span class="parametername">receiverOptions</span></td>
+        <td><p>Options for a event hub receiver.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a></td>
+        <td><p>The created PartitionReceiver</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_CreateEpochReceiver_System_String_System_String_Microsoft_Azure_EventHubs_EventPosition_System_Int64_Microsoft_Azure_EventHubs_ReceiverOptions__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a></div>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateFromConnectionString_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateFromConnectionString*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateFromConnectionString_System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateFromConnectionString(System.String)">CreateFromConnectionString(String)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the Event Hubs client using the specified connection string. You can populate the EntityPath property with the name of the Event Hub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.EventHubs.EventHubClient CreateFromConnectionString (string connectionString);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreatePartitionSender_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreatePartitionSender*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreatePartitionSender_System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreatePartitionSender(System.String)">CreatePartitionSender(String)</h4>
+  <div class="markdown level1 summary"><p>Create a <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html">PartitionSender</a> which can publish <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s directly to a specific EventHub partition (sender type iii. in the below list).</p>
+<p>
+There are 3 patterns/ways to send to EventHubs:
+<p>i.   <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p><p>ii.  <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_">SendAsync(EventData, String)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__System_String_">SendAsync(IEnumerable&lt;EventData&gt;, String)</a></p><p>iii. <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.PartitionSender CreatePartitionSender (string partitionId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>partitionId of EventHub to send the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html">PartitionSender</a></td>
+        <td><p>The created PartitionSender</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_CreatePartitionSender_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html">PartitionSender</a></div>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateReceiver_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateReceiver*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateReceiver_System_String_System_String_Microsoft_Azure_EventHubs_EventPosition_Microsoft_Azure_EventHubs_ReceiverOptions_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateReceiver(System.String,System.String,Microsoft.Azure.EventHubs.EventPosition,Microsoft.Azure.EventHubs.ReceiverOptions)">CreateReceiver(String, String, EventPosition, ReceiverOptions)</h4>
+  <div class="markdown level1 summary"><p>Create the EventHub receiver with given <a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a>.
+The receiver is created for a specific EventHub Partition from the specific consumer group.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.PartitionReceiver CreateReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">consumerGroupName</span></td>
+        <td><p>the consumer group name that this receiver should be grouped under.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>the partition Id that the receiver belongs to. All data received will be from this partition only.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></td>
+        <td><span class="parametername">eventPosition</span></td>
+        <td><p>The starting <a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a> at which to start receiving messages.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverOptions.html">ReceiverOptions</a></td>
+        <td><span class="parametername">receiverOptions</span></td>
+        <td><p>Options for a event hub receiver.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a></td>
+        <td><p>The created PartitionReceiver</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_CreateReceiver_System_String_System_String_Microsoft_Azure_EventHubs_EventPosition_Microsoft_Azure_EventHubs_ReceiverOptions__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a></div>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateWithAzureActiveDirectory_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateWithAzureActiveDirectory*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateWithAzureActiveDirectory_System_Uri_System_String_Microsoft_Azure_EventHubs_AzureActiveDirectoryTokenProvider_AuthenticationCallback_System_String_System_Nullable_System_TimeSpan__Microsoft_Azure_EventHubs_TransportType_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateWithAzureActiveDirectory(System.Uri,System.String,Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback,System.String,System.Nullable{System.TimeSpan},Microsoft.Azure.EventHubs.TransportType)">CreateWithAzureActiveDirectory(Uri, String, AzureActiveDirectoryTokenProvider+AuthenticationCallback, String, Nullable&lt;TimeSpan&gt;, TransportType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the
+<a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a> by using Azure Active Directory authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.EventHubs.EventHubClient CreateWithAzureActiveDirectory (Uri endpointAddress, string path, Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback authCallback, string authority, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.Azure.EventHubs.TransportType transportType = Microsoft.Azure.EventHubs.TransportType.Amqp);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">endpointAddress</span></td>
+        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">path</span></td>
+        <td><p>The path to the Event Hub.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.AzureActiveDirectoryTokenProvider.AuthenticationCallback.html">AzureActiveDirectoryTokenProvider.AuthenticationCallback</a></td>
+        <td><span class="parametername">authCallback</span></td>
+        <td><p>The authentication callback.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">authority</span></td>
+        <td><p>Address of the authority to issue token.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td><p>Operation timeout for Event Hubs operations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.TransportType.html">TransportType</a></td>
+        <td><span class="parametername">transportType</span></td>
+        <td><p>Transport type on connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></td>
+        <td><p>The newly created Event Hub client object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateWithManagedIdentity_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateWithManagedIdentity*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateWithManagedIdentity_System_Uri_System_String_System_Nullable_System_TimeSpan__Microsoft_Azure_EventHubs_TransportType_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateWithManagedIdentity(System.Uri,System.String,System.Nullable{System.TimeSpan},Microsoft.Azure.EventHubs.TransportType)">CreateWithManagedIdentity(Uri, String, Nullable&lt;TimeSpan&gt;, TransportType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a> by using Azure Managed Identity authentication.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.EventHubs.EventHubClient CreateWithManagedIdentity (Uri endpointAddress, string entityPath, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.Azure.EventHubs.TransportType transportType = Microsoft.Azure.EventHubs.TransportType.Amqp);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">endpointAddress</span></td>
+        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td><p>Event Hub path</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td><p>Operation timeout for Event Hubs operations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.TransportType.html">TransportType</a></td>
+        <td><span class="parametername">transportType</span></td>
+        <td><p>Transport type on connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_CreateWithTokenProvider_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateWithTokenProvider*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_CreateWithTokenProvider_System_Uri_System_String_Microsoft_Azure_EventHubs_ITokenProvider_System_Nullable_System_TimeSpan__Microsoft_Azure_EventHubs_TransportType_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.CreateWithTokenProvider(System.Uri,System.String,Microsoft.Azure.EventHubs.ITokenProvider,System.Nullable{System.TimeSpan},Microsoft.Azure.EventHubs.TransportType)">CreateWithTokenProvider(Uri, String, ITokenProvider, Nullable&lt;TimeSpan&gt;, TransportType)</h4>
+  <div class="markdown level1 summary"><p>Creates a new instance of the Event Hubs client using the specified endpoint, entity path, and token provider.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.EventHubs.EventHubClient CreateWithTokenProvider (Uri endpointAddress, string entityPath, Microsoft.Azure.EventHubs.ITokenProvider tokenProvider, Nullable&lt;TimeSpan&gt; operationTimeout = null, Microsoft.Azure.EventHubs.TransportType transportType = Microsoft.Azure.EventHubs.TransportType.Amqp);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">endpointAddress</span></td>
+        <td><p>Fully qualified domain name for Event Hubs. Most likely, {yournamespace}.servicebus.windows.net</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td><p>Event Hub path</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.ITokenProvider.html">ITokenProvider</a></td>
+        <td><span class="parametername">tokenProvider</span></td>
+        <td><p>Token provider which will generate security tokens for authorization.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a>&gt;</td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td><p>Operation timeout for Event Hubs operations.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.TransportType.html">TransportType</a></td>
+        <td><span class="parametername">transportType</span></td>
+        <td><p>Transport type on connection.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_GetPartitionRuntimeInformationAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.GetPartitionRuntimeInformationAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_GetPartitionRuntimeInformationAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.GetPartitionRuntimeInformationAsync(System.String)">GetPartitionRuntimeInformationAsync(String)</h4>
+  <div class="markdown level1 summary"><p>Retrieves runtime information for the specified partition of the Event Hub.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation&gt; GetPartitionRuntimeInformationAsync (string partitionId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td><p>The partition ID.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>&gt;</td>
+        <td><p>Returns <a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_GetRuntimeInformationAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.GetRuntimeInformationAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_GetRuntimeInformationAsync" data-uid="Microsoft.Azure.EventHubs.EventHubClient.GetRuntimeInformationAsync">GetRuntimeInformationAsync()</h4>
+  <div class="markdown level1 summary"><p>Retrieves EventHub runtime information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeInformation&gt; GetRuntimeInformationAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_OnCloseAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnCloseAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_OnCloseAsync" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnCloseAsync">OnCloseAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract System.Threading.Tasks.Task OnCloseAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_OnCreateReceiver_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnCreateReceiver*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_OnCreateReceiver_System_String_System_String_Microsoft_Azure_EventHubs_EventPosition_System_Nullable_System_Int64__Microsoft_Azure_EventHubs_ReceiverOptions_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnCreateReceiver(System.String,System.String,Microsoft.Azure.EventHubs.EventPosition,System.Nullable{System.Int64},Microsoft.Azure.EventHubs.ReceiverOptions)">OnCreateReceiver(String, String, EventPosition, Nullable&lt;Int64&gt;, ReceiverOptions)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Microsoft.Azure.EventHubs.PartitionReceiver OnCreateReceiver (string consumerGroupName, string partitionId, Microsoft.Azure.EventHubs.EventPosition eventPosition, Nullable&lt;long&gt; epoch, Microsoft.Azure.EventHubs.ReceiverOptions receiverOptions);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">consumerGroupName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventPosition.html">EventPosition</a></td>
+        <td><span class="parametername">eventPosition</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td><span class="parametername">epoch</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.ReceiverOptions.html">ReceiverOptions</a></td>
+        <td><span class="parametername">receiverOptions</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.PartitionReceiver.html">PartitionReceiver</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_OnGetPartitionRuntimeInformationAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnGetPartitionRuntimeInformationAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_OnGetPartitionRuntimeInformationAsync_System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnGetPartitionRuntimeInformationAsync(System.String)">OnGetPartitionRuntimeInformationAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation&gt; OnGetPartitionRuntimeInformationAsync (string partitionId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubPartitionRuntimeInformation.html">EventHubPartitionRuntimeInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_OnGetRuntimeInformationAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnGetRuntimeInformationAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_OnGetRuntimeInformationAsync" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnGetRuntimeInformationAsync">OnGetRuntimeInformationAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract System.Threading.Tasks.Task&lt;Microsoft.Azure.EventHubs.EventHubRuntimeInformation&gt; OnGetRuntimeInformationAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventHubRuntimeInformation.html">EventHubRuntimeInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_OnRetryPolicyUpdate_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnRetryPolicyUpdate*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_OnRetryPolicyUpdate" data-uid="Microsoft.Azure.EventHubs.EventHubClient.OnRetryPolicyUpdate">OnRetryPolicyUpdate()</h4>
+  <div class="markdown level1 summary"><p>Handle retry policy updates here.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void OnRetryPolicyUpdate ();</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventData)">SendAsync(EventData)</h4>
+  <div class="markdown level1 summary"><p>Send <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to EventHub. The sent EventData will land on any arbitrarily chosen EventHubs partition.</p>
+<p>There are 3 ways to send to EventHubs, each exposed as a method (along with its sendBatch overload):</p><p>i.    <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p><p>ii.   <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_">SendAsync(EventData, String)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__System_String_">SendAsync(IEnumerable&lt;EventData&gt;, String)</a></p><p>iii.  <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p>
+Use this method to send if:
+<p>a) the <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> operation should be highly available and</p><p>b) the data needs to be evenly distributed among all partitions; exception being, when a subset of partitions are unavailable</p><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> sends the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to a Service Gateway, which in-turn will forward the EventData to one of the EventHub's partitions.
+Here's the message forwarding algorithm:
+<p>i.  Forward the EventDatas to EventHub partitions, by equally distributing the data among all partitions (ex: Round-robin the EventDatas to all EventHub partitions) </p><p>ii. If one of the EventHub partitions is unavailable for a moment, the Service Gateway will automatically detect it and forward the message to another available partition - making the send operation highly-available.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventData eventData);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td><p>the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to be sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the send operations is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_">SendAsync(EventData, String)</a></div>
+      <div></div>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventDataBatch_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventDataBatch)">SendAsync(EventDataBatch)</h4>
+  <div class="markdown level1 summary"><p>Send a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> in <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventDataBatch eventDataBatch);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></td>
+        <td><span class="parametername">eventDataBatch</span></td>
+        <td><p>the batch of events to send to EventHub</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the send operation is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.EventHubs.EventData})">SendAsync(IEnumerable&lt;EventData&gt;)</h4>
+  <div class="markdown level1 summary"><p>Send a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to EventHub. The sent EventData will land on any arbitrarily chosen EventHub partition.
+This is the most recommended way to send to EventHub.</p>
+ <p>There are 3 ways to send to EventHubs, to understand this particular type of send refer to the overload <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a>, which is used to send single <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>.
+ Use this overload if you need to send a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>.</p>
+<p>Sending a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s is useful in the following cases:</p>
+ <p>i.    Efficient send - sending a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> maximizes the overall throughput by optimally using the number of sessions created to EventHub's service.</p><p>ii.   Send multiple <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s in a Transaction. To acheieve ACID properties, the Gateway Service will forward all <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s in the batch to a single EventHub partition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.EventHubs.EventData&gt; eventDatas);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
+        <td><span class="parametername">eventDatas</span></td>
+        <td><p>A batch of events to send to EventHub</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the send operations is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData___examples">Examples</h5>
+  <p>Sample code:</p>
+ <pre><code>
+ var client = EventHubClient.Create("__connectionString__");
+ while (true)
+ {
+     var events = new List&lt;EventData&gt;();
+     for (int count = 1; count &lt; 11; count++)
+     {
+         var payload = new PayloadEvent(count);
+         byte[] payloadBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(payload));
+         var sendEvent = new EventData(payloadBytes);
+         var applicationProperties = new Dictionary&lt;string, string&gt;();
+         applicationProperties["from"] = "csharpClient";
+         sendEvent.Properties = applicationProperties;
+         events.Add(sendEvent);
+     }
+
+     await client.SendAsync(events);
+     Console.WriteLine("Sent Batch... Size: {0}", events.Count);
+ }
+ </code></pre>
+
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData___seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_">SendAsync(EventData, String)</a></div>
+      <div></div>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync(Microsoft.Azure.EventHubs.EventData,System.String)">SendAsync(EventData, String)</h4>
+  <div class="markdown level1 summary"><p>Sends an '<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> with a partitionKey to EventHub. All <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s with a partitionKey are guaranteed to land on the same partition.
+This send pattern emphasize data correlation over general availability and latency.</p>
+<p>There are 3 ways to send to EventHubs, each exposed as a method (along with its batched overload):</p><p>i.   <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p><p>ii.  <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_">SendAsync(EventData, String)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__System_String_">SendAsync(IEnumerable&lt;EventData&gt;, String)</a></p><p>iii. <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p>
+Use this type of send if:
+<p>a)  There is a need for correlation of events based on Sender instance; The sender can generate a UniqueId and set it as partitionKey - which on the received Message can be used for correlation</p><p>b) The client wants to take control of distribution of data across partitions.</p>
+Multiple PartitionKeys could be mapped to one Partition. EventHubs service uses a proprietary Hash algorithm to map the PartitionKey to a PartitionId.
+Using this type of send (Sending using a specific partitionKey) could sometimes result in partitions which are not evenly distributed.
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventData eventData, string partitionKey);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td><p>the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to be sent.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionKey</span></td>
+        <td><p>the partitionKey will be hashed to determine the partitionId to send the EventData to. On the Received message this can be accessed at <a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html#Microsoft_Azure_EventHubs_EventData_SystemPropertiesCollection_PartitionKey">PartitionKey</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the send operation is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a></div>
+      <div></div>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__System_String_" data-uid="Microsoft.Azure.EventHubs.EventHubClient.SendAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.EventHubs.EventData},System.String)">SendAsync(IEnumerable&lt;EventData&gt;, String)</h4>
+  <div class="markdown level1 summary"><p>Send a 'batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> with the same partitionKey' to EventHub. All <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s with a partitionKey are guaranteed to land on the same partition.
+Multiple PartitionKey's will be mapped to one Partition.</p>
+<p>
+There are 3 ways to send to EventHubs, to understand this particular type of send refer to the overload <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_">SendAsync(EventData, String)</a>,
+which is the same type of send and is used to send single <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>.
+</p>
+Sending a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s is useful in the following cases:
+<p>i.    Efficient send - sending a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> maximizes the overall throughput by optimally using the number of sessions created to EventHubs service.</p><p>ii.   Sending multiple events in One Transaction. This is the reason why all events sent in a batch needs to have same partitionKey (so that they are sent to one partition only).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.EventHubs.EventData&gt; eventDatas, string partitionKey);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
+        <td><span class="parametername">eventDatas</span></td>
+        <td><p>the batch of events to send to EventHub</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">partitionKey</span></td>
+        <td><p>the partitionKey will be hashed to determine the partitionId to send the EventData to. On the Received message this can be accessed at <a class="xref" href="Microsoft.Azure.EventHubs.EventData.SystemPropertiesCollection.html#Microsoft_Azure_EventHubs_EventData_SystemPropertiesCollection_PartitionKey">PartitionKey</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the send operation is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__System_String__seealso">See Also</h5>
+  <div class="seealso">
+      <div><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

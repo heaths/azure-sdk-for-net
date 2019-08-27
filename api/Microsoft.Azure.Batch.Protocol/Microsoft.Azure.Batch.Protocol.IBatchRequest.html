@@ -1,0 +1,328 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBatchRequest
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBatchRequest
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_IBatchRequest" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest" class="text-break">Interface IBatchRequest
+  </h1>
+  <div class="markdown level0 summary"><p>Represents a request to the Batch service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBatchRequest</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchRequest_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.CancellationToken*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_CancellationToken" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.CancellationToken">CancellationToken</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_CancellationToken">CancellationToken</a> associated with this <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.CancellationToken CancellationToken { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_CancellationToken_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  Cancelling this token will cancel the currently ongoing request. This applies to the initial request as well
+  as any subsequent requests created due to <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_RetryPolicy">RetryPolicy</a>. Cancelling this token also forbids all
+  future retries of this <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a>.
+</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchRequest_ClientRequestIdProvider_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.ClientRequestIdProvider*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_ClientRequestIdProvider" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.ClientRequestIdProvider">ClientRequestIdProvider</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html#Microsoft_Azure_Batch_Protocol_IBatchRequest_ClientRequestIdProvider">ClientRequestIdProvider</a> used by this request to generate client request ids.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.ClientRequestIdProvider ClientRequestIdProvider { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch/Microsoft.Azure.Batch.ClientRequestIdProvider.html">ClientRequestIdProvider</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchRequest_OperationContext_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.OperationContext*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_OperationContext" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.OperationContext">OperationContext</h4>
+  <div class="markdown level1 summary"><p>Gets the operation context associated with this <a class="xref" href="Microsoft.Azure.Batch.Protocol.IBatchRequest.html">IBatchRequest</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Common.OperationContext OperationContext { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.OperationContext.html">OperationContext</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchRequest_Options_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.Options*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_Options" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.Options">Options</h4>
+  <div class="markdown level1 summary"><p>Gets the options needed by the REST proxy for the current request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.Models.IOptions Options { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.IOptions.html">IOptions</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchRequest_RestClient_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.RestClient*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_RestClient" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.RestClient">RestClient</h4>
+  <div class="markdown level1 summary"><p>Gets the REST client that will be used for this request.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.BatchServiceClient RestClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchRequest_RetryPolicy_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.RetryPolicy*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_RetryPolicy" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.RetryPolicy">RetryPolicy</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the retry policy to be applied.
+Null means no retries will be attempted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Common.IRetryPolicy RetryPolicy { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Common/Microsoft.Azure.Batch.Common.IRetryPolicy.html">IRetryPolicy</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchRequest_Timeout_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.Timeout*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_Timeout" data-uid="Microsoft.Azure.Batch.Protocol.IBatchRequest.Timeout">Timeout</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the client side timeout for a request to the Batch service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TimeSpan Timeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IBatchRequest_Timeout_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>
+  This timeout applies to a single Batch service request; if a retry policy is specified, then each retry will be granted the
+  full duration of this value.
+</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

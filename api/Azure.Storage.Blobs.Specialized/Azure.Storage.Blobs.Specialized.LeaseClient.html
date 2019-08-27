@@ -1,0 +1,1115 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LeaseClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LeaseClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient">
+  
+  
+  <h1 id="Azure_Storage_Blobs_Specialized_LeaseClient" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient" class="text-break">Class LeaseClient
+  </h1>
+  <div class="markdown level0 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a> allows you to manipulate Azure
+Storage leases on containers and blobs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">LeaseClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Blobs.Specialized.html">Azure.Storage.Blobs.Specialized</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Blobs.dll</h6>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class LeaseClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient__ctor" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.#ctor">LeaseClient()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a> class
+for mocking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected LeaseClient ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient__ctor_Azure_Storage_Blobs_BlobContainerClient_System_String_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.#ctor(Azure.Storage.Blobs.BlobContainerClient,System.String)">LeaseClient(BlobContainerClient, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a>  class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LeaseClient (Azure.Storage.Blobs.BlobContainerClient client, string leaseId = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> representing the container
+being leased.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">leaseId</span></td>
+        <td><p>An optional lease ID.  If no lease ID is provided, a random lease
+ID will be created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient__ctor_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.#ctor*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient__ctor_Azure_Storage_Blobs_Specialized_BlobBaseClient_System_String_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.#ctor(Azure.Storage.Blobs.Specialized.BlobBaseClient,System.String)">LeaseClient(BlobBaseClient, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html">LeaseClient</a>  class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LeaseClient (Azure.Storage.Blobs.Specialized.BlobBaseClient client, string leaseId = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></td>
+        <td><span class="parametername">client</span></td>
+        <td><p>A <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_BlobClient">BlobClient</a> representing the blob being leased.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">leaseId</span></td>
+        <td><p>An optional lease ID.  If no lease ID is provided, a random lease
+ID will be created.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_BlobClient_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.BlobClient*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_BlobClient" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.BlobClient">BlobClient</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_BlobClient">BlobClient</a> to manage leases for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Azure.Storage.Blobs.Specialized.BlobBaseClient BlobClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Blobs.Specialized.BlobBaseClient.html">BlobBaseClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_ContainerClient_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ContainerClient*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_ContainerClient" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ContainerClient">ContainerClient</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a> to manage leases for.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Azure.Storage.Blobs.BlobContainerClient ContainerClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure.Storage.Blobs/Azure.Storage.Blobs.BlobContainerClient.html">BlobContainerClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.LeaseId*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.LeaseId">LeaseId</h4>
+  <div class="markdown level1 summary"><p>Gets the Lease ID for this lease.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LeaseId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_Uri_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Uri*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_Uri" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Uri">Uri</h4>
+  <div class="markdown level1 summary"><p>Gets the URI of the object being leased.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Uri Uri { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_Acquire_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Acquire*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_Acquire_System_Int32_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Acquire(System.Int32,System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">Acquire(Int32, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_Acquire_System_Int32_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">Acquire(Int32, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation acquires a lease on
+the blob or container.  The lease <code data-dev-comment-type="paramref">duration</code> must
+be between 15 to 60 seconds, or infinite (-1).</p>
+<p>If the container does not have an active lease, the Blob service
+creates a lease on the blob or container and returns it.  If the
+container has an active lease, you can only request a new lease
+using the active lease ID as <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId">LeaseId</a>, but you can
+specify a new <code data-dev-comment-type="paramref">duration</code>.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt; Acquire (int duration, Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Specifies the duration of the lease, in seconds, or -1 for a lease
+that never expires.  A non-infinite lease can be between 15 and
+60 seconds. A lease duration cannot be changed using
+<a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_RenewAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">RenewAsync(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> or <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_ChangeAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">ChangeAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on acquiring a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_Acquire_System_Int32_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_AcquireAsync_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.AcquireAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_AcquireAsync_System_Int32_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.AcquireAsync(System.Int32,System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">AcquireAsync(Int32, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_AcquireAsync_System_Int32_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">AcquireAsync(Int32, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation acquires a lease on
+the blob or container.  The lease <code data-dev-comment-type="paramref">duration</code> must
+be between 15 to 60 seconds, or infinite (-1).</p>
+<p>If the container does not have an active lease, the Blob service
+creates a lease on the blob or container and returns it.  If the
+container has an active lease, you can only request a new lease
+using the active lease ID as <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId">LeaseId</a>, but you can
+specify a new <code data-dev-comment-type="paramref">duration</code>.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; AcquireAsync (int duration, Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">duration</span></td>
+        <td><p>Specifies the duration of the lease, in seconds, or -1 for a lease
+that never expires.  A non-infinite lease can be between 15 and
+60 seconds. A lease duration cannot be changed using
+<a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_RenewAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">RenewAsync(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> or <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_ChangeAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">ChangeAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on acquiring a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_AcquireAsync_System_Int32_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_Break_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Break*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_Break_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Break(System.Nullable{System.Int32},System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">Break(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_Break_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">Break(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation breaks the blob or
+container's previously-acquired lease (if it exists).</p>
+<p>Once a lease is broken, it cannot be renewed.  Any authorized
+request can break the lease; the request is not required to
+specify a matching lease ID.  When a lease is broken, the lease
+break <code data-dev-comment-type="paramref">breakPeriodInSeconds</code> is allowed to elapse,
+during which time no lease operation except
+<a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_Break_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">Break(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> and <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_Release_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">Release(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> can be
+performed on the blob or container.  When a lease is successfully
+broken, the response indicates the interval in seconds until a new
+lease can be acquired.</p>
+<p>A lease that has been broken can also be released.  A client can
+immediately acquire a blob or container lease that has been
+released.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt; Break (Nullable&lt;int&gt; breakPeriodInSeconds = null, Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">breakPeriodInSeconds</span></td>
+        <td><p>Specifies the proposed duration the lease should continue before
+it is broken, in seconds, between 0 and 60.  This break period is
+only used if it is shorter than the time remaining on the lease.
+If longer, the time remaining on the lease is used.  A new lease
+will not be available before the break period has expired, but the
+lease may be held for longer than the break period.  If this value
+is not provided, a fixed-duration lease breaks after the remaining
+lease period elapses, and an infinite lease breaks immediately.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on breaking a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the broken lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_Break_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_BreakAsync_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.BreakAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_BreakAsync_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.BreakAsync(System.Nullable{System.Int32},System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">BreakAsync(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_BreakAsync_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">BreakAsync(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation breaks the blob or
+container's previously-acquired lease (if it exists).</p>
+<p>Once a lease is broken, it cannot be renewed.  Any authorized
+request can break the lease; the request is not required to
+specify a matching lease ID.  When a lease is broken, the lease
+break <code data-dev-comment-type="paramref">breakPeriodInSeconds</code> is allowed to elapse,
+during which time no lease operation except
+<a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_BreakAsync_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">BreakAsync(Nullable&lt;Int32&gt;, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> and <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">ReleaseAsync(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> can be
+performed on the blob or container.  When a lease is successfully
+broken, the response indicates the interval in seconds until a new
+lease can be acquired.</p>
+<p>A lease that has been broken can also be released.  A client can
+immediately acquire a blob or container lease that has been
+released.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; BreakAsync (Nullable&lt;int&gt; breakPeriodInSeconds = null, Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">breakPeriodInSeconds</span></td>
+        <td><p>Specifies the proposed duration the lease should continue before
+it is broken, in seconds, between 0 and 60.  This break period is
+only used if it is shorter than the time remaining on the lease.
+If longer, the time remaining on the lease is used.  A new lease
+will not be available before the break period has expired, but the
+lease may be held for longer than the break period.  If this value
+is not provided, a fixed-duration lease breaks after the remaining
+lease period elapses, and an infinite lease breaks immediately.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on breaking a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the broken lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_BreakAsync_System_Nullable_System_Int32__System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_Change_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Change*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_Change_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Change(System.String,System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">Change(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_Change_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">Change(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation changes the lease
+of an active lease.  A change must include the current
+<a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId">LeaseId</a> and a new <code data-dev-comment-type="paramref">proposedId</code>.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt; Change (string proposedId, Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">proposedId</span></td>
+        <td><p>An optional proposed lease ID, in a GUID string format. A
+<a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if the
+proposed lease ID is not in the correct format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on changing a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_Change_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_ChangeAsync_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ChangeAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_ChangeAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ChangeAsync(System.String,System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">ChangeAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_ChangeAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">ChangeAsync(String, Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation changes the lease
+of an active lease.  A change must include the current
+<a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId">LeaseId</a> and a new <code data-dev-comment-type="paramref">proposedId</code>.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; ChangeAsync (string proposedId, Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">proposedId</span></td>
+        <td><p>An optional proposed lease ID, in a GUID string format. A
+<a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if the
+proposed lease ID is not in the correct format.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on changing a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_ChangeAsync_System_String_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_Release_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Release*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_Release_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Release(System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">Release(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_Release_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">Release(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation releases the
+container or blob's previously-acquired lease.</p>
+<p>The lease may be released if the <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId">LeaseId</a>
+matches that associated with the container or blob.  Releasing the
+lease allows another client to immediately acquire the lease for the
+container or blob as soon as the release is complete.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.ReleasedObjectInfo&gt; Release (Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on releasing a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ReleasedObjectInfo.html">ReleasedObjectInfo</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+updated blob or container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_Release_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseAsync_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ReleaseAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ReleaseAsync(System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">ReleaseAsync(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">ReleaseAsync(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation releases the
+container or blob's previously-acquired lease.</p>
+<p>The lease may be released if the <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId">LeaseId</a>
+matches that associated with the container or blob.  Releasing the
+lease allows another client to immediately acquire the lease for the
+container or blob as soon as the release is complete.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ReleasedObjectInfo&gt;&gt; ReleaseAsync (Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on releasing a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ReleasedObjectInfo.html">ReleasedObjectInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+updated blob or container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseInternal_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ReleaseInternal*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseInternal_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Boolean_System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.ReleaseInternal(System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Boolean,System.Threading.CancellationToken)">ReleaseInternal(Nullable&lt;HttpAccessConditions&gt;, Boolean, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseInternal_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Boolean_System_Threading_CancellationToken_">ReleaseInternal(Nullable&lt;HttpAccessConditions&gt;, Boolean, CancellationToken)</a> operation releases the
+container or blob's previously-acquired lease.</p>
+<p>The lease may be released if the <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_LeaseId">LeaseId</a>
+matches that associated with the container or blob.  Releasing the
+lease allows another client to immediately acquire the lease for the
+container or blob as soon as the release is complete.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.ReleasedObjectInfo&gt;&gt; ReleaseInternal (Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions, bool async, System.Threading.CancellationToken cancellationToken);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on releasing a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">async</span></td>
+        <td><p>Whether to invoke the operation asynchronously.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.ReleasedObjectInfo.html">ReleasedObjectInfo</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the
+updated blob or container.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_ReleaseInternal_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Boolean_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_Renew_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Renew*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_Renew_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.Renew(System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">Renew(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_Renew_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">Renew(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation renews the blob or
+container's previously-acquired lease.</p>
+<p>The lease can be renewed if the leaseId
+matches that associated with the blob or container.  Note that the]
+lease may be renewed even if it has expired as long as the blob or
+container has not been leased again since the expiration of that
+lease.  When you renew a lease, the lease duration clock resets.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt; Renew (Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on renewing a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_Renew_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+  
+  
+  <a id="Azure_Storage_Blobs_Specialized_LeaseClient_RenewAsync_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.RenewAsync*"></a>
+  <h4 id="Azure_Storage_Blobs_Specialized_LeaseClient_RenewAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_" data-uid="Azure.Storage.Blobs.Specialized.LeaseClient.RenewAsync(System.Nullable{Azure.Storage.Blobs.Models.HttpAccessConditions},System.Threading.CancellationToken)">RenewAsync(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The <a class="xref" href="Azure.Storage.Blobs.Specialized.LeaseClient.html#Azure_Storage_Blobs_Specialized_LeaseClient_RenewAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken_">RenewAsync(Nullable&lt;HttpAccessConditions&gt;, CancellationToken)</a> operation renews the blob or
+container's previously-acquired lease.</p>
+<p>The lease can be renewed if the leaseId
+matches that associated with the blob or container.  Note that the]
+lease may be renewed even if it has expired as long as the blob or
+container has not been leased again since the expiration of that
+lease.  When you renew a lease, the lease duration clock resets.</p>
+<p>For more information, see <a href="https://docs.microsoft.com/rest/api/storageservices/lease-container"></a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Storage.Blobs.Models.Lease&gt;&gt; RenewAsync (Nullable&lt;Azure.Storage.Blobs.Models.HttpAccessConditions&gt; httpAccessConditions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a>&gt;</td>
+        <td><span class="parametername">httpAccessConditions</span></td>
+        <td><p>Optional <a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.HttpAccessConditions.html">HttpAccessConditions</a> to add
+conditions on renewing a lease.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Optional <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> to propagate
+notifications that the operation should be cancelled.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="../Azure.Storage.Blobs.Models/Azure.Storage.Blobs.Models.Lease.html">Lease</a>&gt;&gt;</td>
+        <td><p>A <a class="xref" href="../Azure/Azure.Response-1.html">Response&lt;T&gt;</a> describing the lease.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Storage_Blobs_Specialized_LeaseClient_RenewAsync_System_Nullable_Azure_Storage_Blobs_Models_HttpAccessConditions__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A <a class="xref" href="../Azure.Storage/Azure.Storage.StorageRequestFailedException.html">StorageRequestFailedException</a> will be thrown if
+a failure occurs.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

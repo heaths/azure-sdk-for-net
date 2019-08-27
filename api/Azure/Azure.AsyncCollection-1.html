@@ -1,0 +1,440 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AsyncCollection&lt;T&gt;
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AsyncCollection&lt;T&gt;
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.AsyncCollection`1">
+  
+  
+  <h1 id="Azure_AsyncCollection_1" data-uid="Azure.AsyncCollection`1" class="text-break">Class AsyncCollection&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A collection of values that may take multiple service requests to
+iterate over.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AsyncCollection&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="Azure.Response-1.html">Response</a>&lt;<span class="xref">T</span>&gt;&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.html">Azure</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Core.dll</h6>
+  <h5 id="Azure_AsyncCollection_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class AsyncCollection&lt;T&gt; : System.Collections.Generic.IAsyncEnumerable&lt;Azure.Response&lt;T&gt;&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of the values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_AsyncCollection_1__ctor_" data-uid="Azure.AsyncCollection`1.#ctor*"></a>
+  <h4 id="Azure_AsyncCollection_1__ctor" data-uid="Azure.AsyncCollection`1.#ctor">AsyncCollection&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a>
+class for mocking.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AsyncCollection ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_AsyncCollection_1__ctor_" data-uid="Azure.AsyncCollection`1.#ctor*"></a>
+  <h4 id="Azure_AsyncCollection_1__ctor_System_Threading_CancellationToken_" data-uid="Azure.AsyncCollection`1.#ctor(System.Threading.CancellationToken)">AsyncCollection&lt;T&gt;(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a>
+class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AsyncCollection (System.Threading.CancellationToken cancellationToken);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The <a class="xref" href="Azure.AsyncCollection-1.html#Azure_AsyncCollection_1_CancellationToken">CancellationToken</a> used for requests made while
+enumerating asynchronously.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_AsyncCollection_1_CancellationToken_" data-uid="Azure.AsyncCollection`1.CancellationToken*"></a>
+  <h4 id="Azure_AsyncCollection_1_CancellationToken" data-uid="Azure.AsyncCollection`1.CancellationToken">CancellationToken</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Azure.AsyncCollection-1.html#Azure_AsyncCollection_1_CancellationToken">CancellationToken</a> used for requests made while
+enumerating asynchronously.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual System.Threading.CancellationToken CancellationToken { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_AsyncCollection_1_ByPage_" data-uid="Azure.AsyncCollection`1.ByPage*"></a>
+  <h4 id="Azure_AsyncCollection_1_ByPage_System_String_System_Nullable_System_Int32__" data-uid="Azure.AsyncCollection`1.ByPage(System.String,System.Nullable{System.Int32})">ByPage(String, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Enumerate the values a <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a> at a time.  This may
+make mutliple service requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract System.Collections.Generic.IAsyncEnumerable&lt;Azure.Page&lt;T&gt;&gt; ByPage (string continuationToken = null, Nullable&lt;int&gt; pageSizeHint = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">continuationToken</span></td>
+        <td><p>A continuation token indicating where to resume paging or null to
+begin paging from the beginning.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">pageSizeHint</span></td>
+        <td><p>The size of <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>s that should be requested (from
+service operations that support it).</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerable-1">IAsyncEnumerable</a>&lt;<a class="xref" href="Azure.Page-1.html">Page</a>&lt;<span class="xref">T</span>&gt;&gt;</td>
+        <td><p>An async sequence of <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>s.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_AsyncCollection_1_Equals_" data-uid="Azure.AsyncCollection`1.Equals*"></a>
+  <h4 id="Azure_AsyncCollection_1_Equals_System_Object_" data-uid="Azure.AsyncCollection`1.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a> instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override bool Equals (object obj);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_AsyncCollection_1_GetAsyncEnumerator_" data-uid="Azure.AsyncCollection`1.GetAsyncEnumerator*"></a>
+  <h4 id="Azure_AsyncCollection_1_GetAsyncEnumerator_System_Threading_CancellationToken_" data-uid="Azure.AsyncCollection`1.GetAsyncEnumerator(System.Threading.CancellationToken)">GetAsyncEnumerator(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enumerate the values in the collection asynchronously.  This may
+make mutliple service requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Runtime.CompilerServices.AsyncIteratorStateMachine(typeof(Azure.AsyncCollection`1/&lt;GetAsyncEnumerator&gt;d__6))]
+public virtual System.Collections.Generic.IAsyncEnumerator&lt;Azure.Response&lt;T&gt;&gt; GetAsyncEnumerator (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The <a class="xref" href="Azure.AsyncCollection-1.html#Azure_AsyncCollection_1_CancellationToken">CancellationToken</a> used for requests made while
+enumerating asynchronously.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.iasyncenumerator-1">IAsyncEnumerator</a>&lt;<a class="xref" href="Azure.Response-1.html">Response</a>&lt;<span class="xref">T</span>&gt;&gt;</td>
+        <td><p>An async sequence of values.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_AsyncCollection_1_GetHashCode_" data-uid="Azure.AsyncCollection`1.GetHashCode*"></a>
+  <h4 id="Azure_AsyncCollection_1_GetHashCode" data-uid="Azure.AsyncCollection`1.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Get a hash code for the <a class="xref" href="Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override int GetHashCode ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Hash code for the <a class="xref" href="Azure.Page-1.html">Page&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_AsyncCollection_1_ToString_" data-uid="Azure.AsyncCollection`1.ToString*"></a>
+  <h4 id="Azure_AsyncCollection_1_ToString" data-uid="Azure.AsyncCollection`1.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Creates a string representation of an <a class="xref" href="Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override string ToString ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string representation of an <a class="xref" href="Azure.AsyncCollection-1.html">AsyncCollection&lt;T&gt;</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.Collections.Generic.IAsyncEnumerable&lt;Azure.Response&lt;T&gt;&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

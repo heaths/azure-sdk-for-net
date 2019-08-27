@@ -1,0 +1,542 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PartitionSender
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PartitionSender
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.EventHubs.PartitionSender">
+  
+  
+  <h1 id="Microsoft_Azure_EventHubs_PartitionSender" data-uid="Microsoft.Azure.EventHubs.PartitionSender" class="text-break">Class PartitionSender
+  </h1>
+  <div class="markdown level0 summary"><p>This sender class is a logical representation of sending events to a specific EventHub partition. Do not use this class
+if you do not care about sending events to specific partitions, instead use <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html">ClientEntity</a></div>
+    <div class="level2"><span class="xref">PartitionSender</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_ClientId">ClientEntity.ClientId</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_Close">ClientEntity.Close()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_closeCalled">ClientEntity.closeCalled</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_IsClosed">ClientEntity.IsClosed</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_OnRetryPolicyUpdate">ClientEntity.OnRetryPolicyUpdate()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_RegisteredPlugins">ClientEntity.RegisteredPlugins</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_RegisterPlugin_Microsoft_Azure_EventHubs_Core_EventHubsPlugin_">ClientEntity.RegisterPlugin(EventHubsPlugin)</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_RetryPolicy">ClientEntity.RetryPolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.EventHubs.ClientEntity.html#Microsoft_Azure_EventHubs_ClientEntity_UnregisterPlugin_System_String_">ClientEntity.UnregisterPlugin(String)</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.EventHubs.html">Microsoft.Azure.EventHubs</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.EventHubs.dll</h6>
+  <h5 id="Microsoft_Azure_EventHubs_PartitionSender_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class PartitionSender : Microsoft.Azure.EventHubs.ClientEntity</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_EventHubClient_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.EventHubClient*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_EventHubClient" data-uid="Microsoft.Azure.EventHubs.PartitionSender.EventHubClient">EventHubClient</h4>
+  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_EventHubClient">EventHubClient</a> associated with this PartitionSender.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.EventHubClient EventHubClient { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html">EventHubClient</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_PartitionId_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.PartitionId*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_PartitionId" data-uid="Microsoft.Azure.EventHubs.PartitionSender.PartitionId">PartitionId</h4>
+  <div class="markdown level1 summary"><p>Gets the partition ID for this <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html">PartitionSender</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PartitionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_CloseAsync_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.CloseAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_CloseAsync" data-uid="Microsoft.Azure.EventHubs.PartitionSender.CloseAsync">CloseAsync()</h4>
+  <div class="markdown level1 summary"><p>Closes and releases resources for the <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html">PartitionSender</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public override System.Threading.Tasks.Task CloseAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>An asynchronous operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_CreateBatch_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.CreateBatch*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_CreateBatch" data-uid="Microsoft.Azure.EventHubs.PartitionSender.CreateBatch">CreateBatch()</h4>
+  <div class="markdown level1 summary"><p>Creates a batch where event data objects can be added for later SendAsync call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.EventDataBatch CreateBatch ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></td>
+        <td><p>Returns <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_CreateBatch_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.CreateBatch*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_CreateBatch_Microsoft_Azure_EventHubs_BatchOptions_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.CreateBatch(Microsoft.Azure.EventHubs.BatchOptions)">CreateBatch(BatchOptions)</h4>
+  <div class="markdown level1 summary"><p>Creates a batch where event data objects can be added for later SendAsync call.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.EventHubs.EventDataBatch CreateBatch (Microsoft.Azure.EventHubs.BatchOptions options);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.BatchOptions.html">BatchOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p><a class="xref" href="Microsoft.Azure.EventHubs.BatchOptions.html">BatchOptions</a> to define partition key and max message size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></td>
+        <td><p>Returns <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_SendAsync_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_SendAsync_Microsoft_Azure_EventHubs_EventData_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.SendAsync(Microsoft.Azure.EventHubs.EventData)">SendAsync(EventData)</h4>
+  <div class="markdown level1 summary"><p>Send <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to a specific EventHub partition. The target partition is pre-determined when this PartitionSender was created.
+This send pattern emphasizes data correlation over general availability and latency.</p>
+<p>There are 3 ways to send to EventHubs, each exposed as a method (along with its sendBatch overload):</p><p>i.   <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p><p>ii.  <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_Microsoft_Azure_EventHubs_EventData_System_String_">SendAsync(EventData, String)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.EventHubClient.html#Microsoft_Azure_EventHubs_EventHubClient_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__System_String_">SendAsync(IEnumerable&lt;EventData&gt;, String)</a></p><p>iii. <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a> or <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__">SendAsync(IEnumerable&lt;EventData&gt;)</a></p>
+Use this type of send if:
+<p>a. The client wants to take direct control of distribution of data across partitions. In this case client is responsible for making sure there is at least one sender per event hub partition.</p><p>b. User cannot use partition key as a mean to direct events to specific partition, yet there is a need for data correlation with partitioning scheme.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventData eventData);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a></td>
+        <td><span class="parametername">eventData</span></td>
+        <td><p>the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to be sent.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the send operations is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.MessageSizeExceededException.html">MessageSizeExceededException</a></td>
+        <td><p>the total size of the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> exceeds a pre-defined limit set by the service. Default is 256k bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsException.html">EventHubsException</a></td>
+        <td><p>Event Hubs service encountered problems during the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_SendAsync_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_SendAsync_Microsoft_Azure_EventHubs_EventDataBatch_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.SendAsync(Microsoft.Azure.EventHubs.EventDataBatch)">SendAsync(EventDataBatch)</h4>
+  <div class="markdown level1 summary"><p>Send a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> in <a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task SendAsync (Microsoft.Azure.EventHubs.EventDataBatch eventDataBatch);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventDataBatch.html">EventDataBatch</a></td>
+        <td><span class="parametername">eventDataBatch</span></td>
+        <td><p>the batch of events to send to EventHub</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>A Task that completes when the send operation is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_EventHubs_PartitionSender_SendAsync_" data-uid="Microsoft.Azure.EventHubs.PartitionSender.SendAsync*"></a>
+  <h4 id="Microsoft_Azure_EventHubs_PartitionSender_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData__" data-uid="Microsoft.Azure.EventHubs.PartitionSender.SendAsync(System.Collections.Generic.IEnumerable{Microsoft.Azure.EventHubs.EventData})">SendAsync(IEnumerable&lt;EventData&gt;)</h4>
+  <div class="markdown level1 summary"><p>Send <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> to a specific EventHub partition. The targeted partition is pre-determined when this PartitionSender was created.</p>
+<p>
+There are 3 ways to send to EventHubs, to understand this particular type of send refer to the overload <a class="xref" href="Microsoft.Azure.EventHubs.PartitionSender.html#Microsoft_Azure_EventHubs_PartitionSender_SendAsync_Microsoft_Azure_EventHubs_EventData_">SendAsync(EventData)</a>, which is the same type of send and is used to send single <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>.
+</p>
+Sending a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s is useful in the following cases:
+<p>i.    Efficient send - sending a batch of <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> maximizes the overall throughput by optimally using the number of sessions created to EventHubs' service.</p><p>ii.   Sending multiple <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s in a Transaction. To acheive ACID properties, the Gateway Service will forward all <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>'s in the batch to a single EventHub partition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task SendAsync (System.Collections.Generic.IEnumerable&lt;Microsoft.Azure.EventHubs.EventData&gt; eventDatas);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a>&gt;</td>
+        <td><span class="parametername">eventDatas</span></td>
+        <td><p>batch of events to send to EventHub</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td><p>a Task that completes when the send operation is done.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_EventHubs_PartitionSender_SendAsync_System_Collections_Generic_IEnumerable_Microsoft_Azure_EventHubs_EventData___examples">Examples</h5>
+  <p>Sample code:</p>
+<pre><code>
+EventHubClient client = EventHubClient.Create("__connectionString__");
+PartitionSender senderToPartitionOne = client.CreatePartitionSender("1");
+        
+while (true)
+{
+    var events = new List&lt;EventData&gt;();
+    for (int count = 1; count &lt; 11; count++)
+    {
+        var payload = new PayloadEvent(count);
+        byte[] payloadBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(payload));
+        var sendEvent = new EventData(payloadBytes);
+        var applicationProperties = new Dictionary&lt;string, string&gt;();
+        applicationProperties["from"] = "csharpClient";
+        sendEvent.Properties = applicationProperties;
+        events.Add(sendEvent);
+    }
+        
+    await senderToPartitionOne.SendAsync(events);
+    Console.WriteLine("Sent Batch... Size: {0}", events.Count);
+    
+}
+</code></pre>
+
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.MessageSizeExceededException.html">MessageSizeExceededException</a></td>
+        <td><p>the total size of the <a class="xref" href="Microsoft.Azure.EventHubs.EventData.html">EventData</a> exceeds a pre-defined limit set by the service. Default is 256k bytes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.EventHubs.EventHubsException.html">EventHubsException</a></td>
+        <td><p>Event Hubs service encountered problems during the operation.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div></div>
+      <div></div>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

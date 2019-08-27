@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class JobPreparationTask
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class JobPreparationTask
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.JobPreparationTask">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_JobPreparationTask" data-uid="Microsoft.Azure.Batch.JobPreparationTask" class="text-break">Class JobPreparationTask
+  </h1>
+  <div class="markdown level0 summary"><p>A Job Preparation task to run before any tasks of the job on any given compute node.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">JobPreparationTask</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class JobPreparationTask</code></pre>
+  </div>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Batch will retry tasks when a recovery operation is triggered on a compute node. Examples of recovery operations
+include (but are not limited to) when an unhealthy compute node is rebooted or a compute node disappeared due to
+host failure. Retries due to recovery operations are independent of and are not counted against the <a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html#Microsoft_Azure_Batch_TaskConstraints_MaxTaskRetryCount">MaxTaskRetryCount</a>. Even if the <a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html#Microsoft_Azure_Batch_TaskConstraints_MaxTaskRetryCount">MaxTaskRetryCount</a> is 0, an internal retry due to a recovery operation
+may occur. Because of this, all tasks should be idempotent. This means tasks need to tolerate being interrupted and
+restarted without causing any corruption or duplicate data. The best practice for long running tasks is to use some
+form of checkpointing.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask__ctor_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask__ctor" data-uid="Microsoft.Azure.Batch.JobPreparationTask.#ctor">JobPreparationTask()</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.JobPreparationTask.html">JobPreparationTask</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobPreparationTask ();</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask__ctor_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.#ctor*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask__ctor_System_String_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.#ctor(System.String)">JobPreparationTask(String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="Microsoft.Azure.Batch.JobPreparationTask.html">JobPreparationTask</a> class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public JobPreparationTask (string commandLine);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">commandLine</span></td>
+        <td><p>The command line of the task.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_CommandLine_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.CommandLine*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_CommandLine" data-uid="Microsoft.Azure.Batch.JobPreparationTask.CommandLine">CommandLine</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the command line of the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string CommandLine { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_CommandLine_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The command line does not run under a shell, and therefore cannot take advantage of shell features such as environment</p>
+<p>variable expansion. If you want to take advantage of such features, you should invoke the shell in the command</p>
+<p>line, for example using &quot;cmd /c MyCommand&quot; in Windows or &quot;/bin/sh -c MyCommand&quot; in Linux. If the command line</p>
+<p>refers to file paths, it should use a relative path (relative to the task working directory), or use the Batch</p>
+<p>provided environment variables (<a href="https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables">https://docs.microsoft.com/en-us/azure/batch/batch-compute-node-environment-variables</a>).</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_Constraints_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.Constraints*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_Constraints" data-uid="Microsoft.Azure.Batch.JobPreparationTask.Constraints">Constraints</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the execution constraints provided by the user for this Job Preparation task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.TaskConstraints Constraints { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.TaskConstraints.html">TaskConstraints</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_ContainerSettings_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.ContainerSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_ContainerSettings" data-uid="Microsoft.Azure.Batch.JobPreparationTask.ContainerSettings">ContainerSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the settings for the container under which the task runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.TaskContainerSettings ContainerSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.TaskContainerSettings.html">TaskContainerSettings</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_ContainerSettings_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When this is specified, all directories recursively below the AZ_BATCH_NODE_ROOT_DIR (the root of Azure Batch</p>
+<p>directories on the node) are mapped into the container, all task environment variables are mapped into the container,</p>
+<p>and the task command line is executed in the container.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_EnvironmentSettings_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.EnvironmentSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_EnvironmentSettings" data-uid="Microsoft.Azure.Batch.JobPreparationTask.EnvironmentSettings">EnvironmentSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the collection of EnvironmentSetting instances.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.EnvironmentSetting&gt; EnvironmentSettings { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.EnvironmentSetting.html">EnvironmentSetting</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_Id_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.Id*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_Id" data-uid="Microsoft.Azure.Batch.JobPreparationTask.Id">Id</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the id of the task.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Id { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_RerunOnComputeNodeRebootAfterSuccess_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.RerunOnComputeNodeRebootAfterSuccess*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_RerunOnComputeNodeRebootAfterSuccess" data-uid="Microsoft.Azure.Batch.JobPreparationTask.RerunOnComputeNodeRebootAfterSuccess">RerunOnComputeNodeRebootAfterSuccess</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether the Batch service should rerun the Job Preparation task after a compute node reboots.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;bool&gt; RerunOnComputeNodeRebootAfterSuccess { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_RerunOnComputeNodeRebootAfterSuccess_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Job Preparation task is always rerun if a compute node is reimaged, or if the Job Preparation task did not</p>
+<p>complete (e.g. because the reboot occurred while the task was running). Therefore, you should always write a</p>
+<p>Job Preparation task to be idempotent and to behave correctly if run multiple times. If this property is not</p>
+<p>specified, a default value of true is assigned by the Batch service.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_ResourceFiles_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.ResourceFiles*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_ResourceFiles" data-uid="Microsoft.Azure.Batch.JobPreparationTask.ResourceFiles">ResourceFiles</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of files that the Batch service will download to the compute node before running the command
+line.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.ResourceFile&gt; ResourceFiles { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.ResourceFile.html">ResourceFile</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_ResourceFiles_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>There is a maximum size for the list of resource files. When the max size is exceeded, the request will fail</p>
+<p>and the response error code will be RequestEntityTooLarge. If this occurs, the collection of resource files must</p>
+<p>be reduced in size. This can be achieved using .zip files, Application Packages, or Docker Containers.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_UserIdentity_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.UserIdentity*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_UserIdentity" data-uid="Microsoft.Azure.Batch.JobPreparationTask.UserIdentity">UserIdentity</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the user identity under which the task runs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.UserIdentity UserIdentity { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.UserIdentity.html">UserIdentity</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_UserIdentity_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If omitted, the task runs as a non-administrative user unique to the task.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_JobPreparationTask_WaitForSuccess_" data-uid="Microsoft.Azure.Batch.JobPreparationTask.WaitForSuccess*"></a>
+  <h4 id="Microsoft_Azure_Batch_JobPreparationTask_WaitForSuccess" data-uid="Microsoft.Azure.Batch.JobPreparationTask.WaitForSuccess">WaitForSuccess</h4>
+  <div class="markdown level1 summary"><p>Gets or sets whether the Batch service should wait for the successful completion of the Job Preparation task
+before scheduling any tasks on the compute node.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;bool&gt; WaitForSuccess { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_JobPreparationTask_WaitForSuccess_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>A Job Preparation task execution is considered successful if its ExitCode is 0. If this property is not specified,</p>
+<p>a default value of true is assigned by the Batch service.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

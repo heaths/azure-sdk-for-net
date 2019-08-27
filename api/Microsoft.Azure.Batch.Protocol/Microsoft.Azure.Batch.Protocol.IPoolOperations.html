@@ -1,0 +1,1812 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IPoolOperations
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IPoolOperations
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_IPoolOperations" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations" class="text-break">Interface IPoolOperations
+  </h1>
+  <div class="markdown level0 summary"><p>PoolOperations operations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IPoolOperations</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_AddWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.AddWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_AddWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_PoolAddParameter_Microsoft_Azure_Batch_Protocol_Models_PoolAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.AddWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.PoolAddParameter,Microsoft.Azure.Batch.Protocol.Models.PoolAddOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddWithHttpMessagesAsync(PoolAddParameter, PoolAddOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Adds a Pool to the specified Account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolAddHeaders&gt;&gt; AddWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.PoolAddParameter pool, Microsoft.Azure.Batch.Protocol.Models.PoolAddOptions poolAddOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolAddParameter.html">PoolAddParameter</a></td>
+        <td><span class="parametername">pool</span></td>
+        <td><p>The Pool to be added.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolAddOptions.html">PoolAddOptions</a></td>
+        <td><span class="parametername">poolAddOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolAddHeaders.html">PoolAddHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_AddWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_PoolAddParameter_Microsoft_Azure_Batch_Protocol_Models_PoolAddOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When naming Pools, avoid including sensitive information such as</p>
+<p>user names or secret project names. This information may appear in</p>
+<p>telemetry logs accessible to Microsoft Support engineers.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_DeleteWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.DeleteWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_DeleteWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.DeleteWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolDeleteOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DeleteWithHttpMessagesAsync(String, PoolDeleteOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes a Pool from the specified Account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolDeleteHeaders&gt;&gt; DeleteWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolDeleteOptions poolDeleteOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool to delete.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolDeleteOptions.html">PoolDeleteOptions</a></td>
+        <td><span class="parametername">poolDeleteOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolDeleteHeaders.html">PoolDeleteHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_DeleteWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolDeleteOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>When you request that a Pool be deleted, the following actions</p>
+<p>occur: the Pool state is set to deleting; any ongoing resize</p>
+<p>operation on the Pool are stopped; the Batch service starts</p>
+<p>resizing the Pool to zero Compute Nodes; any Tasks running on</p>
+<p>existing Compute Nodes are terminated and requeued (as if a resize</p>
+<p>Pool operation had been requested with the default requeue option);</p>
+<p>finally, the Pool is removed from the system. Because running Tasks</p>
+<p>are requeued, the user can rerun these Tasks by updating their Job</p>
+<p>to target a different Pool. The Tasks can then run on the new Pool.</p>
+<p>If you want to override the requeue behavior, then you should call</p>
+<p>resize Pool explicitly to shrink the Pool to zero size before</p>
+<p>deleting the Pool. If you call an Update, Patch or Delete API on a</p>
+<p>Pool in the deleting state, it will fail with HTTP status code 409</p>
+<p>with error code PoolBeingDeleted.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_DisableAutoScaleWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.DisableAutoScaleWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_DisableAutoScaleWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolDisableAutoScaleOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.DisableAutoScaleWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolDisableAutoScaleOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">DisableAutoScaleWithHttpMessagesAsync(String, PoolDisableAutoScaleOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Disables automatic scaling for a Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolDisableAutoScaleHeaders&gt;&gt; DisableAutoScaleWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolDisableAutoScaleOptions poolDisableAutoScaleOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool on which to disable automatic scaling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolDisableAutoScaleOptions.html">PoolDisableAutoScaleOptions</a></td>
+        <td><span class="parametername">poolDisableAutoScaleOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolDisableAutoScaleHeaders.html">PoolDisableAutoScaleHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_EnableAutoScaleWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.EnableAutoScaleWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_EnableAutoScaleWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleParameter_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.EnableAutoScaleWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter,Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">EnableAutoScaleWithHttpMessagesAsync(String, PoolEnableAutoScaleParameter, PoolEnableAutoScaleOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Enables automatic scaling for a Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleHeaders&gt;&gt; EnableAutoScaleWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter poolEnableAutoScaleParameter, Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleOptions poolEnableAutoScaleOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool on which to enable automatic scaling.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleParameter.html">PoolEnableAutoScaleParameter</a></td>
+        <td><span class="parametername">poolEnableAutoScaleParameter</span></td>
+        <td><p>The parameters for the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleOptions.html">PoolEnableAutoScaleOptions</a></td>
+        <td><span class="parametername">poolEnableAutoScaleOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolEnableAutoScaleHeaders.html">PoolEnableAutoScaleHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_EnableAutoScaleWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleParameter_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You cannot enable automatic scaling on a Pool if a resize operation</p>
+<p>is in progress on the Pool. If automatic scaling of the Pool is</p>
+<p>currently disabled, you must specify a valid autoscale formula as</p>
+<p>part of the request. If automatic scaling of the Pool is already</p>
+<p>enabled, you may specify a new autoscale formula and/or a new</p>
+<p>evaluation interval. You cannot call this API for the same Pool</p>
+<p>more than once every 30 seconds.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_EvaluateAutoScaleWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.EvaluateAutoScaleWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_EvaluateAutoScaleWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.EvaluateAutoScaleWithHttpMessagesAsync(System.String,System.String,Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">EvaluateAutoScaleWithHttpMessagesAsync(String, String, PoolEvaluateAutoScaleOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the result of evaluating an automatic scaling formula on the
+Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Batch.Protocol.Models.AutoScaleRun,Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleHeaders&gt;&gt; EvaluateAutoScaleWithHttpMessagesAsync (string poolId, string autoScaleFormula, Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleOptions poolEvaluateAutoScaleOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool on which to evaluate the automatic scaling
+formula.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">autoScaleFormula</span></td>
+        <td><p>The formula for the desired number of Compute Nodes in the Pool.
+The formula is validated and its results calculated, but it is not
+applied to the Pool. To apply the formula to the Pool, 'Enable
+automatic scaling on a Pool'. For more information about specifying
+this formula, see Automatically scale Compute Nodes in an Azure
+Batch Pool
+(<a href="https://azure.microsoft.com/en-us/documentation/articles/batch-automatic-scaling">https://azure.microsoft.com/en-us/documentation/articles/batch-automatic-scaling</a>).</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleOptions.html">PoolEvaluateAutoScaleOptions</a></td>
+        <td><span class="parametername">poolEvaluateAutoScaleOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AutoScaleRun.html">AutoScaleRun</a>,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolEvaluateAutoScaleHeaders.html">PoolEvaluateAutoScaleHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_EvaluateAutoScaleWithHttpMessagesAsync_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This API is primarily for validating an autoscale formula, as it</p>
+<p>simply returns the result without applying the formula to the Pool.</p>
+<p>The Pool must have auto scaling enabled in order to evaluate a</p>
+<p>formula.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ExistsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ExistsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ExistsWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolExistsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ExistsWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolExistsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ExistsWithHttpMessagesAsync(String, PoolExistsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets basic properties of a Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;bool,Microsoft.Azure.Batch.Protocol.Models.PoolExistsHeaders&gt;&gt; ExistsWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolExistsOptions poolExistsOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolExistsOptions.html">PoolExistsOptions</a></td>
+        <td><span class="parametername">poolExistsOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolExistsHeaders.html">PoolExistsHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_GetAllLifetimeStatisticsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.GetAllLifetimeStatisticsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_GetAllLifetimeStatisticsWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_PoolGetAllLifetimeStatisticsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.GetAllLifetimeStatisticsWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.PoolGetAllLifetimeStatisticsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetAllLifetimeStatisticsWithHttpMessagesAsync(PoolGetAllLifetimeStatisticsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets lifetime summary statistics for all of the Pools in the
+specified Account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolStatistics,Microsoft.Azure.Batch.Protocol.Models.PoolGetAllLifetimeStatisticsHeaders&gt;&gt; GetAllLifetimeStatisticsWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.PoolGetAllLifetimeStatisticsOptions poolGetAllLifetimeStatisticsOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolGetAllLifetimeStatisticsOptions.html">PoolGetAllLifetimeStatisticsOptions</a></td>
+        <td><span class="parametername">poolGetAllLifetimeStatisticsOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolStatistics.html">PoolStatistics</a>,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolGetAllLifetimeStatisticsHeaders.html">PoolGetAllLifetimeStatisticsHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_GetAllLifetimeStatisticsWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_PoolGetAllLifetimeStatisticsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Statistics are aggregated across all Pools that have ever existed</p>
+<p>in the Account, from Account creation to the last update time of</p>
+<p>the statistics. The statistics may not be immediately available.</p>
+<p>The Batch service performs periodic roll-up of statistics. The</p>
+<p>typical delay is about 30 minutes.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_GetWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.GetWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_GetWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolGetOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.GetWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolGetOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetWithHttpMessagesAsync(String, PoolGetOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets information about the specified Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Azure.Batch.Protocol.Models.CloudPool,Microsoft.Azure.Batch.Protocol.Models.PoolGetHeaders&gt;&gt; GetWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolGetOptions poolGetOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool to get.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolGetOptions.html">PoolGetOptions</a></td>
+        <td><span class="parametername">poolGetOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudPool.html">CloudPool</a>,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolGetHeaders.html">PoolGetHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListNextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolListNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolListNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListNextWithHttpMessagesAsync(String, PoolListNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all of the Pools in the specified Account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.CloudPool&gt;,Microsoft.Azure.Batch.Protocol.Models.PoolListHeaders&gt;&gt; ListNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.PoolListNextOptions poolListNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListNextOptions.html">PoolListNextOptions</a></td>
+        <td><span class="parametername">poolListNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudPool.html">CloudPool</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListHeaders.html">PoolListHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListUsageMetricsNextWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListUsageMetricsNextWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListUsageMetricsNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListUsageMetricsNextWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsNextOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListUsageMetricsNextWithHttpMessagesAsync(String, PoolListUsageMetricsNextOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists the usage metrics, aggregated by Pool across individual time
+intervals, for the specified Account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolUsageMetrics&gt;,Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsHeaders&gt;&gt; ListUsageMetricsNextWithHttpMessagesAsync (string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsNextOptions poolListUsageMetricsNextOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsNextOptions.html">PoolListUsageMetricsNextOptions</a></td>
+        <td><span class="parametername">poolListUsageMetricsNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolUsageMetrics.html">PoolUsageMetrics</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsHeaders.html">PoolListUsageMetricsHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListUsageMetricsNextWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsNextOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you do not specify a $filter clause including a poolId, the</p>
+<p>response includes all Pools that existed in the Account in the time</p>
+<p>range of the returned aggregation intervals. If you do not specify</p>
+<p>a $filter clause including a startTime or endTime these filters</p>
+<p>default to the start and end times of the last aggregation interval</p>
+<p>currently available; that is, only the last aggregation interval is</p>
+<p>returned.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListUsageMetricsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListUsageMetricsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListUsageMetricsWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListUsageMetricsWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListUsageMetricsWithHttpMessagesAsync(PoolListUsageMetricsOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists the usage metrics, aggregated by Pool across individual time
+intervals, for the specified Account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolUsageMetrics&gt;,Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsHeaders&gt;&gt; ListUsageMetricsWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions poolListUsageMetricsOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsOptions.html">PoolListUsageMetricsOptions</a></td>
+        <td><span class="parametername">poolListUsageMetricsOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolUsageMetrics.html">PoolUsageMetrics</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListUsageMetricsHeaders.html">PoolListUsageMetricsHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListUsageMetricsWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If you do not specify a $filter clause including a poolId, the</p>
+<p>response includes all Pools that existed in the Account in the time</p>
+<p>range of the returned aggregation intervals. If you do not specify</p>
+<p>a $filter clause including a startTime or endTime these filters</p>
+<p>default to the start and end times of the last aggregation interval</p>
+<p>currently available; that is, only the last aggregation interval is</p>
+<p>returned.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ListWithHttpMessagesAsync_Microsoft_Azure_Batch_Protocol_Models_PoolListOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ListWithHttpMessagesAsync(Microsoft.Azure.Batch.Protocol.Models.PoolListOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ListWithHttpMessagesAsync(PoolListOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all of the Pools in the specified Account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationResponse&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.CloudPool&gt;,Microsoft.Azure.Batch.Protocol.Models.PoolListHeaders&gt;&gt; ListWithHttpMessagesAsync (Microsoft.Azure.Batch.Protocol.Models.PoolListOptions poolListOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListOptions.html">PoolListOptions</a></td>
+        <td><span class="parametername">poolListOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationResponse</span>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.CloudPool.html">CloudPool</a>&gt;,<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolListHeaders.html">PoolListHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.SerializationException</span></td>
+        <td><p>Thrown when unable to deserialize the response</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_PatchWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.PatchWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolPatchParameter_Microsoft_Azure_Batch_Protocol_Models_PoolPatchOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.PatchWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter,Microsoft.Azure.Batch.Protocol.Models.PoolPatchOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">PatchWithHttpMessagesAsync(String, PoolPatchParameter, PoolPatchOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the properties of the specified Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolPatchHeaders&gt;&gt; PatchWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter poolPatchParameter, Microsoft.Azure.Batch.Protocol.Models.PoolPatchOptions poolPatchOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolPatchParameter.html">PoolPatchParameter</a></td>
+        <td><span class="parametername">poolPatchParameter</span></td>
+        <td><p>The parameters for the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolPatchOptions.html">PoolPatchOptions</a></td>
+        <td><span class="parametername">poolPatchOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolPatchHeaders.html">PoolPatchHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_PatchWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolPatchParameter_Microsoft_Azure_Batch_Protocol_Models_PoolPatchOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This only replaces the Pool properties specified in the request.</p>
+<p>For example, if the Pool has a StartTask associated with it, and a</p>
+<p>request does not specify a StartTask element, then the Pool keeps</p>
+<p>the existing StartTask.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_RemoveNodesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.RemoveNodesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_RemoveNodesWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_NodeRemoveParameter_Microsoft_Azure_Batch_Protocol_Models_PoolRemoveNodesOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.RemoveNodesWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.NodeRemoveParameter,Microsoft.Azure.Batch.Protocol.Models.PoolRemoveNodesOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RemoveNodesWithHttpMessagesAsync(String, NodeRemoveParameter, PoolRemoveNodesOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Removes Compute Nodes from the specified Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolRemoveNodesHeaders&gt;&gt; RemoveNodesWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.NodeRemoveParameter nodeRemoveParameter, Microsoft.Azure.Batch.Protocol.Models.PoolRemoveNodesOptions poolRemoveNodesOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool from which you want to remove Compute Nodes.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.NodeRemoveParameter.html">NodeRemoveParameter</a></td>
+        <td><span class="parametername">nodeRemoveParameter</span></td>
+        <td><p>The parameters for the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolRemoveNodesOptions.html">PoolRemoveNodesOptions</a></td>
+        <td><span class="parametername">poolRemoveNodesOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolRemoveNodesHeaders.html">PoolRemoveNodesHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_RemoveNodesWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_NodeRemoveParameter_Microsoft_Azure_Batch_Protocol_Models_PoolRemoveNodesOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This operation can only run when the allocation state of the Pool</p>
+<p>is steady. When this operation runs, the allocation state changes</p>
+<p>from steady to resizing.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ResizeWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ResizeWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ResizeWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolResizeParameter_Microsoft_Azure_Batch_Protocol_Models_PoolResizeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.ResizeWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolResizeParameter,Microsoft.Azure.Batch.Protocol.Models.PoolResizeOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">ResizeWithHttpMessagesAsync(String, PoolResizeParameter, PoolResizeOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Changes the number of Compute Nodes that are assigned to a Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolResizeHeaders&gt;&gt; ResizeWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolResizeParameter poolResizeParameter, Microsoft.Azure.Batch.Protocol.Models.PoolResizeOptions poolResizeOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool to resize.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolResizeParameter.html">PoolResizeParameter</a></td>
+        <td><span class="parametername">poolResizeParameter</span></td>
+        <td><p>The parameters for the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolResizeOptions.html">PoolResizeOptions</a></td>
+        <td><span class="parametername">poolResizeOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolResizeHeaders.html">PoolResizeHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_ResizeWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolResizeParameter_Microsoft_Azure_Batch_Protocol_Models_PoolResizeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>You can only resize a Pool when its allocation state is steady. If</p>
+<p>the Pool is already resizing, the request fails with status code</p>
+<ol start="409">
+<li>When you resize a Pool, the Pool's allocation state changes</li>
+</ol>
+<p>from steady to resizing. You cannot resize Pools which are</p>
+<p>configured for automatic scaling. If you try to do this, the Batch</p>
+<p>service returns an error 409. If you resize a Pool downwards, the</p>
+<p>Batch service chooses which Compute Nodes to remove. To remove</p>
+<p>specific Compute Nodes, use the Pool remove Compute Nodes API</p>
+<p>instead.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_StopResizeWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.StopResizeWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_StopResizeWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolStopResizeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.StopResizeWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolStopResizeOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">StopResizeWithHttpMessagesAsync(String, PoolStopResizeOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Stops an ongoing resize operation on the Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolStopResizeHeaders&gt;&gt; StopResizeWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolStopResizeOptions poolStopResizeOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool whose resizing you want to stop.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolStopResizeOptions.html">PoolStopResizeOptions</a></td>
+        <td><span class="parametername">poolStopResizeOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolStopResizeHeaders.html">PoolStopResizeHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_StopResizeWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolStopResizeOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This does not restore the Pool to its previous state before the</p>
+<p>resize operation: it only stops any further changes being made, and</p>
+<p>the Pool maintains its current state. After stopping, the Pool</p>
+<p>stabilizes at the number of Compute Nodes it was at when the stop</p>
+<p>operation was done. During the stop operation, the Pool allocation</p>
+<p>state changes first to stopping and then to steady. A resize</p>
+<p>operation need not be an explicit resize Pool request; this API can</p>
+<p>also be used to halt the initial sizing of the Pool when it is</p>
+<p>created.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IPoolOperations_UpdatePropertiesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.UpdatePropertiesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_UpdatePropertiesWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesParameter_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.IPoolOperations.UpdatePropertiesWithHttpMessagesAsync(System.String,Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesParameter,Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesOptions,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">UpdatePropertiesWithHttpMessagesAsync(String, PoolUpdatePropertiesParameter, PoolUpdatePropertiesOptions, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Updates the properties of the specified Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.AzureOperationHeaderResponse&lt;Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesHeaders&gt;&gt; UpdatePropertiesWithHttpMessagesAsync (string poolId, Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesParameter poolUpdatePropertiesParameter, Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesOptions poolUpdatePropertiesOptions = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">poolId</span></td>
+        <td><p>The ID of the Pool to update.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesParameter.html">PoolUpdatePropertiesParameter</a></td>
+        <td><span class="parametername">poolUpdatePropertiesParameter</span></td>
+        <td><p>The parameters for the request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesOptions.html">PoolUpdatePropertiesOptions</a></td>
+        <td><span class="parametername">poolUpdatePropertiesOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td><p>The headers that will be added to request.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.AzureOperationHeaderResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolUpdatePropertiesHeaders.html">PoolUpdatePropertiesHeaders</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IPoolOperations_UpdatePropertiesWithHttpMessagesAsync_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesParameter_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesOptions_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>This fully replaces all the updatable properties of the Pool. For</p>
+<p>example, if the Pool has a StartTask associated with it and if</p>
+<p>StartTask is not specified with this request, then the Batch</p>
+<p>service will remove the existing StartTask.</p>
+</div>
+  <h5 class="exceptions">Exceptions</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Condition</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.BatchErrorException.html">BatchErrorException</a></td>
+        <td><p>Thrown when the operation returned an invalid status code</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ValidationException</span></td>
+        <td><p>Thrown when a required parameter is null</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_Add_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolAddParameter_Microsoft_Azure_Batch_Protocol_Models_PoolAddOptions_">PoolOperationsExtensions.Add(IPoolOperations, PoolAddParameter, PoolAddOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_AddAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolAddParameter_Microsoft_Azure_Batch_Protocol_Models_PoolAddOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.AddAsync(IPoolOperations, PoolAddParameter, PoolAddOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_Delete_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolDeleteOptions_">PoolOperationsExtensions.Delete(IPoolOperations, String, PoolDeleteOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_DeleteAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolDeleteOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.DeleteAsync(IPoolOperations, String, PoolDeleteOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_DisableAutoScale_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolDisableAutoScaleOptions_">PoolOperationsExtensions.DisableAutoScale(IPoolOperations, String, PoolDisableAutoScaleOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_DisableAutoScaleAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolDisableAutoScaleOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.DisableAutoScaleAsync(IPoolOperations, String, PoolDisableAutoScaleOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_EnableAutoScale_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleParameter_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleOptions_">PoolOperationsExtensions.EnableAutoScale(IPoolOperations, String, PoolEnableAutoScaleParameter, PoolEnableAutoScaleOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_EnableAutoScaleAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleParameter_Microsoft_Azure_Batch_Protocol_Models_PoolEnableAutoScaleOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.EnableAutoScaleAsync(IPoolOperations, String, PoolEnableAutoScaleParameter, PoolEnableAutoScaleOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_EvaluateAutoScale_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleOptions_">PoolOperationsExtensions.EvaluateAutoScale(IPoolOperations, String, String, PoolEvaluateAutoScaleOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_EvaluateAutoScaleAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolEvaluateAutoScaleOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.EvaluateAutoScaleAsync(IPoolOperations, String, String, PoolEvaluateAutoScaleOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_Exists_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolExistsOptions_">PoolOperationsExtensions.Exists(IPoolOperations, String, PoolExistsOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ExistsAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolExistsOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.ExistsAsync(IPoolOperations, String, PoolExistsOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_Get_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolGetOptions_">PoolOperationsExtensions.Get(IPoolOperations, String, PoolGetOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_GetAllLifetimeStatistics_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolGetAllLifetimeStatisticsOptions_">PoolOperationsExtensions.GetAllLifetimeStatistics(IPoolOperations, PoolGetAllLifetimeStatisticsOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_GetAllLifetimeStatisticsAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolGetAllLifetimeStatisticsOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.GetAllLifetimeStatisticsAsync(IPoolOperations, PoolGetAllLifetimeStatisticsOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_GetAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolGetOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.GetAsync(IPoolOperations, String, PoolGetOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_List_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolListOptions_">PoolOperationsExtensions.List(IPoolOperations, PoolListOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ListAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolListOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.ListAsync(IPoolOperations, PoolListOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ListNext_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolListNextOptions_">PoolOperationsExtensions.ListNext(IPoolOperations, String, PoolListNextOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ListNextAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolListNextOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.ListNextAsync(IPoolOperations, String, PoolListNextOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ListUsageMetrics_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_">PoolOperationsExtensions.ListUsageMetrics(IPoolOperations, PoolListUsageMetricsOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ListUsageMetricsAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.ListUsageMetricsAsync(IPoolOperations, PoolListUsageMetricsOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ListUsageMetricsNext_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsNextOptions_">PoolOperationsExtensions.ListUsageMetricsNext(IPoolOperations, String, PoolListUsageMetricsNextOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ListUsageMetricsNextAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolListUsageMetricsNextOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.ListUsageMetricsNextAsync(IPoolOperations, String, PoolListUsageMetricsNextOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_Patch_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolPatchParameter_Microsoft_Azure_Batch_Protocol_Models_PoolPatchOptions_">PoolOperationsExtensions.Patch(IPoolOperations, String, PoolPatchParameter, PoolPatchOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_PatchAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolPatchParameter_Microsoft_Azure_Batch_Protocol_Models_PoolPatchOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.PatchAsync(IPoolOperations, String, PoolPatchParameter, PoolPatchOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_RemoveNodes_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_NodeRemoveParameter_Microsoft_Azure_Batch_Protocol_Models_PoolRemoveNodesOptions_">PoolOperationsExtensions.RemoveNodes(IPoolOperations, String, NodeRemoveParameter, PoolRemoveNodesOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_RemoveNodesAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_NodeRemoveParameter_Microsoft_Azure_Batch_Protocol_Models_PoolRemoveNodesOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.RemoveNodesAsync(IPoolOperations, String, NodeRemoveParameter, PoolRemoveNodesOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_Resize_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolResizeParameter_Microsoft_Azure_Batch_Protocol_Models_PoolResizeOptions_">PoolOperationsExtensions.Resize(IPoolOperations, String, PoolResizeParameter, PoolResizeOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_ResizeAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolResizeParameter_Microsoft_Azure_Batch_Protocol_Models_PoolResizeOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.ResizeAsync(IPoolOperations, String, PoolResizeParameter, PoolResizeOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_StopResize_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolStopResizeOptions_">PoolOperationsExtensions.StopResize(IPoolOperations, String, PoolStopResizeOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_StopResizeAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolStopResizeOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.StopResizeAsync(IPoolOperations, String, PoolStopResizeOptions, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_UpdateProperties_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesParameter_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesOptions_">PoolOperationsExtensions.UpdateProperties(IPoolOperations, String, PoolUpdatePropertiesParameter, PoolUpdatePropertiesOptions)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.Batch.Protocol.PoolOperationsExtensions.html#Microsoft_Azure_Batch_Protocol_PoolOperationsExtensions_UpdatePropertiesAsync_Microsoft_Azure_Batch_Protocol_IPoolOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesParameter_Microsoft_Azure_Batch_Protocol_Models_PoolUpdatePropertiesOptions_System_Threading_CancellationToken_">PoolOperationsExtensions.UpdatePropertiesAsync(IPoolOperations, String, PoolUpdatePropertiesParameter, PoolUpdatePropertiesOptions, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

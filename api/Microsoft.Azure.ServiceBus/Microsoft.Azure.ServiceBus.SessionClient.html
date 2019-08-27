@@ -1,0 +1,706 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SessionClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SessionClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.ServiceBus.SessionClient">
+  
+  
+  <h1 id="Microsoft_Azure_ServiceBus_SessionClient" data-uid="Microsoft.Azure.ServiceBus.SessionClient" class="text-break">Class SessionClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html">ClientEntity</a></div>
+    <div class="level2"><span class="xref">SessionClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html">IClientEntity</a></div>
+    <div><a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html">ISessionClient</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ClientId">ClientEntity.ClientId</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_CloseAsync">ClientEntity.CloseAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_IsClosedOrClosing">ClientEntity.IsClosedOrClosing</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OnClosingAsync">ClientEntity.OnClosingAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_OwnsConnection">ClientEntity.OwnsConnection</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_RetryPolicy">ClientEntity.RetryPolicy</a>
+    </div>
+    <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ClientEntity.html#Microsoft_Azure_ServiceBus_ClientEntity_ThrowIfClosed">ClientEntity.ThrowIfClosed()</a>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.ServiceBus.html">Microsoft.Azure.ServiceBus</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.ServiceBus.dll</h6>
+  <h5 id="Microsoft_Azure_ServiceBus_SessionClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public sealed class SessionClient : Microsoft.Azure.ServiceBus.ClientEntity, Microsoft.Azure.ServiceBus.ISessionClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnectionStringBuilder_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(ServiceBusConnectionStringBuilder, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionClient (Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder connectionStringBuilder, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode = Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnectionStringBuilder.html">ServiceBusConnectionStringBuilder</a></td>
+        <td><span class="parametername">connectionStringBuilder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_Microsoft_Azure_ServiceBus_ServiceBusConnection_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(Microsoft.Azure.ServiceBus.ServiceBusConnection,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(ServiceBusConnection, String, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionClient (Microsoft.Azure.ServiceBus.ServiceBusConnection serviceBusConnection, string entityPath, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
+        <td><span class="parametername">serviceBusConnection</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(String, String, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionClient (string connectionString, string entityPath, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode = Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">connectionString</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient__ctor_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient__ctor_System_String_System_String_Microsoft_Azure_ServiceBus_Primitives_ITokenProvider_Microsoft_Azure_ServiceBus_TransportType_Microsoft_Azure_ServiceBus_ReceiveMode_Microsoft_Azure_ServiceBus_RetryPolicy_System_Int32_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.#ctor(System.String,System.String,Microsoft.Azure.ServiceBus.Primitives.ITokenProvider,Microsoft.Azure.ServiceBus.TransportType,Microsoft.Azure.ServiceBus.ReceiveMode,Microsoft.Azure.ServiceBus.RetryPolicy,System.Int32)">SessionClient(String, String, ITokenProvider, TransportType, ReceiveMode, RetryPolicy, Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SessionClient (string endpoint, string entityPath, Microsoft.Azure.ServiceBus.Primitives.ITokenProvider tokenProvider, Microsoft.Azure.ServiceBus.TransportType transportType = Microsoft.Azure.ServiceBus.TransportType.Amqp, Microsoft.Azure.ServiceBus.ReceiveMode receiveMode = Microsoft.Azure.ServiceBus.ReceiveMode.PeekLock, Microsoft.Azure.ServiceBus.RetryPolicy retryPolicy = null, int prefetchCount = 0);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">endpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">entityPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus.Primitives/Microsoft.Azure.ServiceBus.Primitives.ITokenProvider.html">ITokenProvider</a></td>
+        <td><span class="parametername">tokenProvider</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.TransportType.html">TransportType</a></td>
+        <td><span class="parametername">transportType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ReceiveMode.html">ReceiveMode</a></td>
+        <td><span class="parametername">receiveMode</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.RetryPolicy.html">RetryPolicy</a></td>
+        <td><span class="parametername">retryPolicy</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><span class="parametername">prefetchCount</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_EntityPath_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.EntityPath*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_EntityPath" data-uid="Microsoft.Azure.ServiceBus.SessionClient.EntityPath">EntityPath</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EntityPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OperationTimeout*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_OperationTimeout" data-uid="Microsoft.Azure.ServiceBus.SessionClient.OperationTimeout">OperationTimeout</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override TimeSpan OperationTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_Path_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.Path*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_Path" data-uid="Microsoft.Azure.ServiceBus.SessionClient.Path">Path</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Path { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisteredPlugins*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_RegisteredPlugins" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisteredPlugins">RegisteredPlugins</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override System.Collections.Generic.IList&lt;Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin&gt; RegisteredPlugins { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.ServiceBus.Core/Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.ServiceBusConnection*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_ServiceBusConnection" data-uid="Microsoft.Azure.ServiceBus.SessionClient.ServiceBusConnection">ServiceBusConnection</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Microsoft.Azure.ServiceBus.ServiceBusConnection ServiceBusConnection { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.ServiceBus.ServiceBusConnection.html">ServiceBusConnection</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync">AcceptMessageSessionAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String)">AcceptMessageSessionAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync (string sessionId);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.TimeSpan)">AcceptMessageSessionAsync(TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync (TimeSpan operationTimeout);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_AcceptMessageSessionAsync_System_String_System_TimeSpan_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.AcceptMessageSessionAsync(System.String,System.TimeSpan)">AcceptMessageSessionAsync(String, TimeSpan)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Azure.ServiceBus.IMessageSession&gt; AcceptMessageSessionAsync (string sessionId, TimeSpan operationTimeout);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.timespan">TimeSpan</a></td>
+        <td><span class="parametername">operationTimeout</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Microsoft.Azure.ServiceBus.IMessageSession.html">IMessageSession</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisterPlugin*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_RegisterPlugin_Microsoft_Azure_ServiceBus_Core_ServiceBusPlugin_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.RegisterPlugin(Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin)">RegisterPlugin(ServiceBusPlugin)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void RegisterPlugin (Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin serviceBusPlugin);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.ServiceBus.Core/Microsoft.Azure.ServiceBus.Core.ServiceBusPlugin.html">ServiceBusPlugin</a></td>
+        <td><span class="parametername">serviceBusPlugin</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.UnregisterPlugin*"></a>
+  <h4 id="Microsoft_Azure_ServiceBus_SessionClient_UnregisterPlugin_System_String_" data-uid="Microsoft.Azure.ServiceBus.SessionClient.UnregisterPlugin(System.String)">UnregisterPlugin(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void UnregisterPlugin (string serviceBusPluginName);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">serviceBusPluginName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.IClientEntity.html">Microsoft.Azure.ServiceBus.IClientEntity</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.ServiceBus.ISessionClient.html">Microsoft.Azure.ServiceBus.ISessionClient</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

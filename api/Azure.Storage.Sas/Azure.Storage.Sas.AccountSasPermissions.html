@@ -1,0 +1,664 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Struct AccountSasPermissions
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Struct AccountSasPermissions
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Sas.AccountSasPermissions">
+  
+  
+  <h1 id="Azure_Storage_Sas_AccountSasPermissions" data-uid="Azure.Storage.Sas.AccountSasPermissions" class="text-break">Struct AccountSasPermissions
+  </h1>
+  <div class="markdown level0 summary"><p>Specifies the permissions available to an account level shared access
+signature.  Use <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html#Azure_Storage_Sas_AccountSasPermissions_ToString">ToString()</a> to produce a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+that can be for <a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html#Azure_Storage_Sas_AccountSasBuilder_Permissions">Permissions</a>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iequatable-1">IEquatable</a>&lt;<a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a>&gt;</div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Storage.Sas.html">Azure.Storage.Sas</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Storage.Common.dll</h6>
+  <h5 id="Azure_Storage_Sas_AccountSasPermissions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public struct AccountSasPermissions : IEquatable&lt;Azure.Storage.Sas.AccountSasPermissions&gt;</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Add_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Add*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Add" data-uid="Azure.Storage.Sas.AccountSasPermissions.Add">Add</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Add permissions are granted to
+the specified resource type.  Valid for the following Object
+resource types only: queue messages and append blobs.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Create_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Create*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Create" data-uid="Azure.Storage.Sas.AccountSasPermissions.Create">Create</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Create permissions are granted to
+the specified resource type.  Valid for the following Object
+resource types only: blobs and files.  Users can create new blobs
+or files, but may not overwrite existing blobs or files.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Create { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Delete_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Delete*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Delete" data-uid="Azure.Storage.Sas.AccountSasPermissions.Delete">Delete</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Delete permissions are granted to
+the specified resource type.  Valid for Container and Object
+resource types, except for queue messages.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Delete { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_List_" data-uid="Azure.Storage.Sas.AccountSasPermissions.List*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_List" data-uid="Azure.Storage.Sas.AccountSasPermissions.List">List</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether List permissions are granted to the
+specified resource type.  Valid for Service and Container resource
+types only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool List { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Process_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Process*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Process" data-uid="Azure.Storage.Sas.AccountSasPermissions.Process">Process</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Process permissions are granted to
+the specified resource type.  Valid for queue messages only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Process { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Read_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Read*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Read" data-uid="Azure.Storage.Sas.AccountSasPermissions.Read">Read</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Read permissions are granted to the
+specified resource type.  Valid for all resources types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Read { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Update_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Update*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Update" data-uid="Azure.Storage.Sas.AccountSasPermissions.Update">Update</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Update permissions are granted to
+the specified resource type.  Valid for queue messages only.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Update { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Write_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Write*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Write" data-uid="Azure.Storage.Sas.AccountSasPermissions.Write">Write</h4>
+  <div class="markdown level1 summary"><p>Gets a value indicating whether Write permissions are granted to
+the specified resource type.  Valid for all resources types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Write { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Equals_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Equals*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Equals_Azure_Storage_Sas_AccountSasPermissions_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Equals(Azure.Storage.Sas.AccountSasPermissions)">Equals(AccountSasPermissions)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a> instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals (Azure.Storage.Sas.AccountSasPermissions other);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></td>
+        <td><span class="parametername">other</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Equals_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Equals*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Equals_System_Object_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a> instances are equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override bool Equals (object obj);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The instance to compare to.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_GetHashCode_" data-uid="Azure.Storage.Sas.AccountSasPermissions.GetHashCode*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_GetHashCode" data-uid="Azure.Storage.Sas.AccountSasPermissions.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Get a hash code for the <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.ComponentModel.EditorBrowsable]
+public override int GetHashCode ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a></td>
+        <td><p>Hash code for the <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_Parse_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Parse*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_Parse_System_String_" data-uid="Azure.Storage.Sas.AccountSasPermissions.Parse(System.String)">Parse(String)</h4>
+  <div class="markdown level1 summary"><p>Parse a string representing which permissions are granted by a
+shared access signature.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Azure.Storage.Sas.AccountSasPermissions Parse (string s);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">s</span></td>
+        <td><p>A string representing which permissions are granted.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></td>
+        <td><p>An <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a> instance.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_ToString_" data-uid="Azure.Storage.Sas.AccountSasPermissions.ToString*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_ToString" data-uid="Azure.Storage.Sas.AccountSasPermissions.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Creates a string representing which permissions can be allowed for
+<a class="xref" href="Azure.Storage.Sas.AccountSasBuilder.html#Azure_Storage_Sas_AccountSasBuilder_Permissions">Permissions</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString ();</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><p>A string representing which permissions are allowed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="operators">Operators
+  </h3>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_op_Equality_" data-uid="Azure.Storage.Sas.AccountSasPermissions.op_Equality*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_op_Equality_Azure_Storage_Sas_AccountSasPermissions_Azure_Storage_Sas_AccountSasPermissions_" data-uid="Azure.Storage.Sas.AccountSasPermissions.op_Equality(Azure.Storage.Sas.AccountSasPermissions,Azure.Storage.Sas.AccountSasPermissions)">Equality(AccountSasPermissions, AccountSasPermissions)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a> instances are
+equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator == (Azure.Storage.Sas.AccountSasPermissions left, Azure.Storage.Sas.AccountSasPermissions right);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Storage_Sas_AccountSasPermissions_op_Inequality_" data-uid="Azure.Storage.Sas.AccountSasPermissions.op_Inequality*"></a>
+  <h4 id="Azure_Storage_Sas_AccountSasPermissions_op_Inequality_Azure_Storage_Sas_AccountSasPermissions_Azure_Storage_Sas_AccountSasPermissions_" data-uid="Azure.Storage.Sas.AccountSasPermissions.op_Inequality(Azure.Storage.Sas.AccountSasPermissions,Azure.Storage.Sas.AccountSasPermissions)">Inequality(AccountSasPermissions, AccountSasPermissions)</h4>
+  <div class="markdown level1 summary"><p>Check if two <a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a> instances are not
+equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator != (Azure.Storage.Sas.AccountSasPermissions left, Azure.Storage.Sas.AccountSasPermissions right);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></td>
+        <td><span class="parametername">left</span></td>
+        <td><p>The first instance to compare.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></td>
+        <td><span class="parametername">right</span></td>
+        <td><p>The second instance to compare.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><p>True if they're not equal, false otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">System.IEquatable&lt;Azure.Storage.Sas.AccountSasPermissions&gt;</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

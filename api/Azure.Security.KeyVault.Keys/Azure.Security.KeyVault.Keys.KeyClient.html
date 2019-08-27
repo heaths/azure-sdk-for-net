@@ -1,0 +1,2099 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class KeyClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class KeyClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Security.KeyVault.Keys.KeyClient">
+  
+  
+  <h1 id="Azure_Security_KeyVault_Keys_KeyClient" data-uid="Azure.Security.KeyVault.Keys.KeyClient" class="text-break">Class KeyClient
+  </h1>
+  <div class="markdown level0 summary"><p>The KeyClient provides synchronous and asynchronous methods to manage <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a> in the Azure Key Vault. The client
+supports creating, retrieving, updating, deleting, purging, backing up, restoring and listing the <a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>.
+The client also supports listing <a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a> for a soft-delete enabled Azure Key Vault.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">KeyClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Security.KeyVault.Keys.html">Azure.Security.KeyVault.Keys</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Security.KeyVault.Keys.dll</h6>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class KeyClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient__ctor_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient__ctor" data-uid="Azure.Security.KeyVault.Keys.KeyClient.#ctor">KeyClient()</h4>
+  <div class="markdown level1 summary"><p>Protected constructor to allow mocking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected KeyClient ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient__ctor_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient__ctor_System_Uri_Azure_Core_TokenCredential_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.#ctor(System.Uri,Azure.Core.TokenCredential)">KeyClient(Uri, TokenCredential)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the KeyClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyClient (Uri vaultUri, Azure.Core.TokenCredential credential);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">vaultUri</span></td>
+        <td><p>Endpoint URL for the Azure Key Vault service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>Represents a credential capable of providing an OAuth token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient__ctor_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Security_KeyVault_Keys_KeyClientOptions_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Keys.KeyClientOptions)">KeyClient(Uri, TokenCredential, KeyClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the KeyClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public KeyClient (Uri vaultUri, Azure.Core.TokenCredential credential, Azure.Security.KeyVault.Keys.KeyClientOptions options);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">vaultUri</span></td>
+        <td><p>Endpoint URL for the Azure Key Vault service.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>Represents a credential capable of providing an OAuth token.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyClientOptions.html">KeyClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options that allow to configure the management of the request sent to Key Vault.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_BackupKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.BackupKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_BackupKey_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.BackupKey(System.String,System.Threading.CancellationToken)">BackupKey(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Requests that a backup of the specified key be downloaded to the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;byte[]&gt; BackupKey (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_BackupKey_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Key Backup operation exports a key from Azure Key Vault in a protected</p>
+<p>form. Note that this operation does NOT return key material in a form that</p>
+<p>can be used outside the Azure Key Vault system, the returned key material</p>
+<p>is either protected to a Azure Key Vault HSM or to Azure Key Vault itself.</p>
+<p>The intent of this operation is to allow a client to GENERATE a key in one</p>
+<p>Azure Key Vault instance, BACKUP the key, and then RESTORE it into another</p>
+<p>Azure Key Vault instance. The BACKUP operation may be used to export, in</p>
+<p>protected form, any key type from Azure Key Vault. Individual versions of a</p>
+<p>key cannot be backed up. BACKUP / RESTORE can be performed within</p>
+<p>geographical boundaries only; meaning that a BACKUP from one geographical</p>
+<p>area cannot be restored to another geographical area. For example, a backup</p>
+<p>from the US geographical area cannot be restored in an EU geographical</p>
+<p>area. This operation requires the key/backup permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_BackupKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.BackupKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_BackupKeyAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.BackupKeyAsync(System.String,System.Threading.CancellationToken)">BackupKeyAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Requests that a backup of the specified key be downloaded to the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;byte[]&gt;&gt; BackupKeyAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_BackupKeyAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Key Backup operation exports a key from Azure Key Vault in a protected</p>
+<p>form. Note that this operation does NOT return key material in a form that</p>
+<p>can be used outside the Azure Key Vault system, the returned key material</p>
+<p>is either protected to a Azure Key Vault HSM or to Azure Key Vault itself.</p>
+<p>The intent of this operation is to allow a client to GENERATE a key in one</p>
+<p>Azure Key Vault instance, BACKUP the key, and then RESTORE it into another</p>
+<p>Azure Key Vault instance. The BACKUP operation may be used to export, in</p>
+<p>protected form, any key type from Azure Key Vault. Individual versions of a</p>
+<p>key cannot be backed up. BACKUP / RESTORE can be performed within</p>
+<p>geographical boundaries only; meaning that a BACKUP from one geographical</p>
+<p>area cannot be restored to another geographical area. For example, a backup</p>
+<p>from the US geographical area cannot be restored in an EU geographical</p>
+<p>area. This operation requires the key/backup permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_CreateEcKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateEcKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_CreateEcKey_Azure_Security_KeyVault_Keys_EcKeyCreateOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateEcKey(Azure.Security.KeyVault.Keys.EcKeyCreateOptions,System.Threading.CancellationToken)">CreateEcKey(EcKeyCreateOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates and stores a new Elliptic Curve key in Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; CreateEcKey (Azure.Security.KeyVault.Keys.EcKeyCreateOptions ecKey, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.EcKeyCreateOptions.html">EcKeyCreateOptions</a></td>
+        <td><span class="parametername">ecKey</span></td>
+        <td><p>The key options object containing information about the Elliptic Curve key being created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_CreateEcKey_Azure_Security_KeyVault_Keys_EcKeyCreateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. It requires the keys/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_CreateEcKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateEcKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_CreateEcKeyAsync_Azure_Security_KeyVault_Keys_EcKeyCreateOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateEcKeyAsync(Azure.Security.KeyVault.Keys.EcKeyCreateOptions,System.Threading.CancellationToken)">CreateEcKeyAsync(EcKeyCreateOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates and stores a new Elliptic Curve key in Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; CreateEcKeyAsync (Azure.Security.KeyVault.Keys.EcKeyCreateOptions ecKey, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.EcKeyCreateOptions.html">EcKeyCreateOptions</a></td>
+        <td><span class="parametername">ecKey</span></td>
+        <td><p>The key options object containing information about the Elliptic Curve key being created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_CreateEcKeyAsync_Azure_Security_KeyVault_Keys_EcKeyCreateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. It requires the keys/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_CreateKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_CreateKey_System_String_Azure_Security_KeyVault_Keys_KeyType_Azure_Security_KeyVault_Keys_KeyCreateOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateKey(System.String,Azure.Security.KeyVault.Keys.KeyType,Azure.Security.KeyVault.Keys.KeyCreateOptions,System.Threading.CancellationToken)">CreateKey(String, KeyType, KeyCreateOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates and stores a new key in Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; CreateKey (string name, Azure.Security.KeyVault.Keys.KeyType keyType, Azure.Security.KeyVault.Keys.KeyCreateOptions keyOptions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyType.html">KeyType</a></td>
+        <td><span class="parametername">keyType</span></td>
+        <td><p>The type of key to create. See <a class="xref" href="Azure.Security.KeyVault.Keys.KeyType.html">KeyType</a> for valid values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyCreateOptions.html">KeyCreateOptions</a></td>
+        <td><span class="parametername">keyOptions</span></td>
+        <td><p>Specific attributes with information about the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_CreateKey_System_String_Azure_Security_KeyVault_Keys_KeyType_Azure_Security_KeyVault_Keys_KeyCreateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The create key operation can be used to create any key type in Azure Key</p>
+<p>Vault. If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. It requires the keys/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_CreateKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_CreateKeyAsync_System_String_Azure_Security_KeyVault_Keys_KeyType_Azure_Security_KeyVault_Keys_KeyCreateOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateKeyAsync(System.String,Azure.Security.KeyVault.Keys.KeyType,Azure.Security.KeyVault.Keys.KeyCreateOptions,System.Threading.CancellationToken)">CreateKeyAsync(String, KeyType, KeyCreateOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates and stores a new key in Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; CreateKeyAsync (string name, Azure.Security.KeyVault.Keys.KeyType keyType, Azure.Security.KeyVault.Keys.KeyCreateOptions keyOptions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyType.html">KeyType</a></td>
+        <td><span class="parametername">keyType</span></td>
+        <td><p>The type of key to create. See <a class="xref" href="Azure.Security.KeyVault.Keys.KeyType.html">KeyType</a> for valid values.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyCreateOptions.html">KeyCreateOptions</a></td>
+        <td><span class="parametername">keyOptions</span></td>
+        <td><p>Specific attributes with information about the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_CreateKeyAsync_System_String_Azure_Security_KeyVault_Keys_KeyType_Azure_Security_KeyVault_Keys_KeyCreateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The create key operation can be used to create any key type in Azure Key</p>
+<p>Vault. If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. It requires the keys/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_CreateRsaKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateRsaKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_CreateRsaKey_Azure_Security_KeyVault_Keys_RsaKeyCreateOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateRsaKey(Azure.Security.KeyVault.Keys.RsaKeyCreateOptions,System.Threading.CancellationToken)">CreateRsaKey(RsaKeyCreateOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates and stores a new RSA key in Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; CreateRsaKey (Azure.Security.KeyVault.Keys.RsaKeyCreateOptions rsaKey, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.RsaKeyCreateOptions.html">RsaKeyCreateOptions</a></td>
+        <td><span class="parametername">rsaKey</span></td>
+        <td><p>The key options object containing information about the RSA key being created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_CreateRsaKey_Azure_Security_KeyVault_Keys_RsaKeyCreateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. It requires the keys/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_CreateRsaKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateRsaKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_CreateRsaKeyAsync_Azure_Security_KeyVault_Keys_RsaKeyCreateOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.CreateRsaKeyAsync(Azure.Security.KeyVault.Keys.RsaKeyCreateOptions,System.Threading.CancellationToken)">CreateRsaKeyAsync(RsaKeyCreateOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Creates and stores a new RSA key in Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; CreateRsaKeyAsync (Azure.Security.KeyVault.Keys.RsaKeyCreateOptions rsaKey, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.RsaKeyCreateOptions.html">RsaKeyCreateOptions</a></td>
+        <td><span class="parametername">rsaKey</span></td>
+        <td><p>The key options object containing information about the RSA key being created.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_CreateRsaKeyAsync_Azure_Security_KeyVault_Keys_RsaKeyCreateOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. It requires the keys/create permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_DeleteKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.DeleteKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_DeleteKey_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.DeleteKey(System.String,System.Threading.CancellationToken)">DeleteKey(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes a key of any type from storage in Azure Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.DeletedKey&gt; DeleteKey (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_DeleteKey_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The delete key operation cannot be used to remove individual versions of a</p>
+<p>key. This operation removes the cryptographic material associated with the</p>
+<p>key, which means the key is not usable for Sign/Verify, Wrap/Unwrap or</p>
+<p>Encrypt/Decrypt operations. This operation requires the keys/delete</p>
+<p>permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_DeleteKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.DeleteKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_DeleteKeyAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.DeleteKeyAsync(System.String,System.Threading.CancellationToken)">DeleteKeyAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Deletes a key of any type from storage in Azure Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.DeletedKey&gt;&gt; DeleteKeyAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_DeleteKeyAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The delete key operation cannot be used to remove individual versions of a</p>
+<p>key. This operation removes the cryptographic material associated with the</p>
+<p>key, which means the key is not usable for Sign/Verify, Wrap/Unwrap or</p>
+<p>Encrypt/Decrypt operations. This operation requires the keys/delete</p>
+<p>permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKey_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKey(System.String,System.Threading.CancellationToken)">GetDeletedKey(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the public part of a deleted key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.DeletedKey&gt; GetDeletedKey (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKey_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Get Deleted Key operation is applicable for soft-delete enabled vaults.</p>
+<p>While the operation can be invoked on any vault, it will return an error if</p>
+<p>invoked on a non soft-delete enabled vault. This operation requires the</p>
+<p>keys/get permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeyAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKeyAsync(System.String,System.Threading.CancellationToken)">GetDeletedKeyAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the public part of a deleted key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.DeletedKey&gt;&gt; GetDeletedKeyAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeyAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Get Deleted Key operation is applicable for soft-delete enabled vaults.</p>
+<p>While the operation can be invoked on any vault, it will return an error if</p>
+<p>invoked on a non soft-delete enabled vault. This operation requires the</p>
+<p>keys/get permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeys_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKeys*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeys_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKeys(System.Threading.CancellationToken)">GetDeletedKeys(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists the deleted keys in the specified vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual System.Collections.Generic.IEnumerable&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.DeletedKey&gt;&gt; GetDeletedKeys (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeys_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Retrieves a list of the keys in the Key Vault that contains the public part of a deleted key.</p>
+<p>This operation includes deletion-specific information.</p>
+<p>The Get Deleted Keys operation is applicable</p>
+<p>for vaults enabled for soft-delete. While the operation can be invoked on</p>
+<p>any vault, it will return an error if invoked on a non soft-delete enabled</p>
+<p>vault. This operation requires the keys/list permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeysAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKeysAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeysAsync_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetDeletedKeysAsync(System.Threading.CancellationToken)">GetDeletedKeysAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists the deleted keys in the specified vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncCollection&lt;Azure.Security.KeyVault.Keys.DeletedKey&gt; GetDeletedKeysAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.DeletedKey.html">DeletedKey</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetDeletedKeysAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Retrieves a list of the keys in the Key Vault that contains the public part of a deleted key.</p>
+<p>This operation includes deletion-specific information.</p>
+<p>The Get Deleted Keys operation is applicable</p>
+<p>for vaults enabled for soft-delete. While the operation can be invoked on</p>
+<p>any vault, it will return an error if invoked on a non soft-delete enabled</p>
+<p>vault. This operation requires the keys/list permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetKey_System_String_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKey(System.String,System.String,System.Threading.CancellationToken)">GetKey(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the public part of a stored key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; GetKey (string name, string version = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetKey_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get key operation is applicable to all key types. If the requested key</p>
+<p>is symmetric, then no key material is released in the response. This</p>
+<p>operation requires the keys/get permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyAsync_System_String_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeyAsync(System.String,System.String,System.Threading.CancellationToken)">GetKeyAsync(String, String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the public part of a stored key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; GetKeyAsync (string name, string version = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">version</span></td>
+        <td><p>The version of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyAsync_System_String_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The get key operation is applicable to all key types. If the requested key</p>
+<p>is symmetric, then no key material is released in the response. This</p>
+<p>operation requires the keys/get permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetKeys_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeys*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeys_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeys(System.Threading.CancellationToken)">GetKeys(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List keys in the specified vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual System.Collections.Generic.IEnumerable&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.KeyBase&gt;&gt; GetKeys (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeys_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Retrieves a list of the keys in the Key Vault that contains the public part of a stored key.</p>
+<p>The list operation is applicable to all key types, however only the base key identifier,</p>
+<p>attributes, and tags are provided in the response. Individual versions of a</p>
+<p>key are not listed in the response. This operation requires the keys/list</p>
+<p>permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetKeysAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeysAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeysAsync_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeysAsync(System.Threading.CancellationToken)">GetKeysAsync(CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>List keys in the specified vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncCollection&lt;Azure.Security.KeyVault.Keys.KeyBase&gt; GetKeysAsync (System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeysAsync_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Retrieves a list of the keys in the Key Vault that contains the public part of a stored key.</p>
+<p>The list operation is applicable to all key types, however only the base key identifier,</p>
+<p>attributes, and tags are provided in the response. Individual versions of a</p>
+<p>key are not listed in the response. This operation requires the keys/list</p>
+<p>permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyVersions_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeyVersions*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyVersions_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeyVersions(System.String,System.Threading.CancellationToken)">GetKeyVersions(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a list of individual key versions with the same key name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual System.Collections.Generic.IEnumerable&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.KeyBase&gt;&gt; GetKeyVersions (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyVersions_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The full key identifier, attributes, and tags are provided in the response.</p>
+<p>This operation requires the keys/list permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyVersionsAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeyVersionsAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyVersionsAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.GetKeyVersionsAsync(System.String,System.Threading.CancellationToken)">GetKeyVersionsAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Retrieves a list of individual key versions with the same key name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.AsyncCollection&lt;Azure.Security.KeyVault.Keys.KeyBase&gt; GetKeyVersionsAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.AsyncCollection-1.html">AsyncCollection</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_GetKeyVersionsAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The full key identifier, attributes, and tags are provided in the response.</p>
+<p>This operation requires the keys/list permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_ImportKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKey_Azure_Security_KeyVault_Keys_KeyImportOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKey(Azure.Security.KeyVault.Keys.KeyImportOptions,System.Threading.CancellationToken)">ImportKey(KeyImportOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Imports an externally created key, stores it, and returns key parameters
+and attributes to the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; ImportKey (Azure.Security.KeyVault.Keys.KeyImportOptions keyImportOptions, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyImportOptions.html">KeyImportOptions</a></td>
+        <td><span class="parametername">keyImportOptions</span></td>
+        <td><p>The key import configuration object containing information about the <a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> being imported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKey_Azure_Security_KeyVault_Keys_KeyImportOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The import key operation may be used to import any key type into an Azure</p>
+<p>Key Vault. If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. This operation requires the keys/import permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_ImportKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKey_System_String_Azure_Security_KeyVault_Keys_JsonWebKey_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKey(System.String,Azure.Security.KeyVault.Keys.JsonWebKey,System.Threading.CancellationToken)">ImportKey(String, JsonWebKey, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Imports an externally created key, stores it, and returns key parameters
+and attributes to the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; ImportKey (string name, Azure.Security.KeyVault.Keys.JsonWebKey keyMaterial, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">keyMaterial</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> being imported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKey_System_String_Azure_Security_KeyVault_Keys_JsonWebKey_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The import key operation may be used to import any key type into an Azure</p>
+<p>Key Vault. If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. This operation requires the keys/import permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_ImportKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKeyAsync_System_String_Azure_Security_KeyVault_Keys_JsonWebKey_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKeyAsync(System.String,Azure.Security.KeyVault.Keys.JsonWebKey,System.Threading.CancellationToken)">ImportKeyAsync(String, JsonWebKey, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Imports an externally created key, stores it, and returns key parameters
+and attributes to the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; ImportKeyAsync (string name, Azure.Security.KeyVault.Keys.JsonWebKey keyMaterial, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a></td>
+        <td><span class="parametername">keyMaterial</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> being imported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKeyAsync_System_String_Azure_Security_KeyVault_Keys_JsonWebKey_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The import key operation may be used to import any key type into an Azure</p>
+<p>Key Vault. If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. This operation requires the keys/import permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_ImportKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKeyAsync_Azure_Security_KeyVault_Keys_KeyImportOptions_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.ImportKeyAsync(Azure.Security.KeyVault.Keys.KeyImportOptions,System.Threading.CancellationToken)">ImportKeyAsync(KeyImportOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Imports an externally created key, stores it, and returns key parameters
+and attributes to the client.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; ImportKeyAsync (Azure.Security.KeyVault.Keys.KeyImportOptions keyImportOptions, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyImportOptions.html">KeyImportOptions</a></td>
+        <td><span class="parametername">keyImportOptions</span></td>
+        <td><p>The key import configuration object containing information about the <a class="xref" href="Azure.Security.KeyVault.Keys.JsonWebKey.html">JsonWebKey</a> being imported.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_ImportKeyAsync_Azure_Security_KeyVault_Keys_KeyImportOptions_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The import key operation may be used to import any key type into an Azure</p>
+<p>Key Vault. If the named key already exists, Azure Key Vault creates a new</p>
+<p>version of the key. This operation requires the keys/import permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_PurgeDeletedKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.PurgeDeletedKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_PurgeDeletedKey_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.PurgeDeletedKey(System.String,System.Threading.CancellationToken)">PurgeDeletedKey(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Permanently deletes the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response PurgeDeletedKey (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response.html">Response</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_PurgeDeletedKey_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Purge Deleted Key operation is applicable for soft-delete enabled</p>
+<p>vaults. While the operation can be invoked on any vault, it will return an</p>
+<p>error if invoked on a non soft-delete enabled vault. This operation</p>
+<p>requires the keys/purge permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_PurgeDeletedKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.PurgeDeletedKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_PurgeDeletedKeyAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.PurgeDeletedKeyAsync(System.String,System.Threading.CancellationToken)">PurgeDeletedKeyAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Permanently deletes the specified key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&gt; PurgeDeletedKeyAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response.html">Response</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_PurgeDeletedKeyAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Purge Deleted Key operation is applicable for soft-delete enabled</p>
+<p>vaults. While the operation can be invoked on any vault, it will return an</p>
+<p>error if invoked on a non soft-delete enabled vault. This operation</p>
+<p>requires the keys/purge permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_RecoverDeletedKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RecoverDeletedKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_RecoverDeletedKey_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RecoverDeletedKey(System.String,System.Threading.CancellationToken)">RecoverDeletedKey(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Recovers the deleted key to its latest version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; RecoverDeletedKey (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_RecoverDeletedKey_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Recover Deleted Key operation is applicable for deleted keys in</p>
+<p>soft-delete enabled vaults. It recovers the deleted key back to its latest</p>
+<p>version under /keys. An attempt to recover an non-deleted key will return</p>
+<p>an error. Consider this the inverse of the delete operation on soft-delete</p>
+<p>enabled vaults. This operation requires the keys/recover permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_RecoverDeletedKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RecoverDeletedKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_RecoverDeletedKeyAsync_System_String_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RecoverDeletedKeyAsync(System.String,System.Threading.CancellationToken)">RecoverDeletedKeyAsync(String, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Recovers the deleted key to its latest version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; RecoverDeletedKeyAsync (string name, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>The name of the key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_RecoverDeletedKeyAsync_System_String_System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>The Recover Deleted Key operation is applicable for deleted keys in</p>
+<p>soft-delete enabled vaults. It recovers the deleted key back to its latest</p>
+<p>version under /keys. An attempt to recover an non-deleted key will return</p>
+<p>an error. Consider this the inverse of the delete operation on soft-delete</p>
+<p>enabled vaults. This operation requires the keys/recover permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_RestoreKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RestoreKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_RestoreKey_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RestoreKey(System.Byte[],System.Threading.CancellationToken)">RestoreKey(Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Restores a backed up key to a vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; RestoreKey (byte[] backup, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The backup blob associated with a key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_RestoreKey_System_Byte___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Imports a previously backed up key into Azure Key Vault, restoring the key,</p>
+<p>its key identifier, attributes and access control policies. The RESTORE</p>
+<p>operation may be used to import a previously backed up key. Individual</p>
+<p>versions of a key cannot be restored. The key is restored in its entirety</p>
+<p>with the same key name as it had when it was backed up. If the key name is</p>
+<p>not available in the target Key Vault, the RESTORE operation will be</p>
+<p>rejected. While the key name is retained during restore, the final key</p>
+<p>identifier will change if the key is restored to a different vault. Restore</p>
+<p>will restore all versions and preserve version identifiers. The RESTORE</p>
+<p>operation is subject to security constraints: The target Key Vault must be</p>
+<p>owned by the same Microsoft Azure Subscription as the source Key Vault The</p>
+<p>user must have RESTORE permission in the target Key Vault. This operation</p>
+<p>requires the keys/restore permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_RestoreKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RestoreKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_RestoreKeyAsync_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.RestoreKeyAsync(System.Byte[],System.Threading.CancellationToken)">RestoreKeyAsync(Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Restores a backed up key to a vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; RestoreKeyAsync (byte[] backup, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">backup</span></td>
+        <td><p>The backup blob associated with a key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_RestoreKeyAsync_System_Byte___System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Imports a previously backed up key into Azure Key Vault, restoring the key,</p>
+<p>its key identifier, attributes and access control policies. The RESTORE</p>
+<p>operation may be used to import a previously backed up key. Individual</p>
+<p>versions of a key cannot be restored. The key is restored in its entirety</p>
+<p>with the same key name as it had when it was backed up. If the key name is</p>
+<p>not available in the target Key Vault, the RESTORE operation will be</p>
+<p>rejected. While the key name is retained during restore, the final key</p>
+<p>identifier will change if the key is restored to a different vault. Restore</p>
+<p>will restore all versions and preserve version identifiers. The RESTORE</p>
+<p>operation is subject to security constraints: The target Key Vault must be</p>
+<p>owned by the same Microsoft Azure Subscription as the source Key Vault The</p>
+<p>user must have RESTORE permission in the target Key Vault. This operation</p>
+<p>requires the keys/restore permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_UpdateKey_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.UpdateKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_UpdateKey_Azure_Security_KeyVault_Keys_KeyBase_System_Collections_Generic_IEnumerable_Azure_Security_KeyVault_Keys_KeyOperations__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.UpdateKey(Azure.Security.KeyVault.Keys.KeyBase,System.Collections.Generic.IEnumerable{Azure.Security.KeyVault.Keys.KeyOperations},System.Threading.CancellationToken)">UpdateKey(KeyBase, IEnumerable&lt;KeyOperations&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The update key operation changes specified attributes of a stored key and
+can be applied to any key type and key version stored in Azure Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt; UpdateKey (Azure.Security.KeyVault.Keys.KeyBase key, System.Collections.Generic.IEnumerable&lt;Azure.Security.KeyVault.Keys.KeyOperations&gt; keyOperations, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a> object with updated properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.KeyOperations.html">KeyOperations</a>&gt;</td>
+        <td><span class="parametername">keyOperations</span></td>
+        <td><p>List of supported <a class="xref" href="Azure.Security.KeyVault.Keys.KeyOperations.html">KeyOperations</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_UpdateKey_Azure_Security_KeyVault_Keys_KeyBase_System_Collections_Generic_IEnumerable_Azure_Security_KeyVault_Keys_KeyOperations__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In order to perform this operation, the key must already exist in the Key</p>
+<p>Vault. Note: The cryptographic material of a key itself cannot be changed.</p>
+<p>This operation requires the keys/update permission.</p>
+</div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_KeyClient_UpdateKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.UpdateKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_KeyClient_UpdateKeyAsync_Azure_Security_KeyVault_Keys_KeyBase_System_Collections_Generic_IEnumerable_Azure_Security_KeyVault_Keys_KeyOperations__System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.KeyClient.UpdateKeyAsync(Azure.Security.KeyVault.Keys.KeyBase,System.Collections.Generic.IEnumerable{Azure.Security.KeyVault.Keys.KeyOperations},System.Threading.CancellationToken)">UpdateKeyAsync(KeyBase, IEnumerable&lt;KeyOperations&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>The update key operation changes specified attributes of a stored key and
+can be applied to any key type and key version stored in Azure Key Vault.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Response&lt;Azure.Security.KeyVault.Keys.Key&gt;&gt; UpdateKeyAsync (Azure.Security.KeyVault.Keys.KeyBase key, System.Collections.Generic.IEnumerable&lt;Azure.Security.KeyVault.Keys.KeyOperations&gt; keyOperations, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The <a class="xref" href="Azure.Security.KeyVault.Keys.KeyBase.html">KeyBase</a> object with updated properties.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.KeyOperations.html">KeyOperations</a>&gt;</td>
+        <td><span class="parametername">keyOperations</span></td>
+        <td><p>List of supported <a class="xref" href="Azure.Security.KeyVault.Keys.KeyOperations.html">KeyOperations</a>.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>A <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a> controlling the request lifetime.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="../Azure/Azure.Response-1.html">Response</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Key.html">Key</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Azure_Security_KeyVault_Keys_KeyClient_UpdateKeyAsync_Azure_Security_KeyVault_Keys_KeyBase_System_Collections_Generic_IEnumerable_Azure_Security_KeyVault_Keys_KeyOperations__System_Threading_CancellationToken__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>In order to perform this operation, the key must already exist in the Key</p>
+<p>Vault. Note: The cryptographic material of a key itself cannot be changed.</p>
+<p>This operation requires the keys/update permission.</p>
+</div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

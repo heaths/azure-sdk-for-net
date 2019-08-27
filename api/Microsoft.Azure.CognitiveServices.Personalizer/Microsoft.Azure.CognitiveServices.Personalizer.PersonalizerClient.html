@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PersonalizerClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PersonalizerClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient" class="text-break">Class PersonalizerClient
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">Microsoft.Rest.ServiceClient</span></div>
+    <div class="level1"><span class="xref">PersonalizerClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.IPersonalizerClient.html">IPersonalizerClient</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.CognitiveServices.Personalizer.html">Microsoft.Azure.CognitiveServices.Personalizer</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Personalizer.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PersonalizerClient : Microsoft.Rest.ServiceClient&lt;Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient&gt;, IDisposable, Microsoft.Azure.CognitiveServices.Personalizer.IPersonalizerClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor(System.Net.Http.DelegatingHandler[])">PersonalizerClient(DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PersonalizerClient (params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.DelegatingHandler[])">PersonalizerClient(ServiceClientCredentials, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersonalizerClient (Microsoft.Rest.ServiceClientCredentials credentials, params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor(System.Net.Http.HttpClient,System.Boolean)">PersonalizerClient(HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PersonalizerClient (System.Net.Http.HttpClient httpClient, bool disposeHttpClient);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor(System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">PersonalizerClient(HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PersonalizerClient (System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_HttpClient_System_Boolean_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClient,System.Boolean)">PersonalizerClient(ServiceClientCredentials, HttpClient, Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersonalizerClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClient httpClient, bool disposeHttpClient);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclient">HttpClient</a></td>
+        <td><span class="parametername">httpClient</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposeHttpClient</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient__ctor_Microsoft_Rest_ServiceClientCredentials_System_Net_Http_HttpClientHandler_System_Net_Http_DelegatingHandler___" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.#ctor(Microsoft.Rest.ServiceClientCredentials,System.Net.Http.HttpClientHandler,System.Net.Http.DelegatingHandler[])">PersonalizerClient(ServiceClientCredentials, HttpClientHandler, DelegatingHandler[])</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PersonalizerClient (Microsoft.Rest.ServiceClientCredentials credentials, System.Net.Http.HttpClientHandler rootHandler, params System.Net.Http.DelegatingHandler[] handlers);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td><span class="parametername">credentials</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.httpclienthandler">HttpClientHandler</a></td>
+        <td><span class="parametername">rootHandler</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.net.http.delegatinghandler">DelegatingHandler</a>[]</td>
+        <td><span class="parametername">handlers</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_Credentials_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_Credentials" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Rest.ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_DeserializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_DeserializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Newtonsoft.Json.JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_Endpoint_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.Endpoint*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_Endpoint" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.Endpoint">Endpoint</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Endpoint { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_Events_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.Events*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_Events" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.Events">Events</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.CognitiveServices.Personalizer.IEvents Events { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.IEvents.html">IEvents</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_SerializationSettings_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_SerializationSettings" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Newtonsoft.Json.JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_RankWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.RankWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClient_RankWithHttpMessagesAsync_Microsoft_Azure_CognitiveServices_Personalizer_Models_RankRequest_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClient.RankWithHttpMessagesAsync(Microsoft.Azure.CognitiveServices.Personalizer.Models.RankRequest,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">RankWithHttpMessagesAsync(RankRequest, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.Personalizer.Models.RankResponse&gt;&gt; RankWithHttpMessagesAsync (Microsoft.Azure.CognitiveServices.Personalizer.Models.RankRequest rankRequest, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.Personalizer.Models/Microsoft.Azure.CognitiveServices.Personalizer.Models.RankRequest.html">RankRequest</a></td>
+        <td><span class="parametername">rankRequest</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.Personalizer.Models/Microsoft.Azure.CognitiveServices.Personalizer.Models.RankResponse.html">RankResponse</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.IPersonalizerClient.html">Microsoft.Azure.CognitiveServices.Personalizer.IPersonalizerClient</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClientExtensions.html#Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClientExtensions_Rank_Microsoft_Azure_CognitiveServices_Personalizer_IPersonalizerClient_Microsoft_Azure_CognitiveServices_Personalizer_Models_RankRequest_">PersonalizerClientExtensions.Rank(IPersonalizerClient, RankRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClientExtensions.html#Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClientExtensions_RankAsync_Microsoft_Azure_CognitiveServices_Personalizer_IPersonalizerClient_Microsoft_Azure_CognitiveServices_Personalizer_Models_RankRequest_System_Threading_CancellationToken_">PersonalizerClientExtensions.RankAsync(IPersonalizerClient, RankRequest, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClientExtensions.html#Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClientExtensions_RankWithHttpMessages_Microsoft_Azure_CognitiveServices_Personalizer_IPersonalizerClient_Microsoft_Azure_CognitiveServices_Personalizer_Models_RankRequest_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___">PersonalizerClientExtensions.RankWithHttpMessages(IPersonalizerClient, RankRequest, Dictionary&lt;String,List&lt;String&gt;&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClientExtensions.html#Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClientExtensions_Reward_Microsoft_Azure_CognitiveServices_Personalizer_IPersonalizerClient_System_String_Microsoft_Azure_CognitiveServices_Personalizer_Models_RewardRequest_">PersonalizerClientExtensions.Reward(IPersonalizerClient, String, RewardRequest)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClientExtensions.html#Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClientExtensions_Reward_Microsoft_Azure_CognitiveServices_Personalizer_IPersonalizerClient_System_String_System_Double_">PersonalizerClientExtensions.Reward(IPersonalizerClient, String, Double)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClientExtensions.html#Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClientExtensions_RewardAsync_Microsoft_Azure_CognitiveServices_Personalizer_IPersonalizerClient_System_String_Microsoft_Azure_CognitiveServices_Personalizer_Models_RewardRequest_System_Threading_CancellationToken_">PersonalizerClientExtensions.RewardAsync(IPersonalizerClient, String, RewardRequest, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.Personalizer.PersonalizerClientExtensions.html#Microsoft_Azure_CognitiveServices_Personalizer_PersonalizerClientExtensions_RewardAsync_Microsoft_Azure_CognitiveServices_Personalizer_IPersonalizerClient_System_String_System_Double_System_Threading_CancellationToken_">PersonalizerClientExtensions.RewardAsync(IPersonalizerClient, String, Double, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

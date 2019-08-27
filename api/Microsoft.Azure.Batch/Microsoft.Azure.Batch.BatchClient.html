@@ -1,0 +1,510 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class BatchClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class BatchClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.BatchClient">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_BatchClient" data-uid="Microsoft.Azure.Batch.BatchClient" class="text-break">Class BatchClient
+  </h1>
+  <div class="markdown level0 summary"><p>A client for an Azure Batch account, used to access the Batch service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">BatchClient</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.html">Microsoft.Azure.Batch</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_BatchClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class BatchClient : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_ApplicationOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.ApplicationOperations*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_ApplicationOperations" data-uid="Microsoft.Azure.Batch.BatchClient.ApplicationOperations">ApplicationOperations</h4>
+  <div class="markdown level1 summary"><p>Gets an <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_ApplicationOperations">ApplicationOperations</a> for performing application-related operations on the associated account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.ApplicationOperations ApplicationOperations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.ApplicationOperations.html">ApplicationOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_CertificateOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.CertificateOperations*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_CertificateOperations" data-uid="Microsoft.Azure.Batch.BatchClient.CertificateOperations">CertificateOperations</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_CertificateOperations">CertificateOperations</a> for performing certificate-related operations on the associated account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.CertificateOperations CertificateOperations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.CertificateOperations.html">CertificateOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_CustomBehaviors_" data-uid="Microsoft.Azure.Batch.BatchClient.CustomBehaviors*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_CustomBehaviors" data-uid="Microsoft.Azure.Batch.BatchClient.CustomBehaviors">CustomBehaviors</h4>
+  <div class="markdown level1 summary"><p>Gets or sets a list of behaviors that modify or customize requests to the Batch service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Collections.Generic.IList&lt;Microsoft.Azure.Batch.BatchClientBehavior&gt; CustomBehaviors { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="Microsoft.Azure.Batch.BatchClientBehavior.html">BatchClientBehavior</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="Microsoft_Azure_Batch_BatchClient_CustomBehaviors_remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>These behaviors are inherited by child objects.</p>
+<p>Modifications are applied in the order of the collection. The last write wins.</p>
+</div>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_JobOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.JobOperations*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_JobOperations" data-uid="Microsoft.Azure.Batch.BatchClient.JobOperations">JobOperations</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_JobOperations">JobOperations</a> for performing job-related operations on the associated account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.JobOperations JobOperations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.JobOperations.html">JobOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_JobScheduleOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.JobScheduleOperations*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_JobScheduleOperations" data-uid="Microsoft.Azure.Batch.BatchClient.JobScheduleOperations">JobScheduleOperations</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_JobScheduleOperations">JobScheduleOperations</a> for performing job schedule-related operations on the associated account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.JobScheduleOperations JobScheduleOperations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.JobScheduleOperations.html">JobScheduleOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_PoolOperations_" data-uid="Microsoft.Azure.Batch.BatchClient.PoolOperations*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_PoolOperations" data-uid="Microsoft.Azure.Batch.BatchClient.PoolOperations">PoolOperations</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_PoolOperations">PoolOperations</a> for performing pool-related operations on the associated account.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.PoolOperations PoolOperations { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.PoolOperations.html">PoolOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_Utilities_" data-uid="Microsoft.Azure.Batch.BatchClient.Utilities*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_Utilities" data-uid="Microsoft.Azure.Batch.BatchClient.Utilities">Utilities</h4>
+  <div class="markdown level1 summary"><p>Gets a <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html#Microsoft_Azure_Batch_BatchClient_Utilities">Utilities</a> object containing utility methods for orchestrating multiple Batch operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Utilities Utilities { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Utilities.html">Utilities</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_Dispose_" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_Dispose" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Releases the unmanaged resources and disposes of the managed resources used by the <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Dispose ();</code></pre>
+  </div>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_Dispose_" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_Dispose_System_Boolean_" data-uid="Microsoft.Azure.Batch.BatchClient.Dispose(System.Boolean)">Dispose(Boolean)</h4>
+  <div class="markdown level1 summary"><p>Releases unmanaged resources used by the <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>, and optionally disposes of managed resources.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Dispose (bool disposing);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><span class="parametername">disposing</span></td>
+        <td><p>Indicates whether the object is being disposed or finalized.  If true, the object is
+being disposed and can dispose managed resource.  If false, the object is being finalized and should only
+release unmanaged resources.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_Open_" data-uid="Microsoft.Azure.Batch.BatchClient.Open*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_Open_Microsoft_Azure_Batch_Auth_BatchSharedKeyCredentials_" data-uid="Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials)">Open(BatchSharedKeyCredentials)</h4>
+  <div class="markdown level1 summary"><p>Creates an instance of <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.Batch.BatchClient Open (Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials credentials);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Auth/Microsoft.Azure.Batch.Auth.BatchSharedKeyCredentials.html">BatchSharedKeyCredentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>The Batch account credentials.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a></td>
+        <td><p>An instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_Open_" data-uid="Microsoft.Azure.Batch.BatchClient.Open*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_Open_Microsoft_Azure_Batch_Auth_BatchTokenCredentials_" data-uid="Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Auth.BatchTokenCredentials)">Open(BatchTokenCredentials)</h4>
+  <div class="markdown level1 summary"><p>Creates an instance of <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.Batch.BatchClient Open (Microsoft.Azure.Batch.Auth.BatchTokenCredentials credentials);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Auth/Microsoft.Azure.Batch.Auth.BatchTokenCredentials.html">BatchTokenCredentials</a></td>
+        <td><span class="parametername">credentials</span></td>
+        <td><p>The Azure Active Directory Batch account credentials.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a></td>
+        <td><p>An instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_BatchClient_Open_" data-uid="Microsoft.Azure.Batch.BatchClient.Open*"></a>
+  <h4 id="Microsoft_Azure_Batch_BatchClient_Open_Microsoft_Azure_Batch_Protocol_BatchServiceClient_" data-uid="Microsoft.Azure.Batch.BatchClient.Open(Microsoft.Azure.Batch.Protocol.BatchServiceClient)">Open(BatchServiceClient)</h4>
+  <div class="markdown level1 summary"><p>Blocking call that creates an instance of <a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a> associated with the specified <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Azure.Batch.BatchClient Open (Microsoft.Azure.Batch.Protocol.BatchServiceClient restClient);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a></td>
+        <td><span class="parametername">restClient</span></td>
+        <td><p>The instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a> to use for all calls made to the Batch Service. It will not be disposed when BatchClient is disposed.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.BatchClient.html">BatchClient</a></td>
+        <td><p>An instance of <a class="xref" href="../Microsoft.Azure.Batch.Protocol/Microsoft.Azure.Batch.Protocol.BatchServiceClient.html">BatchServiceClient</a>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

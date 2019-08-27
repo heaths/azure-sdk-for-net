@@ -1,0 +1,585 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IBatchServiceClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IBatchServiceClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient" class="text-break">Interface IBatchServiceClient
+  </h1>
+  <div class="markdown level0 summary"><p>A client for issuing REST requests to the Azure Batch service.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IBatchServiceClient : IDisposable</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_AcceptLanguage_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.AcceptLanguage*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_AcceptLanguage" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.AcceptLanguage">AcceptLanguage</h4>
+  <div class="markdown level1 summary"><p>The preferred language for the response.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string AcceptLanguage { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Account_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Account*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Account" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Account">Account</h4>
+  <div class="markdown level1 summary"><p>Gets the IAccountOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.IAccountOperations Account { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_ApiVersion_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.ApiVersion*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_ApiVersion" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.ApiVersion">ApiVersion</h4>
+  <div class="markdown level1 summary"><p>Client API Version.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ApiVersion { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Application_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Application*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Application" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Application">Application</h4>
+  <div class="markdown level1 summary"><p>Gets the IApplicationOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.IApplicationOperations Application { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IApplicationOperations.html">IApplicationOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_BatchUrl_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.BatchUrl*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_BatchUrl" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.BatchUrl">BatchUrl</h4>
+  <div class="markdown level1 summary"><p>The base URL for all Azure Batch service requests.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string BatchUrl { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Certificate_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Certificate*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Certificate" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Certificate">Certificate</h4>
+  <div class="markdown level1 summary"><p>Gets the ICertificateOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.ICertificateOperations Certificate { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ICertificateOperations.html">ICertificateOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_ComputeNode_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.ComputeNode*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_ComputeNode" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.ComputeNode">ComputeNode</h4>
+  <div class="markdown level1 summary"><p>Gets the IComputeNodeOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.IComputeNodeOperations ComputeNode { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IComputeNodeOperations.html">IComputeNodeOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Credentials_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Credentials*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Credentials" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Credentials">Credentials</h4>
+  <div class="markdown level1 summary"><p>Credentials needed for the client to connect to Azure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Rest.ServiceClientCredentials Credentials { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.ServiceClientCredentials</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_DeserializationSettings_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.DeserializationSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_DeserializationSettings" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.DeserializationSettings">DeserializationSettings</h4>
+  <div class="markdown level1 summary"><p>Gets or sets json deserialization settings.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Newtonsoft.Json.JsonSerializerSettings DeserializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_File_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.File*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_File" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.File">File</h4>
+  <div class="markdown level1 summary"><p>Gets the IFileOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.IFileOperations File { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IFileOperations.html">IFileOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_GenerateClientRequestId_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.GenerateClientRequestId*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_GenerateClientRequestId" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.GenerateClientRequestId">GenerateClientRequestId</h4>
+  <div class="markdown level1 summary"><p>Whether a unique x-ms-client-request-id should be generated. When
+set to true a unique x-ms-client-request-id value is generated and
+included in each request. Default is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;bool&gt; GenerateClientRequestId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Job_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Job*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Job" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Job">Job</h4>
+  <div class="markdown level1 summary"><p>Gets the IJobOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.IJobOperations Job { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IJobOperations.html">IJobOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_JobSchedule_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.JobSchedule*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_JobSchedule" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.JobSchedule">JobSchedule</h4>
+  <div class="markdown level1 summary"><p>Gets the IJobScheduleOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.IJobScheduleOperations JobSchedule { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IJobScheduleOperations.html">IJobScheduleOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_LongRunningOperationRetryTimeout_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.LongRunningOperationRetryTimeout*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_LongRunningOperationRetryTimeout" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.LongRunningOperationRetryTimeout">LongRunningOperationRetryTimeout</h4>
+  <div class="markdown level1 summary"><p>The retry timeout in seconds for Long Running Operations. Default
+value is 30.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;int&gt; LongRunningOperationRetryTimeout { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Pool_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Pool*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Pool" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Pool">Pool</h4>
+  <div class="markdown level1 summary"><p>Gets the IPoolOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.IPoolOperations Pool { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IPoolOperations.html">IPoolOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_SerializationSettings_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.SerializationSettings*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_SerializationSettings" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.SerializationSettings">SerializationSettings</h4>
+  <div class="markdown level1 summary"><p>The base URI of the service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Newtonsoft.Json.JsonSerializerSettings SerializationSettings { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonSerializerSettings</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Task_" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Task*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_IBatchServiceClient_Task" data-uid="Microsoft.Azure.Batch.Protocol.IBatchServiceClient.Task">Task</h4>
+  <div class="markdown level1 summary"><p>Gets the ITaskOperations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Microsoft.Azure.Batch.Protocol.ITaskOperations Task { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.ITaskOperations.html">ITaskOperations</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

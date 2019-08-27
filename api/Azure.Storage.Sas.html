@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Azure.Storage.Sas
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Azure.Storage.Sas
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Storage.Sas">
+  
+  <h1 id="Azure_Storage_Sas" data-uid="Azure.Storage.Sas" class="text-break">Namespace Azure.Storage.Sas
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasQueryParameters.html">BlobSasQueryParameters</a></h4>
+      <section><p>A <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasQueryParameters.html">BlobSasQueryParameters</a> object represents the components
+that make up an Azure Storage Shared Access Signature's query
+parameters.  You can construct a new instance using
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a>.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas"></a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.SasQueryParameters.html">SasQueryParameters</a></h4>
+      <section><p>A <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.SasQueryParameters.html">SasQueryParameters</a> object represents the components
+that make up an Azure Storage Shared Access Signature's query
+parameters.  It includes components used by all Azure Storage resources
+(Containers, Blobs, Files, and Queues).  You can construct a new instance
+using the service specific SAS builder types.</p>
+<p>For more information, <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas"></a>.</p>
+</section>
+    <h3 id="structs">Structs
+  </h3>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasBuilder.html">AccountSasBuilder</a> is used to generate an account level
+Shared Access Signature (SAS) for Azure Storage services.
+For more information, see
+<a href="https://docs.microsoft.com/rest/api/storageservices/constructing-an-account-sas"></a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasPermissions.html">AccountSasPermissions</a></h4>
+      <section><p>Specifies the permissions available to an account level shared access
+signature.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasPermissions.html#Azure_Storage_Sas_AccountSasPermissions_ToString">ToString()</a> to produce a <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>
+that can be for <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasBuilder.html#Azure_Storage_Sas_AccountSasBuilder_Permissions">Permissions</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasResourceTypes.html">AccountSasResourceTypes</a></h4>
+      <section><p>Specifies the resource types accessible from an account level shared
+access signature.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasResourceTypes.html#Azure_Storage_Sas_AccountSasResourceTypes_ToString">ToString()</a> to produce a value that
+can be used for <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasBuilder.html#Azure_Storage_Sas_AccountSasBuilder_ResourceTypes">ResourceTypes</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasServices.html">AccountSasServices</a></h4>
+      <section><p>Specifies the services accessible from an account level shared access
+signature.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasServices.html#Azure_Storage_Sas_AccountSasServices_ToString">ToString()</a> to produce a value that can be
+used for <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.AccountSasBuilder.html#Azure_Storage_Sas_AccountSasBuilder_Services">Services</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobAccountSasPermissions.html">BlobAccountSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobAccountSasPermissions.html">BlobAccountSasPermissions</a> supports reading and writing
+permissions string for a storage account's access policy.  Use
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobAccountSasPermissions.html#Azure_Storage_Sas_BlobAccountSasPermissions_ToString">ToString()</a> to generate a permissions string.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html">BlobSasBuilder</a> is used to generate a Shared Access
+Signature (SAS) for an Azure Storage container or blob.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas"></a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasPermissions.html">BlobSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasPermissions.html">BlobSasPermissions</a> supports reading and writing
+permissions string for a blob's access policy.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasPermissions.html#Azure_Storage_Sas_BlobSasPermissions_ToString">ToString()</a>
+to generate a permissions string you can provide to
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html#Azure_Storage_Sas_BlobSasBuilder_Permissions">Permissions</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.ContainerSasPermissions.html">ContainerSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.ContainerSasPermissions.html">ContainerSasPermissions</a> supports reading and writing
+permissions string for a containers's access policy.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.ContainerSasPermissions.html#Azure_Storage_Sas_ContainerSasPermissions_ToString">ToString()</a>
+to generate a permissions string you can provide to
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html#Azure_Storage_Sas_BlobSasBuilder_Permissions">Permissions</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileAccountSasPermissions.html">FileAccountSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileAccountSasPermissions.html">FileAccountSasPermissions</a> supports reading and writing
+permissions string for a storage account's access policy.  Use
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileAccountSasPermissions.html#Azure_Storage_Sas_FileAccountSasPermissions_ToString">ToString()</a> to generate a permissions string.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileSasBuilder.html">FileSasBuilder</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileSasBuilder.html">FileSasBuilder</a> is used to generate a Shared Access
+Signature (SAS) for an Azure Storage share, directory, or file.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas"></a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileSasPermissions.html">FileSasPermissions</a> supports reading and writing
+permissions string for a file's access policy.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileSasPermissions.html#Azure_Storage_Sas_FileSasPermissions_ToString">ToString()</a>
+to generate a permissions string you can provide to
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileSasBuilder.html#Azure_Storage_Sas_FileSasBuilder_Permissions">Permissions</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.IPRange.html">IPRange</a></h4>
+      <section><p>Represents a range of allowed IP addresses for constructing a Shared
+Access Signature.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueAccountSasPermissions.html">QueueAccountSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueAccountSasPermissions.html">QueueAccountSasPermissions</a> supports reading and writing
+permissions string for a queue account's access policy.  Use
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueAccountSasPermissions.html#Azure_Storage_Sas_QueueAccountSasPermissions_ToString">ToString()</a> to generate a permissions string you can provide
+to <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueSasBuilder.html#Azure_Storage_Sas_QueueSasBuilder_Permissions">Permissions</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueSasBuilder.html">QueueSasBuilder</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueSasBuilder.html">QueueSasBuilder</a> is used to generate a Shared Access
+Signature (SAS) for an Azure Storage queue.
+For more information, see <a href="https://docs.microsoft.com/en-us/rest/api/storageservices/constructing-a-service-sas"></a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueSasPermissions.html">QueueSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueSasPermissions.html">QueueSasPermissions</a> supports reading and writing
+permissions string for a queue's access policy.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.QueueSasPermissions.html#Azure_Storage_Sas_QueueSasPermissions_ToString">ToString()</a>
+to generate a permissions string you can provide to</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.SasProtocol.html">SasProtocol</a></h4>
+      <section><p>Defines the protocols permitted for Storage requests made with a shared
+access signature.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.ShareSasPermissions.html">ShareSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.ShareSasPermissions.html">ShareSasPermissions</a> supports reading and writing
+permissions string for a share's access policy.  Use <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.ShareSasPermissions.html#Azure_Storage_Sas_ShareSasPermissions_ToString">ToString()</a>
+to generate a permissions string you can provide to
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.FileSasBuilder.html#Azure_Storage_Sas_FileSasBuilder_Permissions">Permissions</a>.</p>
+</section>
+      <h4><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.SnapshotSasPermissions.html">SnapshotSasPermissions</a></h4>
+      <section><p><a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.SnapshotSasPermissions.html">SnapshotSasPermissions</a> supports reading and writing
+permissions string for a blob snapshot's access policy.  Use
+<a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.SnapshotSasPermissions.html#Azure_Storage_Sas_SnapshotSasPermissions_ToString">ToString()</a> to generate a permissions string you can
+provide to <a class="xref" href="Azure.Storage.Sas/Azure.Storage.Sas.BlobSasBuilder.html#Azure_Storage_Sas_BlobSasBuilder_Permissions">Permissions</a>.</p>
+</section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1003 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IReviews
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IReviews
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews">
+  
+  
+  <h1 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews" class="text-break">Interface IReviews
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.html">Microsoft.Azure.CognitiveServices.ContentModerator</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.CognitiveServices.Vision.ContentModerator.dll</h6>
+  <h5 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IReviews</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoFrameStreamWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoFrameStreamWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoFrameStreamWithHttpMessagesAsync_System_String_System_String_System_String_System_IO_Stream_System_String_System_Nullable_System_Int32__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoFrameStreamWithHttpMessagesAsync(System.String,System.String,System.String,System.IO.Stream,System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddVideoFrameStreamWithHttpMessagesAsync(String, String, String, Stream, String, Nullable&lt;Int32&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; AddVideoFrameStreamWithHttpMessagesAsync (string contentType, string teamName, string reviewId, System.IO.Stream frameImageZip, string frameMetadata, Nullable&lt;int&gt; timescale = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">contentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">frameImageZip</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">frameMetadata</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">timescale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoFrameUrlWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoFrameUrlWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoFrameUrlWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_VideoFrameBodyItem__System_Nullable_System_Int32__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoFrameUrlWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.ContentModerator.Models.VideoFrameBodyItem},System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddVideoFrameUrlWithHttpMessagesAsync(String, String, String, IList&lt;VideoFrameBodyItem&gt;, Nullable&lt;Int32&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; AddVideoFrameUrlWithHttpMessagesAsync (string contentType, string teamName, string reviewId, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.VideoFrameBodyItem&gt; videoFrameBody, Nullable&lt;int&gt; timescale = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">contentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.VideoFrameBodyItem.html">VideoFrameBodyItem</a>&gt;</td>
+        <td><span class="parametername">videoFrameBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">timescale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoFrameWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoFrameWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoFrameWithHttpMessagesAsync_System_String_System_String_System_Nullable_System_Int32__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoFrameWithHttpMessagesAsync(System.String,System.String,System.Nullable{System.Int32},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddVideoFrameWithHttpMessagesAsync(String, String, Nullable&lt;Int32&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; AddVideoFrameWithHttpMessagesAsync (string teamName, string reviewId, Nullable&lt;int&gt; timescale = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">timescale</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoTranscriptModerationResultWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoTranscriptModerationResultWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoTranscriptModerationResultWithHttpMessagesAsync_System_String_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_TranscriptModerationBodyItem__System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoTranscriptModerationResultWithHttpMessagesAsync(System.String,System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.ContentModerator.Models.TranscriptModerationBodyItem},System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddVideoTranscriptModerationResultWithHttpMessagesAsync(String, String, String, IList&lt;TranscriptModerationBodyItem&gt;, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; AddVideoTranscriptModerationResultWithHttpMessagesAsync (string contentType, string teamName, string reviewId, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.TranscriptModerationBodyItem&gt; transcriptModerationBody, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">contentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.TranscriptModerationBodyItem.html">TranscriptModerationBodyItem</a>&gt;</td>
+        <td><span class="parametername">transcriptModerationBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoTranscriptWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoTranscriptWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_AddVideoTranscriptWithHttpMessagesAsync_System_String_System_String_System_IO_Stream_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.AddVideoTranscriptWithHttpMessagesAsync(System.String,System.String,System.IO.Stream,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">AddVideoTranscriptWithHttpMessagesAsync(String, String, Stream, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; AddVideoTranscriptWithHttpMessagesAsync (string teamName, string reviewId, System.IO.Stream vTTfile, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">vTTfile</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_CreateJobWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.CreateJobWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_CreateJobWithHttpMessagesAsync_System_String_System_String_System_String_System_String_System_String_Microsoft_Azure_CognitiveServices_ContentModerator_Models_Content_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.CreateJobWithHttpMessagesAsync(System.String,System.String,System.String,System.String,System.String,Microsoft.Azure.CognitiveServices.ContentModerator.Models.Content,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">CreateJobWithHttpMessagesAsync(String, String, String, String, String, Content, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.JobId&gt;&gt; CreateJobWithHttpMessagesAsync (string teamName, string contentType, string contentId, string workflowName, string jobContentType, Microsoft.Azure.CognitiveServices.ContentModerator.Models.Content content, string callBackEndpoint = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">contentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">contentId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">workflowName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jobContentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.Content.html">Content</a></td>
+        <td><span class="parametername">content</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">callBackEndpoint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.JobId.html">JobId</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_CreateReviewsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.CreateReviewsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_CreateReviewsWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_CreateReviewBodyItem__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.CreateReviewsWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.ContentModerator.Models.CreateReviewBodyItem},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">CreateReviewsWithHttpMessagesAsync(String, String, IList&lt;CreateReviewBodyItem&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;string&gt;&gt;&gt; CreateReviewsWithHttpMessagesAsync (string urlContentType, string teamName, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.CreateReviewBodyItem&gt; createReviewBody, string subTeam = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">urlContentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.CreateReviewBodyItem.html">CreateReviewBodyItem</a>&gt;</td>
+        <td><span class="parametername">createReviewBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">subTeam</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_CreateVideoReviewsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.CreateVideoReviewsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_CreateVideoReviewsWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_CreateVideoReviewsBodyItem__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.CreateVideoReviewsWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.IList{Microsoft.Azure.CognitiveServices.ContentModerator.Models.CreateVideoReviewsBodyItem},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">CreateVideoReviewsWithHttpMessagesAsync(String, String, IList&lt;CreateVideoReviewsBodyItem&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;System.Collections.Generic.IList&lt;string&gt;&gt;&gt; CreateVideoReviewsWithHttpMessagesAsync (string contentType, string teamName, System.Collections.Generic.IList&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.CreateVideoReviewsBodyItem&gt; createVideoReviewsBody, string subTeam = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">contentType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.CreateVideoReviewsBodyItem.html">CreateVideoReviewsBodyItem</a>&gt;</td>
+        <td><span class="parametername">createVideoReviewsBody</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">subTeam</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_GetJobDetailsWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.GetJobDetailsWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_GetJobDetailsWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.GetJobDetailsWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetJobDetailsWithHttpMessagesAsync(String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.Job&gt;&gt; GetJobDetailsWithHttpMessagesAsync (string teamName, string jobId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">jobId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.Job.html">Job</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_GetReviewWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.GetReviewWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_GetReviewWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.GetReviewWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetReviewWithHttpMessagesAsync(String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.Review&gt;&gt; GetReviewWithHttpMessagesAsync (string teamName, string reviewId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.Review.html">Review</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_GetVideoFramesWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.GetVideoFramesWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_GetVideoFramesWithHttpMessagesAsync_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.GetVideoFramesWithHttpMessagesAsync(System.String,System.String,System.Nullable{System.Int32},System.Nullable{System.Int32},System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">GetVideoFramesWithHttpMessagesAsync(String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&lt;Microsoft.Azure.CognitiveServices.ContentModerator.Models.Frames&gt;&gt; GetVideoFramesWithHttpMessagesAsync (string teamName, string reviewId, Nullable&lt;int&gt; startSeed = null, Nullable&lt;int&gt; noOfRecords = null, string filter = null, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">startSeed</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int32">Int32</a>&gt;</td>
+        <td><span class="parametername">noOfRecords</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">filter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&lt;<a class="xref" href="../Microsoft.Azure.CognitiveServices.ContentModerator.Models/Microsoft.Azure.CognitiveServices.ContentModerator.Models.Frames.html">Frames</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_PublishVideoReviewWithHttpMessagesAsync_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.PublishVideoReviewWithHttpMessagesAsync*"></a>
+  <h4 id="Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_PublishVideoReviewWithHttpMessagesAsync_System_String_System_String_System_Collections_Generic_Dictionary_System_String_System_Collections_Generic_List_System_String___System_Threading_CancellationToken_" data-uid="Microsoft.Azure.CognitiveServices.ContentModerator.IReviews.PublishVideoReviewWithHttpMessagesAsync(System.String,System.String,System.Collections.Generic.Dictionary{System.String,System.Collections.Generic.List{System.String}},System.Threading.CancellationToken)">PublishVideoReviewWithHttpMessagesAsync(String, String, Dictionary&lt;String,List&lt;String&gt;&gt;, CancellationToken)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public System.Threading.Tasks.Task&lt;Microsoft.Rest.HttpOperationResponse&gt; PublishVideoReviewWithHttpMessagesAsync (string teamName, string reviewId, System.Collections.Generic.Dictionary&lt;string,System.Collections.Generic.List&lt;string&gt;&gt; customHeaders = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">teamName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">reviewId</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>,<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.list-1">List</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>&gt;&gt;</td>
+        <td><span class="parametername">customHeaders</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.HttpOperationResponse</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoFrame_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Nullable_System_Int32__">ReviewsExtensions.AddVideoFrame(IReviews, String, String, Nullable&lt;Int32&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoFrameAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Nullable_System_Int32__System_Threading_CancellationToken_">ReviewsExtensions.AddVideoFrameAsync(IReviews, String, String, Nullable&lt;Int32&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoFrameStream_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_IO_Stream_System_String_System_Nullable_System_Int32__">ReviewsExtensions.AddVideoFrameStream(IReviews, String, String, String, Stream, String, Nullable&lt;Int32&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoFrameStreamAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_IO_Stream_System_String_System_Nullable_System_Int32__System_Threading_CancellationToken_">ReviewsExtensions.AddVideoFrameStreamAsync(IReviews, String, String, String, Stream, String, Nullable&lt;Int32&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoFrameUrl_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_VideoFrameBodyItem__System_Nullable_System_Int32__">ReviewsExtensions.AddVideoFrameUrl(IReviews, String, String, String, IList&lt;VideoFrameBodyItem&gt;, Nullable&lt;Int32&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoFrameUrlAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_VideoFrameBodyItem__System_Nullable_System_Int32__System_Threading_CancellationToken_">ReviewsExtensions.AddVideoFrameUrlAsync(IReviews, String, String, String, IList&lt;VideoFrameBodyItem&gt;, Nullable&lt;Int32&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoTranscript_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_IO_Stream_">ReviewsExtensions.AddVideoTranscript(IReviews, String, String, Stream)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoTranscriptAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_IO_Stream_System_Threading_CancellationToken_">ReviewsExtensions.AddVideoTranscriptAsync(IReviews, String, String, Stream, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoTranscriptModerationResult_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_TranscriptModerationBodyItem__">ReviewsExtensions.AddVideoTranscriptModerationResult(IReviews, String, String, String, IList&lt;TranscriptModerationBodyItem&gt;)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_AddVideoTranscriptModerationResultAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_TranscriptModerationBodyItem__System_Threading_CancellationToken_">ReviewsExtensions.AddVideoTranscriptModerationResultAsync(IReviews, String, String, String, IList&lt;TranscriptModerationBodyItem&gt;, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_CreateJob_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_String_System_String_Microsoft_Azure_CognitiveServices_ContentModerator_Models_Content_System_String_">ReviewsExtensions.CreateJob(IReviews, String, String, String, String, String, Content, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_CreateJobAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_String_System_String_System_String_Microsoft_Azure_CognitiveServices_ContentModerator_Models_Content_System_String_System_Threading_CancellationToken_">ReviewsExtensions.CreateJobAsync(IReviews, String, String, String, String, String, Content, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_CreateReviews_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_CreateReviewBodyItem__System_String_">ReviewsExtensions.CreateReviews(IReviews, String, String, IList&lt;CreateReviewBodyItem&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_CreateReviewsAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_CreateReviewBodyItem__System_String_System_Threading_CancellationToken_">ReviewsExtensions.CreateReviewsAsync(IReviews, String, String, IList&lt;CreateReviewBodyItem&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_CreateVideoReviews_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_CreateVideoReviewsBodyItem__System_String_">ReviewsExtensions.CreateVideoReviews(IReviews, String, String, IList&lt;CreateVideoReviewsBodyItem&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_CreateVideoReviewsAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Collections_Generic_IList_Microsoft_Azure_CognitiveServices_ContentModerator_Models_CreateVideoReviewsBodyItem__System_String_System_Threading_CancellationToken_">ReviewsExtensions.CreateVideoReviewsAsync(IReviews, String, String, IList&lt;CreateVideoReviewsBodyItem&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_GetJobDetails_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_">ReviewsExtensions.GetJobDetails(IReviews, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_GetJobDetailsAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Threading_CancellationToken_">ReviewsExtensions.GetJobDetailsAsync(IReviews, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_GetReview_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_">ReviewsExtensions.GetReview(IReviews, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_GetReviewAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Threading_CancellationToken_">ReviewsExtensions.GetReviewAsync(IReviews, String, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_GetVideoFrames_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_">ReviewsExtensions.GetVideoFrames(IReviews, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_GetVideoFramesAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Nullable_System_Int32__System_Nullable_System_Int32__System_String_System_Threading_CancellationToken_">ReviewsExtensions.GetVideoFramesAsync(IReviews, String, String, Nullable&lt;Int32&gt;, Nullable&lt;Int32&gt;, String, CancellationToken)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_PublishVideoReview_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_">ReviewsExtensions.PublishVideoReview(IReviews, String, String)</a>
+  </div>
+  <div>
+      <a class="xref" href="Microsoft.Azure.CognitiveServices.ContentModerator.ReviewsExtensions.html#Microsoft_Azure_CognitiveServices_ContentModerator_ReviewsExtensions_PublishVideoReviewAsync_Microsoft_Azure_CognitiveServices_ContentModerator_IReviews_System_String_System_String_System_Threading_CancellationToken_">ReviewsExtensions.PublishVideoReviewAsync(IReviews, String, String, CancellationToken)</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

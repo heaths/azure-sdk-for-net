@@ -1,0 +1,589 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class AccountOperationsExtensions
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class AccountOperationsExtensions
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions">
+  
+  
+  <h1 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions" class="text-break">Class AccountOperationsExtensions
+  </h1>
+  <div class="markdown level0 summary"><p>Extension methods for AccountOperations.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">AccountOperationsExtensions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Microsoft.Azure.Batch.Protocol.html">Microsoft.Azure.Batch.Protocol</a></h6>
+  <h6><strong>Assembly</strong>: Microsoft.Azure.Batch.dll</h6>
+  <h5 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class AccountOperationsExtensions</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCounts_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCounts*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCounts_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsOptions_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCounts(Microsoft.Azure.Batch.Protocol.IAccountOperations,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions)">ListPoolNodeCounts(IAccountOperations, AccountListPoolNodeCountsOptions)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of Compute Nodes in each state, grouped by Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt; ListPoolNodeCounts (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions accountListPoolNodeCountsOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions.html">AccountListPoolNodeCountsOptions</a></td>
+        <td><span class="parametername">accountListPoolNodeCountsOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts.html">PoolNodeCounts</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsAsync_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCountsAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCountsAsync(Microsoft.Azure.Batch.Protocol.IAccountOperations,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions,System.Threading.CancellationToken)">ListPoolNodeCountsAsync(IAccountOperations, AccountListPoolNodeCountsOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of Compute Nodes in each state, grouped by Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;&gt; ListPoolNodeCountsAsync (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions accountListPoolNodeCountsOptions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsOptions.html">AccountListPoolNodeCountsOptions</a></td>
+        <td><span class="parametername">accountListPoolNodeCountsOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts.html">PoolNodeCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsNext_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCountsNext*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsNext_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsNextOptions_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCountsNext(Microsoft.Azure.Batch.Protocol.IAccountOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions)">ListPoolNodeCountsNext(IAccountOperations, String, AccountListPoolNodeCountsNextOptions)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of Compute Nodes in each state, grouped by Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt; ListPoolNodeCountsNext (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions accountListPoolNodeCountsNextOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions.html">AccountListPoolNodeCountsNextOptions</a></td>
+        <td><span class="parametername">accountListPoolNodeCountsNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts.html">PoolNodeCounts</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsNextAsync_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCountsNextAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListPoolNodeCountsNextAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListPoolNodeCountsNextOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListPoolNodeCountsNextAsync(Microsoft.Azure.Batch.Protocol.IAccountOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions,System.Threading.CancellationToken)">ListPoolNodeCountsNextAsync(IAccountOperations, String, AccountListPoolNodeCountsNextOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Gets the number of Compute Nodes in each state, grouped by Pool.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts&gt;&gt; ListPoolNodeCountsNextAsync (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions accountListPoolNodeCountsNextOptions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListPoolNodeCountsNextOptions.html">AccountListPoolNodeCountsNextOptions</a></td>
+        <td><span class="parametername">accountListPoolNodeCountsNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.PoolNodeCounts.html">PoolNodeCounts</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImages_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImages*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImages_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesOptions_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImages(Microsoft.Azure.Batch.Protocol.IAccountOperations,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions)">ListSupportedImages(IAccountOperations, AccountListSupportedImagesOptions)</h4>
+  <div class="markdown level1 summary"><p>Lists all Virtual Machine Images supported by the Azure Batch service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt; ListSupportedImages (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions accountListSupportedImagesOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions.html">AccountListSupportedImagesOptions</a></td>
+        <td><span class="parametername">accountListSupportedImagesOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ImageInformation.html">ImageInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesAsync_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImagesAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImagesAsync(Microsoft.Azure.Batch.Protocol.IAccountOperations,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions,System.Threading.CancellationToken)">ListSupportedImagesAsync(IAccountOperations, AccountListSupportedImagesOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all Virtual Machine Images supported by the Azure Batch service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;&gt; ListSupportedImagesAsync (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions accountListSupportedImagesOptions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesOptions.html">AccountListSupportedImagesOptions</a></td>
+        <td><span class="parametername">accountListSupportedImagesOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ImageInformation.html">ImageInformation</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesNext_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImagesNext*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesNext_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesNextOptions_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImagesNext(Microsoft.Azure.Batch.Protocol.IAccountOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions)">ListSupportedImagesNext(IAccountOperations, String, AccountListSupportedImagesNextOptions)</h4>
+  <div class="markdown level1 summary"><p>Lists all Virtual Machine Images supported by the Azure Batch service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt; ListSupportedImagesNext (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions accountListSupportedImagesNextOptions = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions.html">AccountListSupportedImagesNextOptions</a></td>
+        <td><span class="parametername">accountListSupportedImagesNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ImageInformation.html">ImageInformation</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesNextAsync_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImagesNextAsync*"></a>
+  <h4 id="Microsoft_Azure_Batch_Protocol_AccountOperationsExtensions_ListSupportedImagesNextAsync_Microsoft_Azure_Batch_Protocol_IAccountOperations_System_String_Microsoft_Azure_Batch_Protocol_Models_AccountListSupportedImagesNextOptions_System_Threading_CancellationToken_" data-uid="Microsoft.Azure.Batch.Protocol.AccountOperationsExtensions.ListSupportedImagesNextAsync(Microsoft.Azure.Batch.Protocol.IAccountOperations,System.String,Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions,System.Threading.CancellationToken)">ListSupportedImagesNextAsync(IAccountOperations, String, AccountListSupportedImagesNextOptions, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Lists all Virtual Machine Images supported by the Azure Batch service.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public static System.Threading.Tasks.Task&lt;Microsoft.Rest.Azure.IPage&lt;Microsoft.Azure.Batch.Protocol.Models.ImageInformation&gt;&gt; ListSupportedImagesNextAsync (this Microsoft.Azure.Batch.Protocol.IAccountOperations operations, string nextPageLink, Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions accountListSupportedImagesNextOptions = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Microsoft.Azure.Batch.Protocol.IAccountOperations.html">IAccountOperations</a></td>
+        <td><span class="parametername">operations</span></td>
+        <td><p>The operations group for this extension method.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">nextPageLink</span></td>
+        <td><p>The NextLink from the previous successful call to List operation.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.AccountListSupportedImagesNextOptions.html">AccountListSupportedImagesNextOptions</a></td>
+        <td><span class="parametername">accountListSupportedImagesNextOptions</span></td>
+        <td><p>Additional parameters for the operation</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>The cancellation token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<span class="xref">Microsoft.Rest.Azure.IPage</span>&lt;<a class="xref" href="../Microsoft.Azure.Batch.Protocol.Models/Microsoft.Azure.Batch.Protocol.Models.ImageInformation.html">ImageInformation</a>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

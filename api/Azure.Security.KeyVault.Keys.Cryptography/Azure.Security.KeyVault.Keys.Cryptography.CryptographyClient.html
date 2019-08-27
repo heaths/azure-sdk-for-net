@@ -1,0 +1,1496 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class CryptographyClient
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class CryptographyClient
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient">
+  
+  
+  <h1 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient" class="text-break">Class CryptographyClient
+  </h1>
+  <div class="markdown level0 summary"><p>A client used to perform cryptographic operations with Azure Key Vault keys</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">CryptographyClient</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Security.KeyVault.Keys.Cryptography.html">Azure.Security.KeyVault.Keys.Cryptography</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Security.KeyVault.Keys.dll</h6>
+  <h5 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CryptographyClient</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient__ctor_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient__ctor" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.#ctor">CryptographyClient()</h4>
+  <div class="markdown level1 summary"><p>Protected cosntructor for mocking</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected CryptographyClient ();</code></pre>
+  </div>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient__ctor_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient__ctor_System_Uri_Azure_Core_TokenCredential_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.#ctor(System.Uri,Azure.Core.TokenCredential)">CryptographyClient(Uri, TokenCredential)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the CryptographyClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CryptographyClient (Uri keyId, Azure.Core.TokenCredential credential);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">keyId</span></td>
+        <td><p>The <a class="xref" href="../Azure.Security.KeyVault.Keys/Azure.Security.KeyVault.Keys.KeyBase.html#Azure_Security_KeyVault_Keys_KeyBase_Id">Id</a> of the <a class="xref" href="../Azure.Security.KeyVault.Keys/Azure.Security.KeyVault.Keys.Key.html">Key</a> which will be used for cryptographic operations</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>Represents a credential capable of providing an OAuth token.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient__ctor_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.#ctor*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient__ctor_System_Uri_Azure_Core_TokenCredential_Azure_Security_KeyVault_Keys_Cryptography_CryptographyClientOptions_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.#ctor(System.Uri,Azure.Core.TokenCredential,Azure.Security.KeyVault.Keys.Cryptography.CryptographyClientOptions)">CryptographyClient(Uri, TokenCredential, CryptographyClientOptions)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the CryptographyClient class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CryptographyClient (Uri keyId, Azure.Core.TokenCredential credential, Azure.Security.KeyVault.Keys.Cryptography.CryptographyClientOptions options);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.uri">Uri</a></td>
+        <td><span class="parametername">keyId</span></td>
+        <td><p>The <a class="xref" href="../Azure.Security.KeyVault.Keys/Azure.Security.KeyVault.Keys.KeyBase.html#Azure_Security_KeyVault_Keys_KeyBase_Id">Id</a> of the <a class="xref" href="../Azure.Security.KeyVault.Keys/Azure.Security.KeyVault.Keys.Key.html">Key</a> which will be used for cryptographic operations</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="../Azure.Core/Azure.Core.TokenCredential.html">TokenCredential</a></td>
+        <td><span class="parametername">credential</span></td>
+        <td><p>Represents a credential capable of providing an OAuth token.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClientOptions.html">CryptographyClientOptions</a></td>
+        <td><span class="parametername">options</span></td>
+        <td><p>Options that allow to configure the management of the request sent to Key Vault.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Decrypt_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Decrypt*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Decrypt_Azure_Security_KeyVault_Keys_Cryptography_EncryptionAlgorithm_System_Byte___System_Byte___System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Decrypt(Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm,System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Threading.CancellationToken)">Decrypt(EncryptionAlgorithm, Byte[], Byte[], Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the specified cipher text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.DecryptResult Decrypt (Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm algorithm, byte[] ciphertext, byte[] iv = null, byte[] authenticationData = null, byte[] authenticationTag = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm.html">EncryptionAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">ciphertext</span></td>
+        <td><p>The encrypted data to decrypt</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">iv</span></td>
+        <td><p>The initialization vector. This should only be specified when using symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">authenticationData</span></td>
+        <td><p>The authentication data. This should only be specified when using authenticated symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">authenticationTag</span></td>
+        <td><p>The authentication tag. This should only be specified when using authenticated
+symmetric encryption algorithms, otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.DecryptResult.html">DecryptResult</a></td>
+        <td><p>The result of the decrypt operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.DecryptResult.html">DecryptResult</a> contains the encrypted data
+along with information regarding the algorithm and key used to decrypt it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_DecryptAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.DecryptAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_DecryptAsync_Azure_Security_KeyVault_Keys_Cryptography_EncryptionAlgorithm_System_Byte___System_Byte___System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.DecryptAsync(Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm,System.Byte[],System.Byte[],System.Byte[],System.Byte[],System.Threading.CancellationToken)">DecryptAsync(EncryptionAlgorithm, Byte[], Byte[], Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the specified cipher text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.DecryptResult&gt; DecryptAsync (Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm algorithm, byte[] ciphertext, byte[] iv = null, byte[] authenticationData = null, byte[] authenticationTag = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm.html">EncryptionAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">ciphertext</span></td>
+        <td><p>The encrypted data to decrypt</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">iv</span></td>
+        <td><p>The initialization vector. This should only be specified when using symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">authenticationData</span></td>
+        <td><p>The authentication data. This should only be specified when using authenticated symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">authenticationTag</span></td>
+        <td><p>The authentication tag. This should only be specified when using authenticated
+symmetric encryption algorithms, otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.DecryptResult.html">DecryptResult</a>&gt;</td>
+        <td><p>The result of the decrypt operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.DecryptResult.html">DecryptResult</a> contains the encrypted data
+along with information regarding the algorithm and key used to decrypt it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Encrypt_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Encrypt*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Encrypt_Azure_Security_KeyVault_Keys_Cryptography_EncryptionAlgorithm_System_Byte___System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Encrypt(Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm,System.Byte[],System.Byte[],System.Byte[],System.Threading.CancellationToken)">Encrypt(EncryptionAlgorithm, Byte[], Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the specified plain text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.EncryptResult Encrypt (Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm algorithm, byte[] plaintext, byte[] iv = null, byte[] authenticationData = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm.html">EncryptionAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>The data to encrypt</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">iv</span></td>
+        <td><p>The initialization vector. This should only be specified when using symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">authenticationData</span></td>
+        <td><p>The authentication data. This should only be specified when using authenticated symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptResult.html">EncryptResult</a></td>
+        <td><p>The result of the encrypt operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptResult.html">EncryptResult</a> contains the encrypted data
+along with all other information needed to decrypt it. This information should be stored with the encrypted data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_EncryptAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.EncryptAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_EncryptAsync_Azure_Security_KeyVault_Keys_Cryptography_EncryptionAlgorithm_System_Byte___System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.EncryptAsync(Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm,System.Byte[],System.Byte[],System.Byte[],System.Threading.CancellationToken)">EncryptAsync(EncryptionAlgorithm, Byte[], Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the specified plain text.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.EncryptResult&gt; EncryptAsync (Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm algorithm, byte[] plaintext, byte[] iv = null, byte[] authenticationData = null, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptionAlgorithm.html">EncryptionAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">plaintext</span></td>
+        <td><p>The data to encrypt</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">iv</span></td>
+        <td><p>The initialization vector. This should only be specified when using symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">authenticationData</span></td>
+        <td><p>The authentication data. This should only be specified when using authenticated symmetric encryption algorithms,
+otherwise the caller must omit the parameter or pass null.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptResult.html">EncryptResult</a>&gt;</td>
+        <td><p>The result of the encrypt operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.EncryptResult.html">EncryptResult</a> contains the encrypted data
+along with all other information needed to decrypt it. This information should be stored with the encrypted data.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Sign_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Sign*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Sign_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Sign(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Threading.CancellationToken)">Sign(SignatureAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Signs the specified digest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.SignResult Sign (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] digest, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signing algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">digest</span></td>
+        <td><p>The pre-hashed digest to sign. The hash algorithm used to compute the digest must be compatable with the specified algorithm.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a></td>
+        <td><p>The result of the sign operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a> contains the signature
+along with all other information needed to verify it. This information should be stored with the signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignAsync_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignAsync(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Threading.CancellationToken)">SignAsync(SignatureAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Signs the specified digest.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.SignResult&gt; SignAsync (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] digest, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signing algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">digest</span></td>
+        <td><p>The pre-hashed digest to sign. The hash algorithm used to compute the digest must be compatable with the specified algorithm.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a>&gt;</td>
+        <td><p>The result of the sign operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a> contains the signature
+along with all other information needed to verify it. This information should be stored with the signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignData_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignData*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignData_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignData(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Threading.CancellationToken)">SignData(SignatureAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Signs the specified data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.SignResult SignData (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] data, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signing algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to sign.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a></td>
+        <td><p>The result of the sign operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a> contains the signature
+along with all other information needed to verify it. This information should be stored with the signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignData_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignData*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignData_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_IO_Stream_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignData(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.IO.Stream,System.Threading.CancellationToken)">SignData(SignatureAlgorithm, Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Signs the specified data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.SignResult SignData (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, System.IO.Stream data, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signing algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to sign.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a></td>
+        <td><p>The result of the sign operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a> contains the signature
+along with all other information needed to verify it. This information should be stored with the signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignDataAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignDataAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignDataAsync_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_IO_Stream_System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignDataAsync(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.IO.Stream,System.Threading.CancellationToken)">SignDataAsync(SignatureAlgorithm, Stream, CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Signs the specified data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.SignResult&gt; SignDataAsync (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, System.IO.Stream data, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signing algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to sign.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a>&gt;</td>
+        <td><p>The result of the sign operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a> contains the signature
+along with all other information needed to verify it. This information should be stored with the signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignDataAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignDataAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_SignDataAsync_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.SignDataAsync(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Threading.CancellationToken)">SignDataAsync(SignatureAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Signs the specified data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.SignResult&gt; SignDataAsync (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] data, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signing algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data to sign.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a>&gt;</td>
+        <td><p>The result of the sign operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignResult.html">SignResult</a> contains the signature
+along with all other information needed to verify it. This information should be stored with the signature.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_UnwrapKey_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.UnwrapKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_UnwrapKey_Azure_Security_KeyVault_Keys_Cryptography_KeyWrapAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.UnwrapKey(Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm,System.Byte[],System.Threading.CancellationToken)">UnwrapKey(KeyWrapAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the specified encrypted key material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.UnwrapResult UnwrapKey (Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm algorithm, byte[] encryptedKey, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm.html">KeyWrapAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">encryptedKey</span></td>
+        <td><p>The encrypted key material</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.UnwrapResult.html">UnwrapResult</a></td>
+        <td><p>The result of the unwrap operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.UnwrapResult.html">UnwrapResult</a> contains the key
+along with information regarding the algorithm and key used to unwrap it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_UnwrapKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.UnwrapKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_UnwrapKeyAsync_Azure_Security_KeyVault_Keys_Cryptography_KeyWrapAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.UnwrapKeyAsync(Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm,System.Byte[],System.Threading.CancellationToken)">UnwrapKeyAsync(KeyWrapAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Decrypts the specified encrypted key material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.UnwrapResult&gt; UnwrapKeyAsync (Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm algorithm, byte[] encryptedKey, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm.html">KeyWrapAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">encryptedKey</span></td>
+        <td><p>The encrypted key material</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.UnwrapResult.html">UnwrapResult</a>&gt;</td>
+        <td><p>The result of the unwrap operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.UnwrapResult.html">UnwrapResult</a> contains the key
+along with information regarding the algorithm and key used to unwrap it.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Verify_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Verify*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_Verify_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.Verify(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Byte[],System.Threading.CancellationToken)">Verify(SignatureAlgorithm, Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.VerifyResult Verify (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] digest, byte[] signature, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signature algorithm to use. This must be the same algorithm used to sign the digest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">digest</span></td>
+        <td><p>The pre-hashed digest corresponding to the signature. The hash algorithm used to compute the digest must be compatable with the specified algorithm.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>The signature to verify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a></td>
+        <td><p>The result of the verify operation. If the signature is valid the <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html#Azure_Security_KeyVault_Keys_Cryptography_VerifyResult_IsValid">IsValid</a> property of the returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a> will be set to true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyAsync_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyAsync(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Byte[],System.Threading.CancellationToken)">VerifyAsync(SignatureAlgorithm, Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.VerifyResult&gt; VerifyAsync (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] digest, byte[] signature, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signature algorithm to use. This must be the same algorithm used to sign the digest.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">digest</span></td>
+        <td><p>The pre-hashed digest corresponding to the signature. The hash algorithm used to compute the digest must be compatable with the specified algorithm.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>The signature to verify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a>&gt;</td>
+        <td><p>The result of the verify operation. If the signature is valid the <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html#Azure_Security_KeyVault_Keys_Cryptography_VerifyResult_IsValid">IsValid</a> property of the returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a> will be set to true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyData_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyData*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyData_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyData(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Byte[],System.Threading.CancellationToken)">VerifyData(SignatureAlgorithm, Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.VerifyResult VerifyData (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] data, byte[] signature, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signature algorithm to use. This must be the same algorithm used to sign the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data corresponding to the signature.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>The signature to verify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a></td>
+        <td><p>The result of the verify operation. If the signature is valid the <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html#Azure_Security_KeyVault_Keys_Cryptography_VerifyResult_IsValid">IsValid</a> property of the returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a> will be set to true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyData_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyData*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyData_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_IO_Stream_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyData(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.IO.Stream,System.Byte[],System.Threading.CancellationToken)">VerifyData(SignatureAlgorithm, Stream, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.VerifyResult VerifyData (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, System.IO.Stream data, byte[] signature, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signature algorithm to use. This must be the same algorithm used to sign the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data corresponding to the signature.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>The signature to verify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a></td>
+        <td><p>The result of the verify operation. If the signature is valid the <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html#Azure_Security_KeyVault_Keys_Cryptography_VerifyResult_IsValid">IsValid</a> property of the returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a> will be set to true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyDataAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyDataAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyDataAsync_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_Byte___System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyDataAsync(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.Byte[],System.Byte[],System.Threading.CancellationToken)">VerifyDataAsync(SignatureAlgorithm, Byte[], Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.VerifyResult&gt; VerifyDataAsync (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, byte[] data, byte[] signature, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signature algorithm to use. This must be the same algorithm used to sign the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data corresponding to the signature.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>The signature to verify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a>&gt;</td>
+        <td><p>The result of the verify operation. If the signature is valid the <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html#Azure_Security_KeyVault_Keys_Cryptography_VerifyResult_IsValid">IsValid</a> property of the returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a> will be set to true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyDataAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyDataAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_VerifyDataAsync_Azure_Security_KeyVault_Keys_Cryptography_SignatureAlgorithm_System_IO_Stream_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.VerifyDataAsync(Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm,System.IO.Stream,System.Byte[],System.Threading.CancellationToken)">VerifyDataAsync(SignatureAlgorithm, Stream, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Verifies the specified signature</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.VerifyResult&gt; VerifyDataAsync (Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm algorithm, System.IO.Stream data, byte[] signature, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.SignatureAlgorithm.html">SignatureAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The signature algorithm to use. This must be the same algorithm used to sign the data.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.io.stream">Stream</a></td>
+        <td><span class="parametername">data</span></td>
+        <td><p>The data corresponding to the signature.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">signature</span></td>
+        <td><p>The signature to verify</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a>&gt;</td>
+        <td><p>The result of the verify operation. If the signature is valid the <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html#Azure_Security_KeyVault_Keys_Cryptography_VerifyResult_IsValid">IsValid</a> property of the returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.VerifyResult.html">VerifyResult</a> will be set to true.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_WrapKey_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.WrapKey*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_WrapKey_Azure_Security_KeyVault_Keys_Cryptography_KeyWrapAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.WrapKey(Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm,System.Byte[],System.Threading.CancellationToken)">WrapKey(KeyWrapAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the specified key material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual Azure.Security.KeyVault.Keys.Cryptography.WrapResult WrapKey (Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm algorithm, byte[] key, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm.html">KeyWrapAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key material to encrypt</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.WrapResult.html">WrapResult</a></td>
+        <td><p>The result of the wrap operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.WrapResult.html">WrapResult</a> contains the wrapped key
+along with all other information needed to unwrap it. This information should be stored with the wrapped key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_WrapKeyAsync_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.WrapKeyAsync*"></a>
+  <h4 id="Azure_Security_KeyVault_Keys_Cryptography_CryptographyClient_WrapKeyAsync_Azure_Security_KeyVault_Keys_Cryptography_KeyWrapAlgorithm_System_Byte___System_Threading_CancellationToken_" data-uid="Azure.Security.KeyVault.Keys.Cryptography.CryptographyClient.WrapKeyAsync(Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm,System.Byte[],System.Threading.CancellationToken)">WrapKeyAsync(KeyWrapAlgorithm, Byte[], CancellationToken)</h4>
+  <div class="markdown level1 summary"><p>Encrypts the specified key material.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[System.Diagnostics.DebuggerStepThrough]
+public virtual System.Threading.Tasks.Task&lt;Azure.Security.KeyVault.Keys.Cryptography.WrapResult&gt; WrapKeyAsync (Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm algorithm, byte[] key, System.Threading.CancellationToken cancellationToken = null);</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.KeyWrapAlgorithm.html">KeyWrapAlgorithm</a></td>
+        <td><span class="parametername">algorithm</span></td>
+        <td><p>The algorithm to use</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.byte">Byte</a>[]</td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key material to encrypt</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.cancellationtoken">CancellationToken</a></td>
+        <td><span class="parametername">cancellationToken</span></td>
+        <td><p>Cancellation token</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.WrapResult.html">WrapResult</a>&gt;</td>
+        <td><p>The result of the wrap operation. The returned <a class="xref" href="Azure.Security.KeyVault.Keys.Cryptography.WrapResult.html">WrapResult</a> contains the wrapped key
+along with all other information needed to unwrap it. This information should be stored with the wrapped key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

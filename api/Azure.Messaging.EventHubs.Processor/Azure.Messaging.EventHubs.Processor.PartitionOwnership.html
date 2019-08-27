@@ -1,0 +1,349 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PartitionOwnership
+   | Azure SDK for Net </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PartitionOwnership
+   | Azure SDK for Net ">
+    <meta name="generator" content="docfx 2.43.2.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership">
+  
+  
+  <h1 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership" class="text-break">Class PartitionOwnership
+  </h1>
+  <div class="markdown level0 summary"><p>Contains all the information needed to describe the status of the owner of a partition.  It's used by
+<a class="xref" href="Azure.Messaging.EventHubs.Processor.PartitionManager.html">PartitionManager</a> to claim ownership of a partition and to list existing ownership.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
+    <div class="level1"><span class="xref">PartitionOwnership</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="../Azure.Messaging.EventHubs.Processor.html">Azure.Messaging.EventHubs.Processor</a></h6>
+  <h6><strong>Assembly</strong>: Azure.Messaging.EventHubs.dll</h6>
+  <h5 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class PartitionOwnership</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_ConsumerGroup_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.ConsumerGroup*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_ConsumerGroup" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.ConsumerGroup">ConsumerGroup</h4>
+  <div class="markdown level1 summary"><p>The name of the consumer group this partition ownership is associated with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ConsumerGroup { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_ETag_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.ETag*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_ETag" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.ETag">ETag</h4>
+  <div class="markdown level1 summary"><p>The entity tag needed to update this ownership.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ETag { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_EventHubName_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.EventHubName*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_EventHubName" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.EventHubName">EventHubName</h4>
+  <div class="markdown level1 summary"><p>The name of the specific Event Hub this partition ownership is associated with, relative
+to the Event Hubs namespace that contains it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string EventHubName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_LastModifiedTime_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.LastModifiedTime*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_LastModifiedTime" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.LastModifiedTime">LastModifiedTime</h4>
+  <div class="markdown level1 summary"><p>The date and time, in UTC, that the last update was made to this ownership.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;DateTimeOffset&gt; LastModifiedTime { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.datetimeoffset">DateTimeOffset</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_Offset_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.Offset*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_Offset" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.Offset">Offset</h4>
+  <div class="markdown level1 summary"><p>The offset of the last <a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.html">EventData</a> received by the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.IPartitionProcessor.html">IPartitionProcessor</a>
+upon ownership update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;long&gt; Offset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_OwnerIdentifier_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.OwnerIdentifier*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_OwnerIdentifier" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.OwnerIdentifier">OwnerIdentifier</h4>
+  <div class="markdown level1 summary"><p>The identifier of the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.EventProcessor.html">EventProcessor</a> instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string OwnerIdentifier { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_PartitionId_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.PartitionId*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_PartitionId" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.PartitionId">PartitionId</h4>
+  <div class="markdown level1 summary"><p>The identifier of the Event Hub partition this partition ownership is associated with.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PartitionId { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_SequenceNumber_" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.SequenceNumber*"></a>
+  <h4 id="Azure_Messaging_EventHubs_Processor_PartitionOwnership_SequenceNumber" data-uid="Azure.Messaging.EventHubs.Processor.PartitionOwnership.SequenceNumber">SequenceNumber</h4>
+  <div class="markdown level1 summary"><p>The sequence number of the last <a class="xref" href="../Azure.Messaging.EventHubs/Azure.Messaging.EventHubs.EventData.html">EventData</a> received by the associated <a class="xref" href="Azure.Messaging.EventHubs.Processor.IPartitionProcessor.html">IPartitionProcessor</a>
+upon ownership update.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Nullable&lt;long&gt; SequenceNumber { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.int64">Int64</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Azure SDK for Net
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
