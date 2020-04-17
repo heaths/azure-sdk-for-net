@@ -5,6 +5,7 @@
 ### Breaking Changes
 
 - Removed constructor from `SynonymMap` with `IEnumerable<string>` parameter.
+- Combined `MatchConditions` and `SearchRequestOptions` into `SearchConditionalOptions`.
 
 ## 1.0.0-preview.2 (2020-04-06)
 
