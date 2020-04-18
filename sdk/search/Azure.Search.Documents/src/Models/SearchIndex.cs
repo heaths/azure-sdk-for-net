@@ -10,6 +10,9 @@ namespace Azure.Search.Documents.Models
     [CodeGenModel("Index")]
     public partial class SearchIndex
     {
+        [CodeGenMember("etag")]
+        private string _etag;
+
         private List<SearchField> _fields;
 
         // TODO: Replace constructor and read-only properties when https://github.com/Azure/autorest.csharp/issues/554 is fixed.
@@ -69,6 +72,15 @@ namespace Azure.Search.Documents.Models
 
             // Make a shallow copy of the fields.
             internal set => _fields = new List<SearchField>(value ?? throw new ArgumentNullException(nameof(value)));
+        }
+
+        /// <summary>
+        /// The <see cref="Azure.ETag"/> of the <see cref="SearchIndex"/>.
+        /// </summary>
+        public ETag? ETag
+        {
+            get => _etag is null ? (ETag?)null : new ETag(_etag);
+            set => _etag = value?.ToString();
         }
     }
 }
