@@ -2,6 +2,10 @@
 
 ## 4.0.0-beta.5 (Unreleased)
 
+### Changed
+
+- Default service version is now "7.2".
+
 ## 4.0.0-beta.4 (2021-02-10)
 
 ### Added
