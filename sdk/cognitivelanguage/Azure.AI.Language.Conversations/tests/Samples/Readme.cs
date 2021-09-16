@@ -29,7 +29,7 @@ namespace Azure.AI.Language.Conversations.Tests.Samples
             #region Snippet:ConversationAnalysisClient_BadRequest
             try
             {
-                Response<AnalyzeConversationResult> response = client.AnalyzeConversation("invalid-knowledgebase", options);
+                Response<AnalyzeConversationResult> response = client.AnalyzeConversation("invalid-project", options);
             }
             catch (RequestFailedException ex)
             {
