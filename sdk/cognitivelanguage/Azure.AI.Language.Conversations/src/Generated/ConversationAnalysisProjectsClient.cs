@@ -2829,6 +2829,36 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -2873,6 +2903,36 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -2920,6 +2980,37 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="stringIndexType"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ],
+        ///   resultUrl: string
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -2968,6 +3059,37 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="stringIndexType"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ],
+        ///   resultUrl: string
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3032,6 +3154,36 @@ namespace Azure.AI.Language.Conversations
         ///   assets: {
         ///     projectKind: &quot;Conversation&quot; | &quot;Orchestration&quot; (required)
         ///   }
+        /// }
+        /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
         /// }
         /// </code>
         /// Schema for <c>Response Error</c>:
@@ -3100,6 +3252,36 @@ namespace Azure.AI.Language.Conversations
         ///   }
         /// }
         /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3155,6 +3337,49 @@ namespace Azure.AI.Language.Conversations
         ///     kind: &quot;percentage&quot; | &quot;manual&quot;,
         ///     trainingSplitPercentage: number,
         ///     testingSplitPercentage: number
+        ///   }
+        /// }
+        /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ],
+        ///   result: {
+        ///     modelLabel: string,
+        ///     trainingConfigVersion: string,
+        ///     trainingMode: &quot;advanced&quot; | &quot;standard&quot;,
+        ///     trainingStatus: {
+        ///       percentComplete: number,
+        ///       startDateTime: string (ISO 8601 Format),
+        ///       endDateTime: string (ISO 8601 Format),
+        ///       status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;
+        ///     },
+        ///     evaluationStatus: SubTrainingJobState,
+        ///     estimatedEndDateTime: string (ISO 8601 Format)
         ///   }
         /// }
         /// </code>
@@ -3216,6 +3441,49 @@ namespace Azure.AI.Language.Conversations
         ///   }
         /// }
         /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ],
+        ///   result: {
+        ///     modelLabel: string,
+        ///     trainingConfigVersion: string,
+        ///     trainingMode: &quot;advanced&quot; | &quot;standard&quot;,
+        ///     trainingStatus: {
+        ///       percentComplete: number,
+        ///       startDateTime: string (ISO 8601 Format),
+        ///       endDateTime: string (ISO 8601 Format),
+        ///       status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;
+        ///     },
+        ///     evaluationStatus: SubTrainingJobState,
+        ///     estimatedEndDateTime: string (ISO 8601 Format)
+        ///   }
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3266,6 +3534,36 @@ namespace Azure.AI.Language.Conversations
         /// <code>{
         ///   firstDeploymentName: string (required),
         ///   secondDeploymentName: string (required)
+        /// }
+        /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
         /// }
         /// </code>
         /// Schema for <c>Response Error</c>:
@@ -3320,6 +3618,36 @@ namespace Azure.AI.Language.Conversations
         ///   secondDeploymentName: string (required)
         /// }
         /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3370,6 +3698,36 @@ namespace Azure.AI.Language.Conversations
         /// Schema for <c>Request Body</c>:
         /// <code>{
         ///   trainedModelLabel: string (required)
+        /// }
+        /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
         /// }
         /// </code>
         /// Schema for <c>Response Error</c>:
@@ -3425,6 +3783,36 @@ namespace Azure.AI.Language.Conversations
         ///   trainedModelLabel: string (required)
         /// }
         /// </code>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3472,6 +3860,36 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="deploymentName"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> or <paramref name="deploymentName"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3518,6 +3936,36 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="deploymentName"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> or <paramref name="deploymentName"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ]
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3564,6 +4012,49 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="jobId"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> or <paramref name="jobId"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ],
+        ///   result: {
+        ///     modelLabel: string,
+        ///     trainingConfigVersion: string,
+        ///     trainingMode: &quot;advanced&quot; | &quot;standard&quot;,
+        ///     trainingStatus: {
+        ///       percentComplete: number,
+        ///       startDateTime: string (ISO 8601 Format),
+        ///       endDateTime: string (ISO 8601 Format),
+        ///       status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;
+        ///     },
+        ///     evaluationStatus: SubTrainingJobState,
+        ///     estimatedEndDateTime: string (ISO 8601 Format)
+        ///   }
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3610,6 +4101,49 @@ namespace Azure.AI.Language.Conversations
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="jobId"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> or <paramref name="jobId"/> is an empty string, and was expected to be non-empty. </exception>
         /// <remarks>
+        /// Schema for <c>Response Body</c>:
+        /// <code>{
+        ///   jobId: string,
+        ///   createdDateTime: string (ISO 8601 Format),
+        ///   lastUpdatedDateTime: string (ISO 8601 Format),
+        ///   expirationDateTime: string (ISO 8601 Format),
+        ///   status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;,
+        ///   warnings: [
+        ///     {
+        ///       code: string,
+        ///       message: string
+        ///     }
+        ///   ],
+        ///   errors: [
+        ///     {
+        ///       code: &quot;InvalidRequest&quot; | &quot;InvalidArgument&quot; | &quot;Unauthorized&quot; | &quot;Forbidden&quot; | &quot;NotFound&quot; | &quot;ProjectNotFound&quot; | &quot;OperationNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchIndexNotFound&quot; | &quot;TooManyRequests&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;AzureCognitiveSearchIndexLimitReached&quot; | &quot;InternalServerError&quot; | &quot;ServiceUnavailable&quot; | &quot;Timeout&quot; | &quot;QuotaExceeded&quot; | &quot;Conflict&quot; | &quot;Warning&quot;,
+        ///       message: string,
+        ///       target: string,
+        ///       details: [Error],
+        ///       innererror: {
+        ///         code: &quot;InvalidRequest&quot; | &quot;InvalidParameterValue&quot; | &quot;KnowledgeBaseNotFound&quot; | &quot;AzureCognitiveSearchNotFound&quot; | &quot;AzureCognitiveSearchThrottling&quot; | &quot;ExtractionFailure&quot; | &quot;InvalidRequestBodyFormat&quot; | &quot;EmptyRequest&quot; | &quot;MissingInputDocuments&quot; | &quot;InvalidDocument&quot; | &quot;ModelVersionIncorrect&quot; | &quot;InvalidDocumentBatch&quot; | &quot;UnsupportedLanguageCode&quot; | &quot;InvalidCountryHint&quot;,
+        ///         message: string,
+        ///         details: Dictionary&lt;string, string&gt;,
+        ///         target: string,
+        ///         innererror: InnerErrorModel
+        ///       }
+        ///     }
+        ///   ],
+        ///   result: {
+        ///     modelLabel: string,
+        ///     trainingConfigVersion: string,
+        ///     trainingMode: &quot;advanced&quot; | &quot;standard&quot;,
+        ///     trainingStatus: {
+        ///       percentComplete: number,
+        ///       startDateTime: string (ISO 8601 Format),
+        ///       endDateTime: string (ISO 8601 Format),
+        ///       status: &quot;notStarted&quot; | &quot;running&quot; | &quot;succeeded&quot; | &quot;failed&quot; | &quot;cancelled&quot; | &quot;cancelling&quot; | &quot;partiallyCompleted&quot;
+        ///     },
+        ///     evaluationStatus: SubTrainingJobState,
+        ///     estimatedEndDateTime: string (ISO 8601 Format)
+        ///   }
+        /// }
+        /// </code>
         /// Schema for <c>Response Error</c>:
         /// <code>{
         ///   error: {
@@ -3711,7 +4245,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateDeleteProjectRequest(string projectName, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Delete;
             var uri = new RawRequestUriBuilder();
@@ -3727,7 +4261,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateExportProjectRequest(string projectName, string exportedProjectFormat, string assetKind, string stringIndexType, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Post;
             var uri = new RawRequestUriBuilder();
@@ -3753,7 +4287,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateImportProjectRequest(string projectName, RequestContent content, string exportedProjectFormat, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Post;
             var uri = new RawRequestUriBuilder();
@@ -3776,7 +4310,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateTrainRequest(string projectName, RequestContent content, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Post;
             var uri = new RawRequestUriBuilder();
@@ -3824,7 +4358,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateSwapDeploymentsRequest(string projectName, RequestContent content, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Post;
             var uri = new RawRequestUriBuilder();
@@ -3861,7 +4395,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateDeployProjectRequest(string projectName, string deploymentName, RequestContent content, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Put;
             var uri = new RawRequestUriBuilder();
@@ -3881,7 +4415,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateDeleteDeploymentRequest(string projectName, string deploymentName, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Delete;
             var uri = new RawRequestUriBuilder();
@@ -4136,7 +4670,7 @@ namespace Azure.AI.Language.Conversations
 
         internal HttpMessage CreateCancelTrainingJobRequest(string projectName, string jobId, RequestContext context)
         {
-            var message = _pipeline.CreateMessage(context, ResponseClassifier202);
+            var message = _pipeline.CreateMessage(context, ResponseClassifier200202);
             var request = message.Request;
             request.Method = RequestMethod.Post;
             var uri = new RawRequestUriBuilder();
@@ -4376,8 +4910,8 @@ namespace Azure.AI.Language.Conversations
         private static ResponseClassifier ResponseClassifier200 => _responseClassifier200 ??= new StatusCodeClassifier(stackalloc ushort[] { 200 });
         private static ResponseClassifier _responseClassifier200201;
         private static ResponseClassifier ResponseClassifier200201 => _responseClassifier200201 ??= new StatusCodeClassifier(stackalloc ushort[] { 200, 201 });
-        private static ResponseClassifier _responseClassifier202;
-        private static ResponseClassifier ResponseClassifier202 => _responseClassifier202 ??= new StatusCodeClassifier(stackalloc ushort[] { 202 });
+        private static ResponseClassifier _responseClassifier200202;
+        private static ResponseClassifier ResponseClassifier200202 => _responseClassifier200202 ??= new StatusCodeClassifier(stackalloc ushort[] { 200, 202 });
         private static ResponseClassifier _responseClassifier204;
         private static ResponseClassifier ResponseClassifier204 => _responseClassifier204 ??= new StatusCodeClassifier(stackalloc ushort[] { 204 });
     }

@@ -51,7 +51,101 @@ directive:
     $["description"] = "Supported Cognitive Services endpoint (e.g., https://<resource-name>.cognitiveservices.azure.com).";
     $["format"] = "url";
 
-# Rename operations to be consistent.
+# Define multilingual parameter as a boolean.
+- where-operation: ConversationalAnalysisAuthoring_GetSupportedPrebuiltEntities
+  transform: |
+    var multilingualParam = $.parameters.find(param => param.name === "multilingual");
+    multilingualParam.type = "boolean";
+
+# Define HTTP 200 responses for LROs to document result model.
+- where-operation: ConversationalAnalysisAuthoring_DeleteProject
+  transform: |
+    $.responses["200"] = {
+      description: "The project deletion job result.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringProjectDeletionJobState"
+      }
+    };
+
+- where-operation: ConversationalAnalysisAuthoring_Export
+  transform: |
+    $.responses["200"] = {
+      description: "The status of the long running operation.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringExportProjectJobState"
+      }
+    };
+
+- where-operation: ConversationalAnalysisAuthoring_Import
+  transform: |
+    $.responses["200"] = {
+      description: "The details of the long running operation.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringImportProjectJobState"
+      }
+    };
+
+- where-operation: ConversationalAnalysisAuthoring_Train
+  transform: |
+    $.responses["200"] = {
+      description: "The training job result.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringTrainingJobState"
+      }
+    };
+
+- where-operation: ConversationalAnalysisAuthoring_SwapDeployments
+  transform: |
+    $.responses["200"] = {
+      description: "The swap deployment job result.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringDeploymentJobState"
+      }
+    };
+
+- where-operation: ConversationalAnalysisAuthoring_DeployProject
+  transform: |
+    $.responses["200"] = {
+      description: "The deployment job result.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringDeploymentJobState"
+      }
+    };
+
+- where-operation: ConversationalAnalysisAuthoring_DeleteDeployment
+  transform: |
+    $.responses["200"] = {
+      description: "The deployment job result.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringDeploymentJobState"
+      }
+    };
+
+- where-operation: ConversationalAnalysisAuthoring_CancelTrainingJob
+  transform: |
+    $.responses["200"] = {
+      description: "The training job result.",
+      schema: {
+        "$ref": "#/definitions/ConversationalAnalysisAuthoringTrainingJobState"
+      }
+    };
+
+# Move the stringIndexType parameter to the end for all operations referencing it.
+- where-operation: ConversationalAnalysisAuthoring_Export
+  transform: |
+    var stringIndexTypeParamIndex = $.parameters.findIndex(param => param["$ref"] === "#/parameters/ConversationalAnalysisAuthoringStringIndexTypeQueryParameter");
+    var stringIndexTypeParam = $.parameters[stringIndexTypeParamIndex];
+
+    var apiVersionParamIndex = $.parameters.findIndex(param => param["$ref"] === "common.json#/parameters/ApiVersionParameter");
+    var apiVersionParam = $.parameters[apiVersionParamIndex];
+
+    $.parameters.splice(stringIndexTypeParamIndex, 1);
+    $.parameters.splice(apiVersionParamIndex - 1, 1);
+
+    $.parameters.push(stringIndexTypeParam);
+    $.parameters.push(apiVersionParam);
+
+# Rename operations to be consistent. Do this after other operation transforms for ease.
 - rename-operation:
     from: ConversationalAnalysisAuthoring_Export
     to: ConversationalAnalysisAuthoring_ExportProject
@@ -83,27 +177,6 @@ directive:
 - rename-operation:
     from: ConversationalAnalysisAuthoring_Import
     to: ConversationalAnalysisAuthoring_ImportProject
-
-# Define multilingual parameter as a boolean.
-- where-operation: ConversationalAnalysisAuthoring_GetSupportedPrebuiltEntities
-  transform: |
-    var multilingualParam = $.parameters.find(param => param.name === "multilingual");
-    multilingualParam.type = "boolean";
-
-# Move the stringIndexType parameter to the end for all operations referencing it.
-- where-operation: ConversationalAnalysisAuthoring_ExportProject
-  transform: |
-    var stringIndexTypeParamIndex = $.parameters.findIndex(param => param["$ref"] === "#/parameters/ConversationalAnalysisAuthoringStringIndexTypeQueryParameter");
-    var stringIndexTypeParam = $.parameters[stringIndexTypeParamIndex];
-
-    var apiVersionParamIndex = $.parameters.findIndex(param => param["$ref"] === "common.json#/parameters/ApiVersionParameter");
-    var apiVersionParam = $.parameters[apiVersionParamIndex];
-
-    $.parameters.splice(stringIndexTypeParamIndex, 1);
-    $.parameters.splice(apiVersionParamIndex - 1, 1);
-
-    $.parameters.push(stringIndexTypeParam);
-    $.parameters.push(apiVersionParam);
 ```
 
 ### C# customizations
