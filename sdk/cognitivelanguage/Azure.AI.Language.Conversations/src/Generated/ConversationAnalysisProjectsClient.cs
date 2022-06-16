@@ -467,17 +467,17 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Response> GetDeploymentStatusAsync(string projectName, string deploymentName, string jobId, RequestContext context = null)
+        public virtual async Task<Response> GetDeploymentJobStatusAsync(string projectName, string deploymentName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(deploymentName, nameof(deploymentName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetDeploymentStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetDeploymentJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetDeploymentStatusRequest(projectName, deploymentName, jobId, context);
+                using HttpMessage message = CreateGetDeploymentJobStatusRequest(projectName, deploymentName, jobId, context);
                 return await _pipeline.ProcessMessageAsync(message, context).ConfigureAwait(false);
             }
             catch (Exception e)
@@ -544,17 +544,17 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Response GetDeploymentStatus(string projectName, string deploymentName, string jobId, RequestContext context = null)
+        public virtual Response GetDeploymentJobStatus(string projectName, string deploymentName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(deploymentName, nameof(deploymentName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetDeploymentStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetDeploymentJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetDeploymentStatusRequest(projectName, deploymentName, jobId, context);
+                using HttpMessage message = CreateGetDeploymentJobStatusRequest(projectName, deploymentName, jobId, context);
                 return _pipeline.ProcessMessage(message, context);
             }
             catch (Exception e)
@@ -620,16 +620,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Response> GetSwapDeploymentsStatusAsync(string projectName, string jobId, RequestContext context = null)
+        public virtual async Task<Response> GetSwapDeploymentsJobStatusAsync(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetSwapDeploymentsStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetSwapDeploymentsJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetSwapDeploymentsStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetSwapDeploymentsJobStatusRequest(projectName, jobId, context);
                 return await _pipeline.ProcessMessageAsync(message, context).ConfigureAwait(false);
             }
             catch (Exception e)
@@ -695,16 +695,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Response GetSwapDeploymentsStatus(string projectName, string jobId, RequestContext context = null)
+        public virtual Response GetSwapDeploymentsJobStatus(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetSwapDeploymentsStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetSwapDeploymentsJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetSwapDeploymentsStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetSwapDeploymentsJobStatusRequest(projectName, jobId, context);
                 return _pipeline.ProcessMessage(message, context);
             }
             catch (Exception e)
@@ -771,16 +771,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Response> GetExportStatusAsync(string projectName, string jobId, RequestContext context = null)
+        public virtual async Task<Response> GetExportProjectJobStatusAsync(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetExportStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetExportProjectJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetExportStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetExportProjectJobStatusRequest(projectName, jobId, context);
                 return await _pipeline.ProcessMessageAsync(message, context).ConfigureAwait(false);
             }
             catch (Exception e)
@@ -847,16 +847,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Response GetExportStatus(string projectName, string jobId, RequestContext context = null)
+        public virtual Response GetExportProjectJobStatus(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetExportStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetExportProjectJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetExportStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetExportProjectJobStatusRequest(projectName, jobId, context);
                 return _pipeline.ProcessMessage(message, context);
             }
             catch (Exception e)
@@ -922,16 +922,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Response> GetImportStatusAsync(string projectName, string jobId, RequestContext context = null)
+        public virtual async Task<Response> GetImportProjectJobStatusAsync(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetImportStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetImportProjectJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetImportStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetImportProjectJobStatusRequest(projectName, jobId, context);
                 return await _pipeline.ProcessMessageAsync(message, context).ConfigureAwait(false);
             }
             catch (Exception e)
@@ -997,16 +997,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Response GetImportStatus(string projectName, string jobId, RequestContext context = null)
+        public virtual Response GetImportProjectJobStatus(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetImportStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetImportProjectJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetImportStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetImportProjectJobStatusRequest(projectName, jobId, context);
                 return _pipeline.ProcessMessage(message, context);
             }
             catch (Exception e)
@@ -1433,16 +1433,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Response> GetTrainingStatusAsync(string projectName, string jobId, RequestContext context = null)
+        public virtual async Task<Response> GetTrainingJobStatusAsync(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetTrainingStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetTrainingJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetTrainingStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetTrainingJobStatusRequest(projectName, jobId, context);
                 return await _pipeline.ProcessMessageAsync(message, context).ConfigureAwait(false);
             }
             catch (Exception e)
@@ -1521,16 +1521,16 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Response GetTrainingStatus(string projectName, string jobId, RequestContext context = null)
+        public virtual Response GetTrainingJobStatus(string projectName, string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetTrainingStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetTrainingJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetTrainingStatusRequest(projectName, jobId, context);
+                using HttpMessage message = CreateGetTrainingJobStatusRequest(projectName, jobId, context);
                 return _pipeline.ProcessMessage(message, context);
             }
             catch (Exception e)
@@ -1595,15 +1595,15 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Response> GetProjectDeletionStatusAsync(string jobId, RequestContext context = null)
+        public virtual async Task<Response> GetProjectDeletionJobStatusAsync(string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetProjectDeletionStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetProjectDeletionJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetProjectDeletionStatusRequest(jobId, context);
+                using HttpMessage message = CreateGetProjectDeletionJobStatusRequest(jobId, context);
                 return await _pipeline.ProcessMessageAsync(message, context).ConfigureAwait(false);
             }
             catch (Exception e)
@@ -1668,15 +1668,15 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Response GetProjectDeletionStatus(string jobId, RequestContext context = null)
+        public virtual Response GetProjectDeletionJobStatus(string jobId, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(jobId, nameof(jobId));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetProjectDeletionStatus");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.GetProjectDeletionJobStatus");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateGetProjectDeletionStatusRequest(jobId, context);
+                using HttpMessage message = CreateGetProjectDeletionJobStatusRequest(jobId, context);
                 return _pipeline.ProcessMessage(message, context);
             }
             catch (Exception e)
@@ -2615,12 +2615,12 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual AsyncPageable<BinaryData> GetSupportedPrebuiltEntitiesAsync(string language = null, string multilingual = null, int? top = null, int? skip = null, int? maxpagesize = null, RequestContext context = null)
+        public virtual AsyncPageable<BinaryData> GetSupportedPrebuiltEntitiesAsync(string language = null, bool? multilingual = null, int? top = null, int? skip = null, int? maxpagesize = null, RequestContext context = null)
         {
             return GetSupportedPrebuiltEntitiesImplementationAsync("ConversationAnalysisProjectsClient.GetSupportedPrebuiltEntities", language, multilingual, top, skip, maxpagesize, context);
         }
 
-        private AsyncPageable<BinaryData> GetSupportedPrebuiltEntitiesImplementationAsync(string diagnosticsScopeName, string language, string multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
+        private AsyncPageable<BinaryData> GetSupportedPrebuiltEntitiesImplementationAsync(string diagnosticsScopeName, string language, bool? multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
         {
             return PageableHelpers.CreateAsyncPageable(CreateEnumerableAsync, ClientDiagnostics, diagnosticsScopeName);
             async IAsyncEnumerable<Page<BinaryData>> CreateEnumerableAsync(string nextLink, int? pageSizeHint, [EnumeratorCancellation] CancellationToken cancellationToken = default)
@@ -2676,12 +2676,12 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Pageable<BinaryData> GetSupportedPrebuiltEntities(string language = null, string multilingual = null, int? top = null, int? skip = null, int? maxpagesize = null, RequestContext context = null)
+        public virtual Pageable<BinaryData> GetSupportedPrebuiltEntities(string language = null, bool? multilingual = null, int? top = null, int? skip = null, int? maxpagesize = null, RequestContext context = null)
         {
             return GetSupportedPrebuiltEntitiesImplementation("ConversationAnalysisProjectsClient.GetSupportedPrebuiltEntities", language, multilingual, top, skip, maxpagesize, context);
         }
 
-        private Pageable<BinaryData> GetSupportedPrebuiltEntitiesImplementation(string diagnosticsScopeName, string language, string multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
+        private Pageable<BinaryData> GetSupportedPrebuiltEntitiesImplementation(string diagnosticsScopeName, string language, bool? multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
         {
             return PageableHelpers.CreatePageable(CreateEnumerable, ClientDiagnostics, diagnosticsScopeName);
             IEnumerable<Page<BinaryData>> CreateEnumerable(string nextLink, int? pageSizeHint)
@@ -2914,8 +2914,8 @@ namespace Azure.AI.Language.Conversations
         /// <param name="waitUntil"> <see cref="WaitUntil.Completed"/> if the method should wait to return until the long-running operation has completed on the service; <see cref="WaitUntil.Started"/> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         /// <param name="projectName"> The name of the project to use. </param>
         /// <param name="exportedProjectFormat"> The format of the exported project file to use. Allowed values: &quot;Conversation&quot; | &quot;Luis&quot;. </param>
-        /// <param name="stringIndexType"> Specifies the method used to interpret string offsets. Set this to &quot;Utf16CodeUnit&quot; for .NET strings, which are encoded as UTF-16. Allowed values: &quot;Utf16CodeUnit&quot;. </param>
         /// <param name="assetKind"> Kind of asset to export. </param>
+        /// <param name="stringIndexType"> Specifies the method used to interpret string offsets. Set this to &quot;Utf16CodeUnit&quot; for .NET strings, which are encoded as UTF-16. Allowed values: &quot;Utf16CodeUnit&quot;. </param>
         /// <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="stringIndexType"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> is an empty string, and was expected to be non-empty. </exception>
@@ -2939,17 +2939,17 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Operation<BinaryData>> ExportAsync(WaitUntil waitUntil, string projectName, string exportedProjectFormat = null, string stringIndexType = "Utf16CodeUnit", string assetKind = null, RequestContext context = null)
+        public virtual async Task<Operation<BinaryData>> ExportProjectAsync(WaitUntil waitUntil, string projectName, string exportedProjectFormat = null, string assetKind = null, string stringIndexType = "Utf16CodeUnit", RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNull(stringIndexType, nameof(stringIndexType));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.Export");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.ExportProject");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateExportRequest(projectName, exportedProjectFormat, stringIndexType, assetKind, context);
-                return await LowLevelOperationHelpers.ProcessMessageAsync(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.Export", OperationFinalStateVia.Location, context, waitUntil).ConfigureAwait(false);
+                using HttpMessage message = CreateExportProjectRequest(projectName, exportedProjectFormat, assetKind, stringIndexType, context);
+                return await LowLevelOperationHelpers.ProcessMessageAsync(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.ExportProject", OperationFinalStateVia.Location, context, waitUntil).ConfigureAwait(false);
             }
             catch (Exception e)
             {
@@ -2962,8 +2962,8 @@ namespace Azure.AI.Language.Conversations
         /// <param name="waitUntil"> <see cref="WaitUntil.Completed"/> if the method should wait to return until the long-running operation has completed on the service; <see cref="WaitUntil.Started"/> if it should return after starting the operation. For more information on long-running operations, please see <see href="https://github.com/Azure/azure-sdk-for-net/blob/main/sdk/core/Azure.Core/samples/LongRunningOperations.md"> Azure.Core Long-Running Operation samples</see>. </param>
         /// <param name="projectName"> The name of the project to use. </param>
         /// <param name="exportedProjectFormat"> The format of the exported project file to use. Allowed values: &quot;Conversation&quot; | &quot;Luis&quot;. </param>
-        /// <param name="stringIndexType"> Specifies the method used to interpret string offsets. Set this to &quot;Utf16CodeUnit&quot; for .NET strings, which are encoded as UTF-16. Allowed values: &quot;Utf16CodeUnit&quot;. </param>
         /// <param name="assetKind"> Kind of asset to export. </param>
+        /// <param name="stringIndexType"> Specifies the method used to interpret string offsets. Set this to &quot;Utf16CodeUnit&quot; for .NET strings, which are encoded as UTF-16. Allowed values: &quot;Utf16CodeUnit&quot;. </param>
         /// <param name="context"> The request context, which can override default behaviors on the request on a per-call basis. </param>
         /// <exception cref="ArgumentNullException"> <paramref name="projectName"/> or <paramref name="stringIndexType"/> is null. </exception>
         /// <exception cref="ArgumentException"> <paramref name="projectName"/> is an empty string, and was expected to be non-empty. </exception>
@@ -2987,17 +2987,17 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Operation<BinaryData> Export(WaitUntil waitUntil, string projectName, string exportedProjectFormat = null, string stringIndexType = "Utf16CodeUnit", string assetKind = null, RequestContext context = null)
+        public virtual Operation<BinaryData> ExportProject(WaitUntil waitUntil, string projectName, string exportedProjectFormat = null, string assetKind = null, string stringIndexType = "Utf16CodeUnit", RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNull(stringIndexType, nameof(stringIndexType));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.Export");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.ExportProject");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateExportRequest(projectName, exportedProjectFormat, stringIndexType, assetKind, context);
-                return LowLevelOperationHelpers.ProcessMessage(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.Export", OperationFinalStateVia.Location, context, waitUntil);
+                using HttpMessage message = CreateExportProjectRequest(projectName, exportedProjectFormat, assetKind, stringIndexType, context);
+                return LowLevelOperationHelpers.ProcessMessage(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.ExportProject", OperationFinalStateVia.Location, context, waitUntil);
             }
             catch (Exception e)
             {
@@ -3053,17 +3053,17 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual async Task<Operation<BinaryData>> ImportAsync(WaitUntil waitUntil, string projectName, RequestContent content, string exportedProjectFormat = null, RequestContext context = null)
+        public virtual async Task<Operation<BinaryData>> ImportProjectAsync(WaitUntil waitUntil, string projectName, RequestContent content, string exportedProjectFormat = null, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNull(content, nameof(content));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.Import");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.ImportProject");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateImportRequest(projectName, content, exportedProjectFormat, context);
-                return await LowLevelOperationHelpers.ProcessMessageAsync(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.Import", OperationFinalStateVia.Location, context, waitUntil).ConfigureAwait(false);
+                using HttpMessage message = CreateImportProjectRequest(projectName, content, exportedProjectFormat, context);
+                return await LowLevelOperationHelpers.ProcessMessageAsync(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.ImportProject", OperationFinalStateVia.Location, context, waitUntil).ConfigureAwait(false);
             }
             catch (Exception e)
             {
@@ -3119,17 +3119,17 @@ namespace Azure.AI.Language.Conversations
         /// </code>
         /// 
         /// </remarks>
-        public virtual Operation<BinaryData> Import(WaitUntil waitUntil, string projectName, RequestContent content, string exportedProjectFormat = null, RequestContext context = null)
+        public virtual Operation<BinaryData> ImportProject(WaitUntil waitUntil, string projectName, RequestContent content, string exportedProjectFormat = null, RequestContext context = null)
         {
             Argument.AssertNotNullOrEmpty(projectName, nameof(projectName));
             Argument.AssertNotNull(content, nameof(content));
 
-            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.Import");
+            using var scope = ClientDiagnostics.CreateScope("ConversationAnalysisProjectsClient.ImportProject");
             scope.Start();
             try
             {
-                using HttpMessage message = CreateImportRequest(projectName, content, exportedProjectFormat, context);
-                return LowLevelOperationHelpers.ProcessMessage(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.Import", OperationFinalStateVia.Location, context, waitUntil);
+                using HttpMessage message = CreateImportProjectRequest(projectName, content, exportedProjectFormat, context);
+                return LowLevelOperationHelpers.ProcessMessage(_pipeline, message, ClientDiagnostics, "ConversationAnalysisProjectsClient.ImportProject", OperationFinalStateVia.Location, context, waitUntil);
             }
             catch (Exception e)
             {
@@ -3725,7 +3725,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateExportRequest(string projectName, string exportedProjectFormat, string stringIndexType, string assetKind, RequestContext context)
+        internal HttpMessage CreateExportProjectRequest(string projectName, string exportedProjectFormat, string assetKind, string stringIndexType, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier202);
             var request = message.Request;
@@ -3740,18 +3740,18 @@ namespace Azure.AI.Language.Conversations
             {
                 uri.AppendQuery("format", exportedProjectFormat, true);
             }
-            uri.AppendQuery("stringIndexType", stringIndexType, true);
             if (assetKind != null)
             {
                 uri.AppendQuery("assetKind", assetKind, true);
             }
+            uri.AppendQuery("stringIndexType", stringIndexType, true);
             uri.AppendQuery("api-version", _apiVersion, true);
             request.Uri = uri;
             request.Headers.Add("Accept", "application/json");
             return message;
         }
 
-        internal HttpMessage CreateImportRequest(string projectName, RequestContent content, string exportedProjectFormat, RequestContext context)
+        internal HttpMessage CreateImportProjectRequest(string projectName, RequestContent content, string exportedProjectFormat, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier202);
             var request = message.Request;
@@ -3897,7 +3897,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetDeploymentStatusRequest(string projectName, string deploymentName, string jobId, RequestContext context)
+        internal HttpMessage CreateGetDeploymentJobStatusRequest(string projectName, string deploymentName, string jobId, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;
@@ -3917,7 +3917,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetSwapDeploymentsStatusRequest(string projectName, string jobId, RequestContext context)
+        internal HttpMessage CreateGetSwapDeploymentsJobStatusRequest(string projectName, string jobId, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;
@@ -3935,7 +3935,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetExportStatusRequest(string projectName, string jobId, RequestContext context)
+        internal HttpMessage CreateGetExportProjectJobStatusRequest(string projectName, string jobId, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;
@@ -3953,7 +3953,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetImportStatusRequest(string projectName, string jobId, RequestContext context)
+        internal HttpMessage CreateGetImportProjectJobStatusRequest(string projectName, string jobId, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;
@@ -4116,7 +4116,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetTrainingStatusRequest(string projectName, string jobId, RequestContext context)
+        internal HttpMessage CreateGetTrainingJobStatusRequest(string projectName, string jobId, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;
@@ -4153,7 +4153,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetProjectDeletionStatusRequest(string jobId, RequestContext context)
+        internal HttpMessage CreateGetProjectDeletionJobStatusRequest(string jobId, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;
@@ -4197,7 +4197,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetSupportedPrebuiltEntitiesRequest(string language, string multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
+        internal HttpMessage CreateGetSupportedPrebuiltEntitiesRequest(string language, bool? multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;
@@ -4212,7 +4212,7 @@ namespace Azure.AI.Language.Conversations
             }
             if (multilingual != null)
             {
-                uri.AppendQuery("multilingual", multilingual, true);
+                uri.AppendQuery("multilingual", multilingual.Value, true);
             }
             if (top != null)
             {
@@ -4344,7 +4344,7 @@ namespace Azure.AI.Language.Conversations
             return message;
         }
 
-        internal HttpMessage CreateGetSupportedPrebuiltEntitiesNextPageRequest(string nextLink, string language, string multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
+        internal HttpMessage CreateGetSupportedPrebuiltEntitiesNextPageRequest(string nextLink, string language, bool? multilingual, int? top, int? skip, int? maxpagesize, RequestContext context)
         {
             var message = _pipeline.CreateMessage(context, ResponseClassifier200);
             var request = message.Request;

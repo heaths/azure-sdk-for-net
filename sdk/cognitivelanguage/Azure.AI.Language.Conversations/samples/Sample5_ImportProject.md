@@ -18,7 +18,7 @@ Once you have created a client, you can call synchronous or asynchronous methods
 ```C# Snippet:ConversationAnalysisProjectsClient_ImportProject
 string projectName = "Menu";
 
-// Define our project assets and import.
+// Define our project assets and import. In practice this would most often be read from a file.
 var importData = new
 {
     projectFileVersion = "2022-05-01",
@@ -101,8 +101,11 @@ var importData = new
     stringIndexType = "Utf16CodeUnit",
 };
 
-Operation<BinaryData> importOperation = client.Import(WaitUntil.Started, projectName, RequestContent.Create(importData));
-importOperation.WaitForCompletion();
+Console.WriteLine($"Importing project {projectName}...");
+Operation<BinaryData> importOperation = client.Import(
+    WaitUntil.Completed,
+    projectName,
+    RequestContent.Create(importData));
 
 // Train the model.
 var trainData = new
@@ -111,8 +114,11 @@ var trainData = new
     trainingMode = "standard",
 };
 
-Operation<BinaryData> trainOperation = client.Train(WaitUntil.Started, projectName, RequestContent.Create(trainData));
-trainOperation.WaitForCompletion();
+Console.WriteLine($"Training project {projectName}...");
+Operation<BinaryData> trainOperation = client.Train(
+    WaitUntil.Completed,
+    projectName,
+    RequestContent.Create(trainData));
 
 // Deploy the model.
 var deployData = new
@@ -120,101 +126,26 @@ var deployData = new
     trainedModelLabel = "Sample5",
 };
 
-Operation<BinaryData> deployOperation = client.DeployProject(WaitUntil.Started, projectName, "production", RequestContent.Create(deployData));
-deployOperation.WaitForCompletion();
+Console.WriteLine($"Deploying project {projectName} to production...");
+Operation<BinaryData> deployOperation = client.DeployProject(
+    WaitUntil.Started,
+    projectName,
+    "production",
+    RequestContent.Create(deployData));
+
+Console.WriteLine("Import complete");
 ```
 
-# Asynchronous
+## Asynchronous
+
+Using the same `importData` definition above, you can make an asynchronous request by calling `ImportProjectAsync`:
 
 ```C# Snippet:ConversationAnalysisProjectsClient_ImportProjectAsync
-string projectName = "Menu";
-
-// Define our project assets and import.
-var importData = new
-{
-    projectFileVersion = "2022-05-01",
-    metadata = new
-    {
-        projectName,
-        projectKind = "Conversation",
-        multilingual = true,
-        language = "en",
-    },
-
-    assets = new
-    {
-        projectKind = "Conversation",
-        entities = new[] // ConversationalAnalysisAuthoringConversationExportedEntity
-        {
-            new
-            {
-                category = "Contact",
-                compositionSetting = "combineComponents",
-                prebuilts = new[]
-                {
-                    new
-                    {
-                        category = "Person.Name",
-                    },
-                },
-
-                // ... more entities.
-            }
-        },
-
-        intents = new[] // ConversationalAnalysisAuthoringConversationExportedIntent
-        {
-            new
-            {
-                category = "Send",
-            },
-
-            // ... more intents.
-        },
-
-        utterances = new[] // ConversationalAnalysisAuthoringConversationExportedUtterance
-        {
-            new
-            {
-                text = "Send an email to Johnson",
-                language = "en",
-                intent = "Send",
-                entities = new[]
-                {
-                    new
-                    {
-                        category = "Contact",
-                        offset = 17,
-                        length = 7,
-                    },
-                },
-            },
-            new
-            {
-                text = "Send Kathy a calendar invite",
-                language = "en",
-                intent = "Send",
-                entities = new[]
-                {
-                    new
-                    {
-                        category = "Contact",
-                        offset = 5,
-                        length = 5,
-                    },
-                },
-            },
-
-            // ... more utterances.
-        },
-    },
-
-    // Use Utf16CodeUnit for strings in .NET.
-    stringIndexType = "Utf16CodeUnit",
-};
-
-Operation<BinaryData> importOperation = await client.ImportAsync(WaitUntil.Started, projectName, RequestContent.Create(importData));
-await importOperation.WaitForCompletionAsync();
+Console.WriteLine($"Importing project {projectName}...");
+Operation<BinaryData> importOperation = await client.ImportAsync(
+    WaitUntil.Completed,
+    projectName,
+    RequestContent.Create(importData));
 
 // Train the model.
 var trainData = new
@@ -223,8 +154,11 @@ var trainData = new
     trainingMode = "standard",
 };
 
-Operation<BinaryData> trainOperation = await client.TrainAsync(WaitUntil.Started, projectName, RequestContent.Create(trainData));
-await trainOperation.WaitForCompletionAsync();
+Console.WriteLine($"Training project {projectName}...");
+Operation<BinaryData> trainOperation = await client.TrainAsync(
+    WaitUntil.Completed,
+    projectName,
+    RequestContent.Create(trainData));
 
 // Deploy the model.
 var deployData = new
@@ -232,6 +166,12 @@ var deployData = new
     trainedModelLabel = "Sample5",
 };
 
-Operation<BinaryData> deployOperation = await client.DeployProjectAsync(WaitUntil.Started, projectName, "production", RequestContent.Create(deployData));
-await deployOperation.WaitForCompletionAsync();
+Console.WriteLine($"Deploying project {projectName} to production...");
+Operation<BinaryData> deployOperation = await client.DeployProjectAsync(
+    WaitUntil.Started,
+    projectName,
+    "production",
+    RequestContent.Create(deployData));
+
+Console.WriteLine("Import complete");
 ```
