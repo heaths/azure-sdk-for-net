@@ -1,7 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
+    <!-- ECParameters is defined in netstandard2.0 but not net461 (introduced in net47). -->
+    <TargetFrameworks>$(RequiredTargetFrameworks);net47</TargetFrameworks>
   </PropertyGroup>
 
   <Import Project="..\..\Azure.Security.KeyVault.Shared\tests\Azure.Security.KeyVault.Shared.Tests.projitems" Label="Shared" />

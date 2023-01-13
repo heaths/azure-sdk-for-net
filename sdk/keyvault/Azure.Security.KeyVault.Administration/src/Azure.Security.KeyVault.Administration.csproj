@@ -1,13 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
-<PropertyGroup>
+  <PropertyGroup>
     <Description>This is the Microsoft Azure Key Vault Administration client library</Description>
     <AssemblyTitle>Microsoft Azure.Security.KeyVault.Administration client library</AssemblyTitle>
     <Version>4.3.0-beta.2</Version>
     <!--The ApiCompatVersion is managed automatically and should not generally be modified manually.-->
     <ApiCompatVersion>4.2.0</ApiCompatVersion>
+    <!-- TODO: Remove following exception once new version with net461 ships: https://github.com/Azure/azure-sdk-for-net/issues/33431 -->
+    <RunApiCompatForSrc Condition=" '$(TargetFramework)' == 'net461' ">false</RunApiCompatForSrc>
     <PackageTags>Microsoft Azure Key Vault Administration;$(PackageCommonTags)</PackageTags>
-    <TargetFrameworks>$(RequiredTargetFrameworks)</TargetFrameworks>
+    <TargetFrameworks>$(RequiredTargetFrameworks);net461</TargetFrameworks>
     <NoWarn>$(NoWarn);3021;CA1812</NoWarn>
     <IncludeOperationsSharedSource>true</IncludeOperationsSharedSource>
   </PropertyGroup>

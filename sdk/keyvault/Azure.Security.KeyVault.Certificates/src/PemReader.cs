@@ -14,24 +14,23 @@ namespace Azure.Core
     /// </summary>
     internal static partial class PemReader
     {
-        private static bool s_ecInitializedImportPkcs8PrivateKeyMethod;
-        private static MethodInfo s_ecImportPkcs8PrivateKeyMethod;
-        private static MethodInfo s_ecCopyWithPrivateKeyMethod;
-
         static partial void CreateECDsaCertificate(byte[] cer, byte[] key, X509KeyStorageFlags keyStorageFlags, ref X509Certificate2 certificate)
         {
-            if (!s_ecInitializedImportPkcs8PrivateKeyMethod)
-            {
-                // ImportPkcs8PrivateKey was added in .NET Core 3.0 and is only present on Core. We will fall back to a lightweight decoder if this method is missing from the current runtime.
-                s_ecImportPkcs8PrivateKeyMethod = typeof(ECDsa).GetMethod("ImportPkcs8PrivateKey", BindingFlags.Instance | BindingFlags.Public, null, new[] { typeof(ReadOnlySpan<byte>), typeof(int).MakeByRefType() }, null);
-                s_ecInitializedImportPkcs8PrivateKeyMethod = true;
-            }
+#if NET461
+            throw new PlatformNotSupportedException("The current platform does not support reading an ECDsa private key from a PEM file");
+#elif NETSTANDARD2_0_OR_GREATER
+            //if (!s_ecInitializedImportPkcs8PrivateKeyMethod)
+            //{
+            //    // ImportPkcs8PrivateKey was added in .NET Core 3.0 and is only present on Core. We will fall back to a lightweight decoder if this method is missing from the current runtime.
+            //    s_ecImportPkcs8PrivateKeyMethod = typeof(ECDsa).GetMethod("ImportPkcs8PrivateKey", BindingFlags.Instance | BindingFlags.Public, null, new[] { typeof(ReadOnlySpan<byte>), typeof(int).MakeByRefType() }, null);
+            //    s_ecInitializedImportPkcs8PrivateKeyMethod = true;
+            //}
 
-            if (s_ecCopyWithPrivateKeyMethod is null)
-            {
-                s_ecCopyWithPrivateKeyMethod = typeof(ECDsaCertificateExtensions).GetMethod("CopyWithPrivateKey", BindingFlags.Static | BindingFlags.Public, null, new[] { typeof(X509Certificate2), typeof(ECDsa) }, null)
-                    ?? throw new PlatformNotSupportedException("The current platform does not support reading an ECDsa private key from a PEM file");
-            }
+            //if (s_ecCopyWithPrivateKeyMethod is null)
+            //{
+            //    s_ecCopyWithPrivateKeyMethod = typeof(ECDsaCertificateExtensions).GetMethod("CopyWithPrivateKey", BindingFlags.Static | BindingFlags.Public, null, new[] { typeof(X509Certificate2), typeof(ECDsa) }, null)
+            //        ?? throw new PlatformNotSupportedException("The current platform does not support reading an ECDsa private key from a PEM file");
+            //}
 
             // Create the certificate without the private key to pass to our PKCS8 decoder if needed to copy the prime curve.
             using X509Certificate2 certificateWithoutPrivateKey = new X509Certificate2(cer, (string)null, keyStorageFlags);
@@ -70,6 +69,7 @@ namespace Azure.Core
                 // If we created and did not use the RSA private key, make sure it's disposed.
                 privateKey?.Dispose();
             }
+#endif
         }
     }
 }
